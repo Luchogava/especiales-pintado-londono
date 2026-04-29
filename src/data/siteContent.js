@@ -26,21 +26,29 @@ export const stats = [
 export const services = [
   {
     title: 'Transporte empresarial',
+    accent: 'bg-[#1f8d3e]',
+    objectPosition: '14% 63%',
     description:
       'Movilización para personal operativo, administrativo y ejecutivo, con logística organizada, cumplimiento de horarios y respaldo para la continuidad de tu operación.',
   },
   {
     title: 'Transporte escolar',
+    accent: 'bg-[#1b75d0]',
+    objectPosition: '37% 64%',
     description:
       'Rutas confiables para instituciones educativas, estudiantes y familias que priorizan seguridad, puntualidad, control y comunicación responsable.',
   },
   {
     title: 'Turismo y grupos',
+    accent: 'bg-[#7a3fd1]',
+    objectPosition: '59% 64%',
     description:
       'Soluciones de transporte para recorridos turísticos, convenciones, salidas grupales, eventos y viajes programados con atención cordial y cómoda.',
   },
   {
     title: 'Servicios especiales',
+    accent: 'bg-[#f28705]',
+    objectPosition: '82% 64%',
     description:
       'Atención a requerimientos a la medida para organizaciones, familias y personas que necesitan un servicio organizado, seguro y flexible.',
   },

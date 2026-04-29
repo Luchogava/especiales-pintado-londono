@@ -1,15 +1,13 @@
+import { BrandLogo } from './BrandLogo'
 import { Container } from './Container'
 
 export function Header({ navigation, whatsappLink }) {
   return (
-    <header className="sticky top-0 z-40 border-b border-white/10 bg-brand-ink/75 backdrop-blur-xl">
+    <header className="sticky top-0 z-40 border-b border-brand-gold/20 bg-brand-ink/85 backdrop-blur-xl">
       <Container className="py-4">
         <div className="flex items-center justify-between gap-4">
-          <a href="#inicio" className="max-w-[16rem] text-white" aria-label="Ir al inicio">
-            <span className="block font-display text-lg font-semibold tracking-[0.18em] text-brand-gold">SEPL</span>
-            <span className="block text-sm font-semibold leading-snug text-slate-200">
-              Servicios Especiales Pintado Londoño
-            </span>
+          <a href="#inicio" className="max-w-[19rem]" aria-label="Ir al inicio">
+            <BrandLogo />
           </a>
 
           <nav className="hidden items-center gap-8 lg:flex" aria-label="Principal">
@@ -28,7 +26,7 @@ export function Header({ navigation, whatsappLink }) {
             href={whatsappLink}
             target="_blank"
             rel="noreferrer"
-            className="rounded-full border border-brand-gold/60 bg-brand-gold px-5 py-3 text-sm font-extrabold text-brand-ink transition hover:-translate-y-0.5 hover:bg-[#ebbd3d]"
+            className="rounded-full border border-brand-gold/70 bg-brand-gold px-5 py-3 text-sm font-extrabold text-brand-ink transition hover:-translate-y-0.5 hover:bg-[#ffc72a]"
           >
             WhatsApp
           </a>

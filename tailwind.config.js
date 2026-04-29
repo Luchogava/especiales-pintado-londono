@@ -5,12 +5,12 @@ export default {
     extend: {
       colors: {
         brand: {
-          navy: '#0f2748',
-          blue: '#173f73',
-          gold: '#d7a928',
-          sand: '#f7f2e4',
+          navy: '#051a34',
+          blue: '#123866',
+          gold: '#f2b501',
+          sand: '#fff8e7',
           slate: '#e2e8f0',
-          ink: '#08111f',
+          ink: '#06111f',
         },
       },
       fontFamily: {
