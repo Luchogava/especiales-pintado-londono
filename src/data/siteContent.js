@@ -17,38 +17,50 @@ export const navigation = [
 ]
 
 export const stats = [
-  { value: '40+ años', label: 'Movilizando personas con experiencia y criterio operativo.' },
-  { value: 'Cobertura nacional', label: 'Atendemos rutas y servicios en diferentes regiones de Colombia.' },
-  { value: 'Certificaciones ISO', label: 'Procesos orientados a la calidad y a la seguridad operacional.' },
-  { value: 'Atención humana', label: 'Acompañamiento cercano, claro y oportuno en cada solicitud.' },
+  {
+    value: '40+ años',
+    label: 'Movilizando personas con experiencia y criterio operativo.',
+    type: 'years',
+  },
+  {
+    value: 'Cobertura nacional',
+    label: 'Atendemos rutas y servicios en diferentes regiones de Colombia.',
+    type: 'coverage',
+  },
+  {
+    value: 'ISO 9001:2015',
+    label: 'Sistema de gestión de calidad orientado al servicio y la mejora continua.',
+    type: 'iso',
+  },
+  {
+    value: 'ISO 45001:2018',
+    label: 'Compromiso con la seguridad, salud en el trabajo y operación responsable.',
+    type: 'iso',
+  },
 ]
 
 export const services = [
   {
     title: 'Transporte empresarial',
     accent: 'bg-[#1f8d3e]',
-    objectPosition: '14% 63%',
     description:
       'Movilización para personal operativo, administrativo y ejecutivo, con logística organizada, cumplimiento de horarios y respaldo para la continuidad de tu operación.',
   },
   {
     title: 'Transporte escolar',
     accent: 'bg-[#1b75d0]',
-    objectPosition: '37% 64%',
     description:
       'Rutas confiables para instituciones educativas, estudiantes y familias que priorizan seguridad, puntualidad, control y comunicación responsable.',
   },
   {
     title: 'Turismo y grupos',
     accent: 'bg-[#7a3fd1]',
-    objectPosition: '59% 64%',
     description:
       'Soluciones de transporte para recorridos turísticos, convenciones, salidas grupales, eventos y viajes programados con atención cordial y cómoda.',
   },
   {
     title: 'Servicios especiales',
     accent: 'bg-[#f28705]',
-    objectPosition: '82% 64%',
     description:
       'Atención a requerimientos a la medida para organizaciones, familias y personas que necesitan un servicio organizado, seguro y flexible.',
   },
@@ -83,11 +95,13 @@ export const certifications = [
     title: 'ISO 9001:2015',
     description:
       'Respaldamos la gestión de nuestros procesos con enfoque en calidad, mejora continua y satisfacción del cliente.',
+    tag: 'Gestión de calidad',
   },
   {
     title: 'ISO 45001:2018',
     description:
       'Fortalecemos la seguridad y la salud en el trabajo con prácticas responsables y una cultura preventiva.',
+    tag: 'Seguridad y salud en el trabajo',
   },
 ]
 
