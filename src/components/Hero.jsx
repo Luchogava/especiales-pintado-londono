@@ -22,26 +22,28 @@ export function Hero({ company, whatsappLink }) {
       <div className="absolute left-[-8rem] top-16 h-72 w-72 rounded-full bg-brand-blue/35 blur-3xl" />
       <div className="absolute right-[-8rem] top-10 h-80 w-80 rounded-full bg-brand-gold/20 blur-3xl" />
 
-      <Container className="relative grid gap-14 py-20 lg:grid-cols-[1.05fr_0.95fr] lg:items-center lg:py-24">
+      <Container className="relative grid gap-14 py-16 lg:grid-cols-[1.05fr_0.95fr] lg:items-center lg:py-20">
         <div className="max-w-3xl">
           <div className="inline-flex items-center gap-2 rounded-full border border-brand-gold/25 bg-white/5 px-4 py-2 text-sm text-slate-200">
             <ShieldIcon />
             {company.founded} movilizando personas en Colombia
           </div>
 
-          <img
-            src="/nombre-con-buses.png"
-            alt="Servicios Especiales Pintado Londoño"
-            className="mt-8 w-full max-w-4xl object-contain"
-          />
+          <div className="mt-7 overflow-hidden rounded-[1.75rem] border border-white/10 bg-white/5 shadow-[0_25px_60px_rgba(0,0,0,0.28)]">
+            <img
+              src="/hero-brand.png"
+              alt="Servicios Especiales Pintado Londono"
+              className="block w-full object-cover"
+            />
+          </div>
 
-          <h1 className="mt-8 font-display text-4xl font-bold leading-tight sm:text-5xl lg:text-[3.6rem]">
+          <h1 className="mt-7 font-display text-4xl font-bold leading-tight sm:text-5xl lg:text-[3.6rem]">
             Transporte especial con seguridad, puntualidad y buen trato
           </h1>
 
           <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-300 sm:text-xl">
-            Empresa de transporte especial de pasajeros para compañías, instituciones educativas, turismo, grupos y
-            servicios a la medida, con operación nacional, atención humana y experiencia comprobada.
+            Empresa de transporte especial de pasajeros para companias, instituciones educativas, turismo, grupos y
+            servicios a la medida, con operacion nacional, atencion humana y experiencia comprobada.
           </p>
 
           <div className="mt-10 flex flex-col gap-4 sm:flex-row">
@@ -49,7 +51,7 @@ export function Hero({ company, whatsappLink }) {
               href="#cotizacion"
               className="inline-flex items-center justify-center rounded-full bg-brand-gold px-7 py-4 text-base font-extrabold text-brand-ink shadow-[0_18px_40px_rgba(242,181,1,0.35)] transition hover:-translate-y-0.5 hover:bg-[#ffc72a]"
             >
-              Solicitar cotización
+              Solicitar cotizacion
             </a>
             <a
               href={whatsappLink}
@@ -78,7 +80,7 @@ export function Hero({ company, whatsappLink }) {
 
                 <img
                   src="/40-anos.png"
-                  alt="Más de 40 años movilizando personas"
+                  alt="Mas de 40 anos movilizando personas"
                   className="mx-auto w-full max-w-[14rem] object-contain sm:mx-0"
                 />
               </div>
@@ -86,16 +88,16 @@ export function Hero({ company, whatsappLink }) {
               <div className="mt-8 grid gap-4 sm:grid-cols-2">
                 <div className="rounded-3xl border border-white/10 bg-brand-ink/60 p-5">
                   <p className="text-sm font-black uppercase tracking-[0.22em] text-brand-gold">Promesa</p>
-                  <p className="mt-2 text-2xl font-extrabold text-white">Atención humana</p>
+                  <p className="mt-2 text-2xl font-extrabold text-white">Atencion humana</p>
                   <p className="mt-2 text-sm leading-6 text-slate-300">
-                    Acompañamiento cercano para clientes empresariales, institucionales y particulares.
+                    Acompanamiento cercano para clientes empresariales, institucionales y particulares.
                   </p>
                 </div>
                 <div className="rounded-3xl border border-white/10 bg-brand-ink/60 p-5">
                   <p className="text-sm font-black uppercase tracking-[0.22em] text-brand-gold">Respaldo</p>
                   <p className="mt-2 text-2xl font-extrabold text-white">ISO 9001:2015</p>
                   <p className="mt-2 text-sm leading-6 text-slate-300">
-                    Gestión orientada a la calidad, cumplimiento y mejora continua.
+                    Gestion orientada a la calidad, cumplimiento y mejora continua.
                   </p>
                 </div>
               </div>

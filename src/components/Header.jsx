@@ -3,10 +3,10 @@ import { Container } from './Container'
 
 export function Header({ navigation, whatsappLink }) {
   return (
-    <header className="sticky top-0 z-40 border-b border-brand-gold/20 bg-brand-ink/85 backdrop-blur-xl">
-      <Container className="py-4">
+    <header className="sticky top-0 z-40 border-b border-brand-gold/15 bg-brand-ink/82 backdrop-blur-xl">
+      <Container className="py-3.5">
         <div className="flex items-center justify-between gap-4">
-          <a href="#inicio" className="max-w-[19rem]" aria-label="Ir al inicio">
+          <a href="#inicio" className="max-w-[16rem] sm:max-w-[18rem]" aria-label="Ir al inicio">
             <BrandLogo />
           </a>
 
@@ -26,13 +26,13 @@ export function Header({ navigation, whatsappLink }) {
             href={whatsappLink}
             target="_blank"
             rel="noreferrer"
-            className="rounded-full bg-[#25D366] px-5 py-3 text-sm font-extrabold text-white shadow-[0_18px_40px_rgba(37,211,102,0.35)] transition hover:-translate-y-0.5 hover:bg-[#1fbe59]"
+            className="rounded-full bg-[#25D366] px-4 py-3 text-sm font-extrabold text-white shadow-[0_18px_40px_rgba(37,211,102,0.35)] transition hover:-translate-y-0.5 hover:bg-[#1fbe59] sm:px-5"
           >
             Cotiza por WhatsApp
           </a>
         </div>
 
-        <nav className="mt-4 flex gap-4 overflow-x-auto pb-1 lg:hidden" aria-label="Principal móvil">
+        <nav className="mt-3 flex gap-4 overflow-x-auto pb-1 lg:hidden" aria-label="Principal movil">
           {navigation.map((item) => (
             <a
               key={item.href}
