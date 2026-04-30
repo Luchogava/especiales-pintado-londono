@@ -45,7 +45,7 @@ export function Hero({ company, whatsappLink }) {
 
           <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-300 sm:text-xl">
             Soluciones de transporte especial para empresas, instituciones educativas, grupos turisticos y servicios a
-            la medida, con operacion nacional, atencion humana y mas de 40 anos de experiencia.
+            la medida, con operacion nacional, atencion humana y mas de 40 años de experiencia.
           </p>
 
           <div className="mt-10 flex flex-col gap-4 sm:flex-row">
