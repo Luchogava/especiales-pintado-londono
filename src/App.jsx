@@ -3,7 +3,6 @@ import { CertificationsSection } from './components/CertificationsSection'
 import { Footer } from './components/Footer'
 import { Header } from './components/Header'
 import { Hero } from './components/Hero'
-import { MissionVisionValues } from './components/MissionVisionValues'
 import { QuoteSection } from './components/QuoteSection'
 import { ServicesSection } from './components/ServicesSection'
 import { StatsBar } from './components/StatsBar'
@@ -15,9 +14,9 @@ import {
   navigation,
   reasons,
   services,
-  whatsappMessage,
   stats,
   values,
+  whatsappMessage,
 } from './data/siteContent'
 
 function App() {
@@ -31,8 +30,7 @@ function App() {
         <StatsBar stats={stats} />
         <ServicesSection services={services} />
         <WhyChooseUs reasons={reasons} />
-        <AboutSection />
-        <MissionVisionValues values={values} />
+        <AboutSection values={values} />
         <CertificationsSection certifications={certifications} />
         <QuoteSection phoneRaw={company.phoneRaw} email={company.email} />
       </main>
