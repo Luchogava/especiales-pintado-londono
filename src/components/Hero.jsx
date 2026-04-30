@@ -1,3 +1,4 @@
+import { BrochureCrop } from './BrochureCrop'
 import { Container } from './Container'
 
 function ShieldIcon() {
@@ -30,12 +31,22 @@ export function Hero({ company, whatsappLink }) {
           </div>
 
           <div className="mt-7 max-w-[42rem] rounded-[2rem] border border-white/10 bg-gradient-to-br from-white/10 via-white/5 to-brand-gold/10 p-2 shadow-[0_28px_70px_rgba(0,0,0,0.32)]">
-            <div className="overflow-hidden rounded-[1.45rem] border border-brand-gold/20 bg-[radial-gradient(circle_at_left,#f4c645_0%,#d6b13c_18%,#697275_54%,#4d5457_74%,#394044_100%)]">
+            <div className="overflow-hidden rounded-[1.45rem] border border-brand-gold/20 bg-brand-ink/75">
               <img
                 src="/hero-brand.png"
                 alt="Servicios Especiales Pintado Londono"
-                className="block h-[12.5rem] w-full object-cover object-[center_56%] sm:h-[14.5rem] lg:h-[15.5rem]"
+                className="block h-[9.5rem] w-full object-contain bg-[radial-gradient(circle_at_left,#f4c645_0%,#d8b13c_16%,#6f7678_52%,#4d5457_74%,#394044_100%)] px-4 py-3 sm:h-[11rem] lg:h-[11.5rem] lg:px-6"
               />
+
+              <div className="border-t border-brand-gold/20 bg-brand-ink/55 p-3 sm:p-4">
+                <BrochureCrop
+                  alt="Flota de Servicios Especiales Pintado Londono"
+                  className="h-[9.5rem] rounded-[1.15rem] border border-white/10 shadow-[0_18px_40px_rgba(0,0,0,0.25)] sm:h-[11rem] lg:h-[11.5rem]"
+                  imageClassName="scale-[1.08]"
+                  objectPosition="73% 19%"
+                  overlayClassName="bg-gradient-to-r from-brand-ink/15 via-transparent to-brand-ink/10"
+                />
+              </div>
             </div>
           </div>
 
