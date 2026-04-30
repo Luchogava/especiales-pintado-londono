@@ -12,7 +12,6 @@ export const company = {
 export const navigation = [
   { label: 'Servicios', href: '#servicios' },
   { label: 'Nosotros', href: '#nosotros' },
-  { label: 'Certificaciones', href: '#certificaciones' },
   { label: 'Cotizacion', href: '#cotizacion' },
 ]
 
