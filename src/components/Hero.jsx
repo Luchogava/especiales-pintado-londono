@@ -22,7 +22,7 @@ export function Hero({ company, whatsappLink }) {
       <div className="absolute left-[-8rem] top-16 h-72 w-72 rounded-full bg-brand-blue/35 blur-3xl" />
       <div className="absolute right-[-8rem] top-10 h-80 w-80 rounded-full bg-brand-gold/20 blur-3xl" />
 
-      <Container className="relative grid gap-12 py-16 lg:grid-cols-[1.05fr_0.95fr] lg:items-center lg:py-20">
+      <Container className="relative grid gap-10 py-16 lg:grid-cols-[1.08fr_0.92fr] lg:items-center lg:py-20">
         <div className="max-w-3xl">
           <div className="inline-flex items-center gap-2 rounded-full border border-brand-gold/25 bg-white/5 px-4 py-2 text-sm text-slate-200">
             <ShieldIcon />
@@ -40,12 +40,12 @@ export function Hero({ company, whatsappLink }) {
           </div>
 
           <h1 className="mt-6 font-display text-4xl font-bold leading-tight sm:text-5xl lg:text-[3.45rem]">
-            Transporte especial con seguridad, puntualidad y buen trato
+            Transporte especial de pasajeros con seguridad, puntualidad y buen trato
           </h1>
 
           <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-300 sm:text-xl">
-            Empresa de transporte especial de pasajeros para companias, instituciones educativas, turismo, grupos y
-            servicios a la medida, con operacion nacional, atencion humana y experiencia comprobada.
+            Soluciones de transporte especial para empresas, instituciones educativas, grupos turisticos y servicios a
+            la medida, con operacion nacional, atencion humana y mas de 40 anos de experiencia.
           </p>
 
           <div className="mt-10 flex flex-col gap-4 sm:flex-row">
@@ -67,24 +67,20 @@ export function Hero({ company, whatsappLink }) {
         </div>
 
         <div className="relative">
-          <div className="rounded-[2rem] border border-brand-gold/25 bg-white/10 p-5 shadow-glow backdrop-blur">
-            <div className="rounded-[1.7rem] border border-white/10 bg-gradient-to-br from-white/10 via-white/5 to-brand-gold/10 p-7">
-              <div className="flex flex-col gap-6 sm:flex-row sm:items-start sm:justify-between">
-                <div className="max-w-sm">
-                  <p className="text-sm uppercase tracking-[0.25em] text-brand-gold">Respaldo y trayectoria</p>
-                  <h2 className="mt-3 font-display text-3xl font-bold">
-                    Transporte especial de pasajeros con presencia nacional
-                  </h2>
-                  <p className="mt-4 leading-7 text-slate-300">
-                    Seguridad, puntualidad, confianza, comodidad y buen trato como base de cada servicio.
-                  </p>
-                </div>
-
+          <div className="mx-auto max-w-[22rem] rounded-[2rem] border border-brand-gold/25 bg-white/10 p-5 shadow-glow backdrop-blur lg:mr-0 lg:max-w-[24rem]">
+            <div className="rounded-[1.7rem] border border-white/10 bg-gradient-to-br from-white/10 via-white/5 to-brand-gold/10 p-6">
+              <div className="rounded-[1.4rem] border border-white/10 bg-brand-ink/40 p-4">
+                <p className="text-center text-sm font-extrabold uppercase tracking-[0.24em] text-brand-gold">
+                  Mas de 40 anos
+                </p>
                 <img
                   src="/40-anos.png"
                   alt="Mas de 40 anos movilizando personas"
-                  className="mx-auto w-full max-w-[13rem] object-contain sm:mx-0 lg:max-w-[14rem]"
+                  className="mx-auto mt-4 w-full max-w-[14rem] object-contain lg:max-w-[15rem]"
                 />
+                <p className="mt-4 text-center text-sm leading-6 text-slate-300">
+                  Trayectoria, experiencia operativa y confianza para movilizar personas en todo tipo de servicio.
+                </p>
               </div>
             </div>
           </div>
