@@ -3,7 +3,7 @@ export const company = {
   phoneDisplay: '+57 316 841 33 92',
   phoneRaw: '573168413392',
   email: 'comercial@especialespl.com',
-  years: 'Mas de 40 anos',
+  years: 'Mas de 40 años',
   founded: 'Desde 1984',
   coverage: 'Operacion nacional',
   certifications: ['ISO 9001:2015', 'ISO 45001:2018'],
@@ -17,10 +17,10 @@ export const navigation = [
 
 export const stats = [
   {
-    value: '40+ anos',
+    value: '40+ años',
     label: 'Movilizando personas con experiencia y criterio operativo.',
     image: '/stat-40-anos.png',
-    imageAlt: 'Mas de 40 anos movilizando personas',
+    imageAlt: 'Mas de 40 años movilizando personas',
   },
   {
     value: 'Cobertura nacional',
