@@ -5,7 +5,7 @@ export function WhatsAppButton({ href }) {
       target="_blank"
       rel="noreferrer"
       aria-label="Hablar por WhatsApp"
-      className="fixed bottom-5 right-5 z-50 inline-flex h-16 w-16 items-center justify-center rounded-full bg-[#25D366] text-white shadow-[0_20px_40px_rgba(37,211,102,0.35)] transition hover:-translate-y-1"
+      className="fixed bottom-5 right-5 z-50 inline-flex h-16 w-16 items-center justify-center rounded-full bg-[#25D366] text-white ring-4 ring-white shadow-[0_22px_45px_rgba(37,211,102,0.45)] transition hover:-translate-y-1 hover:scale-105 hover:bg-[#1fbe59]"
     >
       <svg viewBox="0 0 24 24" className="h-8 w-8 fill-current" aria-hidden="true">
         <path d="M20.52 3.48A11.8 11.8 0 0 0 12.08 0C5.5 0 .15 5.35.15 11.93c0 2.1.55 4.15 1.59 5.96L0 24l6.29-1.65a11.9 11.9 0 0 0 5.8 1.48h.01c6.58 0 11.93-5.35 11.93-11.93 0-3.19-1.25-6.18-3.51-8.42Zm-8.44 18.3h-.01a9.89 9.89 0 0 1-5.03-1.37l-.36-.21-3.73.98 1-3.63-.24-.37a9.87 9.87 0 0 1-1.52-5.25c0-5.46 4.44-9.9 9.91-9.9a9.84 9.84 0 0 1 7.02 2.91 9.83 9.83 0 0 1 2.9 7.01c0 5.46-4.45 9.9-9.94 9.9Zm5.43-7.4c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.66.15-.2.3-.76.97-.93 1.17-.17.2-.34.22-.64.08-.3-.15-1.24-.45-2.36-1.43-.88-.79-1.47-1.75-1.64-2.05-.17-.3-.02-.47.13-.62.13-.13.3-.34.45-.52.15-.17.2-.3.3-.5.1-.2.05-.38-.02-.53-.08-.15-.66-1.6-.9-2.19-.24-.58-.48-.5-.66-.5h-.56c-.2 0-.53.08-.8.38-.27.3-1.04 1.01-1.04 2.46 0 1.45 1.06 2.86 1.2 3.06.15.2 2.1 3.21 5.08 4.5.71.31 1.27.5 1.7.64.71.22 1.35.19 1.86.11.57-.08 1.77-.72 2.02-1.42.25-.69.25-1.29.17-1.42-.08-.13-.28-.2-.58-.35Z" />

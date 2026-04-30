@@ -27,7 +27,11 @@ export function Footer({ company, navigation, whatsappLink }) {
           <p className="text-sm font-black uppercase tracking-[0.26em] text-brand-gold">Contacto</p>
           <div className="mt-4 space-y-3">
             <p>{company.phoneDisplay}</p>
-            <p>{company.email}</p>
+            <p>
+              <a href={`mailto:${company.email}`} className="transition hover:text-white">
+                {company.email}
+              </a>
+            </p>
             <p>{company.coverage}</p>
             <a href={whatsappLink} target="_blank" rel="noreferrer" className="inline-block font-bold text-white">
               Escribir por WhatsApp

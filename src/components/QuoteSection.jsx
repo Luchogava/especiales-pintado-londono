@@ -63,10 +63,11 @@ export function QuoteSection({ phoneRaw, email }) {
             theme="dark"
           />
 
-          <div className="mt-8 space-y-5 rounded-[2rem] border border-white/10 bg-white/5 p-7 backdrop-blur">
+          <div className="mt-8 space-y-5 rounded-[2rem] border border-brand-gold/20 bg-white/5 p-7 backdrop-blur">
             <div>
-              <p className="text-sm font-black uppercase tracking-[0.26em] text-brand-gold">Contacto comercial</p>
+              <p className="text-sm font-black uppercase tracking-[0.26em] text-brand-gold">Contáctanos</p>
               <p className="mt-3 text-2xl font-bold text-white">{email}</p>
+              <p className="mt-2 text-base font-semibold text-slate-200">WhatsApp: +57 316 841 33 92</p>
             </div>
             <p className="leading-8 text-slate-300">
               Atendemos solicitudes de empresas, colegios, instituciones, grupos turísticos, organizaciones, familias y
@@ -160,7 +161,7 @@ export function QuoteSection({ phoneRaw, email }) {
           <div className="mt-7 flex flex-col gap-3 sm:flex-row">
             <button
               type="submit"
-              className="inline-flex items-center justify-center rounded-full bg-brand-gold px-6 py-4 text-base font-extrabold text-brand-ink transition hover:-translate-y-0.5 hover:bg-[#e6b73a]"
+              className="inline-flex items-center justify-center rounded-full bg-[#25D366] px-6 py-4 text-base font-extrabold text-white shadow-[0_18px_40px_rgba(37,211,102,0.38)] transition hover:-translate-y-0.5 hover:bg-[#1fbe59]"
             >
               Enviar por WhatsApp
             </button>
