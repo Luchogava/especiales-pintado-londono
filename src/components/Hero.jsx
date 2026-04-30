@@ -83,25 +83,8 @@ export function Hero({ company, whatsappLink }) {
                 <img
                   src="/40-anos.png"
                   alt="Mas de 40 anos movilizando personas"
-                  className="mx-auto w-full max-w-[14rem] object-contain sm:mx-0"
+                  className="mx-auto w-full max-w-[13rem] object-contain sm:mx-0 lg:max-w-[14rem]"
                 />
-              </div>
-
-              <div className="mt-8 grid gap-4 sm:grid-cols-2">
-                <div className="rounded-3xl border border-white/10 bg-brand-ink/60 p-5">
-                  <p className="text-sm font-black uppercase tracking-[0.22em] text-brand-gold">Promesa</p>
-                  <p className="mt-2 text-2xl font-extrabold text-white">Atencion humana</p>
-                  <p className="mt-2 text-sm leading-6 text-slate-300">
-                    Acompanamiento cercano para clientes empresariales, institucionales y particulares.
-                  </p>
-                </div>
-                <div className="rounded-3xl border border-white/10 bg-brand-ink/60 p-5">
-                  <p className="text-sm font-black uppercase tracking-[0.22em] text-brand-gold">Respaldo</p>
-                  <p className="mt-2 text-2xl font-extrabold text-white">ISO 9001:2015</p>
-                  <p className="mt-2 text-sm leading-6 text-slate-300">
-                    Gestion orientada a la calidad, cumplimiento y mejora continua.
-                  </p>
-                </div>
               </div>
             </div>
           </div>

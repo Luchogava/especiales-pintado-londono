@@ -3,6 +3,7 @@ import { CertificationsSection } from './components/CertificationsSection'
 import { Footer } from './components/Footer'
 import { Header } from './components/Header'
 import { Hero } from './components/Hero'
+import { QuickActionsSection } from './components/QuickActionsSection'
 import { QuoteSection } from './components/QuoteSection'
 import { ServicesSection } from './components/ServicesSection'
 import { StatsBar } from './components/StatsBar'
@@ -27,8 +28,9 @@ function App() {
       <Header navigation={navigation} whatsappLink={whatsappLink} />
       <main>
         <Hero company={company} whatsappLink={whatsappLink} />
-        <StatsBar stats={stats} />
         <ServicesSection services={services} />
+        <StatsBar stats={stats} />
+        <QuickActionsSection whatsappLink={whatsappLink} />
         <WhyChooseUs reasons={reasons} />
         <AboutSection values={values} />
         <CertificationsSection certifications={certifications} />

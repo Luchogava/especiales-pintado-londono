@@ -21,7 +21,7 @@ function StatCard({ item }) {
 
 export function StatsBar({ stats }) {
   return (
-    <section className="relative -mt-10 z-10">
+    <section className="relative py-8">
       <Container>
         <div className="rounded-[2rem] border border-brand-navy/10 bg-white p-4 shadow-card xl:p-5">
           <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
