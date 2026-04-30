@@ -7,18 +7,25 @@ export function MissionVisionValues({ values }) {
       <Container>
         <SectionHeading
           eyebrow="Fundamento"
-          title="Misión, visión y valores que sostienen nuestro servicio"
-          description="Nuestra forma de trabajar se apoya en principios claros para ofrecer una experiencia consistente, profesional y humana."
+          title="Misión, visión y valores en una sección más limpia"
+          description="Dejamos esta información disponible de forma colapsable para conservar una landing más ágil, comercial y fácil de recorrer."
           align="center"
         />
 
-        <div className="mt-14 grid gap-6 lg:grid-cols-3">
+        <div className="mx-auto mt-14 max-w-4xl space-y-4">
           {values.map((item) => (
-            <article key={item.title} className="rounded-[1.8rem] bg-white p-7 shadow-card">
-              <p className="text-sm font-black uppercase tracking-[0.25em] text-brand-gold">Pilar estratégico</p>
-              <p className="mt-5 font-display text-2xl font-bold text-brand-navy">{item.title}</p>
-              <p className="mt-4 leading-8 text-slate-600">{item.text}</p>
-            </article>
+            <details key={item.title} className="group rounded-[1.6rem] border border-brand-navy/10 bg-white p-6 shadow-card">
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-4">
+                <div>
+                  <p className="text-sm font-black uppercase tracking-[0.24em] text-brand-gold">Información institucional</p>
+                  <p className="mt-2 font-display text-2xl font-bold text-brand-navy">{item.title}</p>
+                </div>
+                <span className="rounded-full border border-brand-gold/30 px-4 py-2 text-sm font-bold text-brand-navy transition group-open:rotate-180">
+                  Ver
+                </span>
+              </summary>
+              <p className="mt-5 leading-8 text-slate-600">{item.text}</p>
+            </details>
           ))}
         </div>
       </Container>

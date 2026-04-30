@@ -138,13 +138,7 @@ export function QuoteSection({ phoneRaw, email }) {
               value={formData.passengers}
               onChange={handleChange}
             />
-            <Field
-              label="Fecha estimada"
-              name="date"
-              type="date"
-              value={formData.date}
-              onChange={handleChange}
-            />
+            <Field label="Fecha estimada" name="date" type="date" value={formData.date} onChange={handleChange} />
             <label className="md:col-span-2">
               <span className="mb-2 block text-sm font-bold text-brand-navy">Detalles del servicio</span>
               <textarea

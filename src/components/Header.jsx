@@ -26,9 +26,9 @@ export function Header({ navigation, whatsappLink }) {
             href={whatsappLink}
             target="_blank"
             rel="noreferrer"
-            className="rounded-full border border-brand-gold/70 bg-brand-gold px-5 py-3 text-sm font-extrabold text-brand-ink transition hover:-translate-y-0.5 hover:bg-[#ffc72a]"
+            className="rounded-full bg-[#25D366] px-5 py-3 text-sm font-extrabold text-white shadow-[0_18px_40px_rgba(37,211,102,0.35)] transition hover:-translate-y-0.5 hover:bg-[#1fbe59]"
           >
-            WhatsApp
+            Cotiza por WhatsApp
           </a>
         </div>
 

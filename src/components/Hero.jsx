@@ -68,7 +68,9 @@ export function Hero({ company, whatsappLink }) {
               <div className="flex flex-col gap-6 sm:flex-row sm:items-start sm:justify-between">
                 <div className="max-w-sm">
                   <p className="text-sm uppercase tracking-[0.25em] text-brand-gold">Respaldo y trayectoria</p>
-                  <h2 className="mt-3 font-display text-3xl font-bold">Transporte especial de pasajeros con presencia nacional</h2>
+                  <h2 className="mt-3 font-display text-3xl font-bold">
+                    Transporte especial de pasajeros con presencia nacional
+                  </h2>
                   <p className="mt-4 leading-7 text-slate-300">
                     Seguridad, puntualidad, confianza, comodidad y buen trato como base de cada servicio.
                   </p>
