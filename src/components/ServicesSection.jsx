@@ -19,8 +19,8 @@ export function ServicesSection({ services }) {
       <Container>
         <SectionHeading
           eyebrow="Servicios"
-          title="Soluciones de transporte especial con presentación corporativa y clara"
-          description="Mantuvimos una estética limpia y profesional usando la paleta oficial de la marca para dar fuerza comercial sin recargar la página."
+          title="Soluciones de transporte especial para cada necesidad"
+          description="Atendemos requerimientos empresariales, escolares, turísticos y servicios especiales con enfoque en seguridad, puntualidad, organización y buen trato."
         />
 
         <div className="mt-14 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
