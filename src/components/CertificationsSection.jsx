@@ -19,7 +19,7 @@ export function CertificationsSection({ certifications }) {
         <SectionHeading
           eyebrow="Certificaciones"
           title="Respaldos que fortalecen la calidad y la seguridad del servicio"
-          description="Para el diseño usamos sellos visuales propios basados en las certificaciones, en lugar de logos oficiales de ISO, para mantener una presentación sólida y profesional."
+          description=""
         />
 
         <div className="mt-14 grid gap-6 lg:grid-cols-2">
