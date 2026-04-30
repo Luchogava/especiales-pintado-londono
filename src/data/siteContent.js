@@ -20,22 +20,26 @@ export const stats = [
   {
     value: '40+ años',
     label: 'Movilizando personas con experiencia y criterio operativo.',
-    type: 'years',
+    image: '/stat-40-anos.png',
+    imageAlt: 'Más de 40 años movilizando personas',
   },
   {
     value: 'Cobertura nacional',
     label: 'Atendemos rutas y servicios en diferentes regiones de Colombia.',
-    type: 'coverage',
+    image: '/stat-cobertura.png',
+    imageAlt: 'Cobertura nacional con mapa de Colombia',
   },
   {
     value: 'ISO 9001:2015',
     label: 'Sistema de gestión de calidad orientado al servicio y la mejora continua.',
-    type: 'iso',
+    image: '/stat-iso-9001.png',
+    imageAlt: 'Certificación ISO 9001:2015',
   },
   {
     value: 'ISO 45001:2018',
     label: 'Compromiso con la seguridad, salud en el trabajo y operación responsable.',
-    type: 'iso',
+    image: '/stat-iso-45001.png',
+    imageAlt: 'Certificación ISO 45001:2018',
   },
 ]
 
