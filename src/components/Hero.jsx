@@ -71,7 +71,7 @@ export function Hero({ company, whatsappLink }) {
             <div className="rounded-[1.7rem] border border-white/10 bg-gradient-to-br from-white/10 via-white/5 to-brand-gold/10 p-6">
               <div className="rounded-[1.4rem] border border-white/10 bg-brand-ink/40 p-4">
                 <p className="text-center text-sm font-extrabold uppercase tracking-[0.24em] text-brand-gold">
-                  Mas de 40 anos
+                  Mas de 40 años
                 </p>
                 <img
                   src="/40-anos.png"
