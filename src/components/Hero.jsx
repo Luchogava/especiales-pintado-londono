@@ -22,22 +22,24 @@ export function Hero({ company, whatsappLink }) {
       <div className="absolute left-[-8rem] top-16 h-72 w-72 rounded-full bg-brand-blue/35 blur-3xl" />
       <div className="absolute right-[-8rem] top-10 h-80 w-80 rounded-full bg-brand-gold/20 blur-3xl" />
 
-      <Container className="relative grid gap-14 py-16 lg:grid-cols-[1.05fr_0.95fr] lg:items-center lg:py-20">
+      <Container className="relative grid gap-12 py-16 lg:grid-cols-[1.05fr_0.95fr] lg:items-center lg:py-20">
         <div className="max-w-3xl">
           <div className="inline-flex items-center gap-2 rounded-full border border-brand-gold/25 bg-white/5 px-4 py-2 text-sm text-slate-200">
             <ShieldIcon />
             {company.founded} movilizando personas en Colombia
           </div>
 
-          <div className="mt-7 overflow-hidden rounded-[1.75rem] border border-white/10 bg-white/5 shadow-[0_25px_60px_rgba(0,0,0,0.28)]">
-            <img
-              src="/hero-brand.png"
-              alt="Servicios Especiales Pintado Londono"
-              className="block w-full object-cover"
-            />
+          <div className="mt-7 max-w-[42rem] rounded-[2rem] border border-white/10 bg-gradient-to-br from-white/10 via-white/5 to-brand-gold/10 p-2 shadow-[0_28px_70px_rgba(0,0,0,0.32)]">
+            <div className="overflow-hidden rounded-[1.45rem] border border-brand-gold/20 bg-[radial-gradient(circle_at_left,#f4c645_0%,#d6b13c_18%,#697275_54%,#4d5457_74%,#394044_100%)]">
+              <img
+                src="/hero-brand.png"
+                alt="Servicios Especiales Pintado Londono"
+                className="block h-[12.5rem] w-full object-cover object-[center_56%] sm:h-[14.5rem] lg:h-[15.5rem]"
+              />
+            </div>
           </div>
 
-          <h1 className="mt-7 font-display text-4xl font-bold leading-tight sm:text-5xl lg:text-[3.6rem]">
+          <h1 className="mt-6 font-display text-4xl font-bold leading-tight sm:text-5xl lg:text-[3.45rem]">
             Transporte especial con seguridad, puntualidad y buen trato
           </h1>
 
