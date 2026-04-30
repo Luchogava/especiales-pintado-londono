@@ -34,7 +34,7 @@ export function Hero({ company, whatsappLink }) {
               <img
                 src="/hero-brand.png"
                 alt="Servicios Especiales Pintado Londono"
-                className="block h-[12.25rem] w-full object-cover object-center sm:h-[15rem] lg:h-[17rem]"
+                className="block h-[12.25rem] w-full object-contain bg-[radial-gradient(circle_at_left,#e9c64b_0%,#d6ad3f_17%,#7a7c7f_54%,#575b5f_76%,#3f4347_100%)] sm:h-[15rem] lg:h-[17rem]"
               />
             </div>
           </div>
