@@ -30,7 +30,7 @@ export function Hero({ company, whatsappLink }) {
           </div>
 
           <img
-            src="/nombre-empresa.png"
+            src="/nombre-con-buses.png"
             alt="Servicios Especiales Pintado Londoño"
             className="mt-8 w-full max-w-4xl object-contain"
           />
@@ -40,8 +40,8 @@ export function Hero({ company, whatsappLink }) {
           </h1>
 
           <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-300 sm:text-xl">
-            Soluciones de transporte terrestre especial para empresas, colegios, turismo, grupos y servicios a la
-            medida, con operación nacional, atención humana y experiencia comprobada.
+            Empresa de transporte especial de pasajeros para compañías, instituciones educativas, turismo, grupos y
+            servicios a la medida, con operación nacional, atención humana y experiencia comprobada.
           </p>
 
           <div className="mt-10 flex flex-col gap-4 sm:flex-row">
@@ -68,9 +68,9 @@ export function Hero({ company, whatsappLink }) {
               <div className="flex flex-col gap-6 sm:flex-row sm:items-start sm:justify-between">
                 <div className="max-w-sm">
                   <p className="text-sm uppercase tracking-[0.25em] text-brand-gold">Respaldo y trayectoria</p>
-                  <h2 className="mt-3 font-display text-3xl font-bold">Operación nacional con imagen sólida de marca</h2>
+                  <h2 className="mt-3 font-display text-3xl font-bold">Transporte especial de pasajeros con presencia nacional</h2>
                   <p className="mt-4 leading-7 text-slate-300">
-                    Seguridad, puntualidad, confianza, comodidad y buen trato como base del servicio.
+                    Seguridad, puntualidad, confianza, comodidad y buen trato como base de cada servicio.
                   </p>
                 </div>
 
