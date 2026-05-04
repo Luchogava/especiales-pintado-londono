@@ -3,10 +3,10 @@ import { Container } from './Container'
 
 export function Header({ navigation, whatsappLink }) {
   return (
-    <header className="sticky top-0 z-40 border-b border-brand-gold/15 bg-brand-ink/82 backdrop-blur-xl">
+    <header className="sticky top-0 z-40 border-b border-brand-silver/10 bg-brand-ink/88 shadow-[0_14px_40px_rgba(4,11,22,0.28)] backdrop-blur-xl">
       <Container className="py-3.5">
         <div className="flex items-center justify-between gap-4">
-          <a href="#inicio" className="max-w-[16rem] sm:max-w-[18rem]" aria-label="Ir al inicio">
+          <a href="#inicio" className="max-w-[15rem] sm:max-w-[17rem]" aria-label="Ir al inicio">
             <BrandLogo />
           </a>
 
@@ -15,7 +15,7 @@ export function Header({ navigation, whatsappLink }) {
               <a
                 key={item.href}
                 href={item.href}
-                className="text-sm font-semibold text-slate-200 transition hover:text-brand-gold"
+                className="text-sm font-semibold text-slate-200 transition hover:text-brand-green"
               >
                 {item.label}
               </a>
@@ -37,7 +37,7 @@ export function Header({ navigation, whatsappLink }) {
             <a
               key={item.href}
               href={item.href}
-              className="whitespace-nowrap rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm font-semibold text-slate-200 transition hover:border-brand-gold hover:text-brand-gold"
+              className="whitespace-nowrap rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm font-semibold text-slate-200 transition hover:border-brand-green hover:text-brand-green"
             >
               {item.label}
             </a>

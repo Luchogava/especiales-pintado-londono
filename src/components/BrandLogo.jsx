@@ -1,21 +1,18 @@
 export function BrandLogo() {
   return (
     <div className="flex items-center gap-3">
-      <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl border border-white/10 bg-white/5 p-1.5 shadow-[0_10px_24px_rgba(0,0,0,0.18)]">
+      <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl border border-white/10 bg-white/5 p-1 shadow-[0_10px_24px_rgba(0,0,0,0.18)] sm:h-12 sm:w-12">
         <img
-          src="/logo-pintado.png"
-          alt="Logo Servicios Especiales Pintado Londono"
+          src="/logo-pl.png"
+          alt="Logo Servicios Especiales Pintado Londoño"
           className="h-full w-full object-contain"
         />
       </div>
-      <div className="min-w-0">
-        <p className="line-clamp-2 text-sm font-extrabold leading-tight text-white sm:text-base">
-          Servicios Especiales Pintado Londono
-        </p>
-        <p className="mt-0.5 text-[0.7rem] font-medium uppercase tracking-[0.18em] text-brand-gold/85 sm:text-xs">
-          Transporte especial de pasajeros
-        </p>
-      </div>
+      <img
+        src="/letrero-pl.png"
+        alt="Letrero de Servicios Especiales Pintado Londoño"
+        className="h-10 w-auto max-w-[12.5rem] object-contain sm:h-11 sm:max-w-[14rem]"
+      />
     </div>
   )
 }

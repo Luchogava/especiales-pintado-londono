@@ -3,7 +3,7 @@ import { SectionHeading } from './SectionHeading'
 
 function IsoMark({ code }) {
   return (
-    <div className="flex h-28 w-28 items-center justify-center rounded-full border-[6px] border-brand-gold bg-gradient-to-br from-brand-ink via-brand-blue to-brand-navy text-center shadow-[0_18px_40px_rgba(5,26,52,0.28)]">
+      <div className="flex h-28 w-28 items-center justify-center rounded-full border-[6px] border-brand-green bg-gradient-to-br from-brand-ink via-brand-blue to-brand-navy text-center shadow-[0_18px_40px_rgba(5,26,52,0.28)]">
       <div className="text-white">
         <p className="text-lg font-black tracking-[0.28em]">ISO</p>
         <p className="mt-1 text-2xl font-extrabold">{code}</p>
@@ -31,7 +31,7 @@ export function CertificationsSection({ certifications }) {
               <div className="flex flex-col gap-6 sm:flex-row sm:items-center">
                 <IsoMark code={item.title.includes('9001') ? '9001' : '45001'} />
                 <div>
-                  <p className="text-sm font-black uppercase tracking-[0.28em] text-brand-gold">{item.tag}</p>
+          <p className="text-sm font-black uppercase tracking-[0.28em] text-brand-green">{item.tag}</p>
                   <h3 className="mt-3 font-display text-3xl font-bold text-brand-navy">{item.title}</h3>
                   <p className="mt-4 text-lg leading-8 text-slate-600">{item.description}</p>
                 </div>

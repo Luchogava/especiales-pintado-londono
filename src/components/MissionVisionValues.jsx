@@ -17,10 +17,10 @@ export function MissionVisionValues({ values }) {
             <details key={item.title} className="group rounded-[1.6rem] border border-brand-navy/10 bg-white p-6 shadow-card">
               <summary className="flex cursor-pointer list-none items-center justify-between gap-4">
                 <div>
-                  <p className="text-sm font-black uppercase tracking-[0.24em] text-brand-gold">Información institucional</p>
+      <p className="text-sm font-black uppercase tracking-[0.24em] text-brand-green">Información institucional</p>
                   <p className="mt-2 font-display text-2xl font-bold text-brand-navy">{item.title}</p>
                 </div>
-                <span className="rounded-full border border-brand-gold/30 px-4 py-2 text-sm font-bold text-brand-navy transition group-open:rotate-180">
+                  <span className="rounded-full border border-brand-green/30 px-4 py-2 text-sm font-bold text-brand-navy transition group-open:rotate-180">
                   Ver
                 </span>
               </summary>

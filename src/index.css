@@ -20,7 +20,8 @@ html {
 body {
   margin: 0;
   min-width: 320px;
-  background: #ffffff;
+  background: linear-gradient(180deg, #f4f7fb 0%, #ffffff 18%, #ffffff 100%);
+  color: #06224b;
 }
 
 a {
@@ -35,5 +36,5 @@ textarea {
 }
 
 ::selection {
-  background: rgba(215, 169, 40, 0.28);
+  background: rgba(116, 192, 67, 0.28);
 }

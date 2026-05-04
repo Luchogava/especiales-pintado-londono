@@ -5,7 +5,11 @@ export function Footer({ company, navigation, whatsappLink }) {
     <footer className="bg-[#050c16] py-14 text-slate-300">
       <Container className="grid gap-10 lg:grid-cols-[1.2fr_0.8fr_0.8fr]">
         <div>
-          <p className="font-display text-2xl font-bold text-white">{company.name}</p>
+          <img
+            src="/letrero-pl.png"
+            alt="Letrero Servicios Especiales Pintado Londoño"
+            className="h-16 w-auto object-contain"
+          />
           <p className="mt-4 max-w-xl leading-8 text-slate-400">
             Transporte terrestre especial de pasajeros en Colombia con experiencia, orden y atención cercana para cada
             servicio.
@@ -13,7 +17,7 @@ export function Footer({ company, navigation, whatsappLink }) {
         </div>
 
         <div>
-          <p className="text-sm font-black uppercase tracking-[0.26em] text-brand-gold">Enlaces</p>
+          <p className="text-sm font-black uppercase tracking-[0.26em] text-brand-green">Enlaces</p>
           <div className="mt-4 space-y-3">
             {navigation.map((item) => (
               <a key={item.href} href={item.href} className="block transition hover:text-white">
@@ -24,7 +28,7 @@ export function Footer({ company, navigation, whatsappLink }) {
         </div>
 
         <div>
-          <p className="text-sm font-black uppercase tracking-[0.26em] text-brand-gold">Contacto</p>
+          <p className="text-sm font-black uppercase tracking-[0.26em] text-brand-green">Contacto</p>
           <div className="mt-4 space-y-3">
             <p>{company.phoneDisplay}</p>
             <p>

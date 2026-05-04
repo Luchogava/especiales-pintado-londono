@@ -5,12 +5,14 @@ export default {
     extend: {
       colors: {
         brand: {
-          navy: '#051a34',
-          blue: '#123866',
-          gold: '#f2b501',
-          sand: '#fff8e7',
-          slate: '#e2e8f0',
-          ink: '#06111f',
+          navy: '#06224B',
+          blue: '#10305F',
+          green: '#74C043',
+          red: '#E33239',
+          silver: '#D9DDE4',
+          graphite: '#44505E',
+          white: '#FFFFFF',
+          ink: '#040B16',
         },
       },
       fontFamily: {
@@ -20,10 +22,11 @@ export default {
       boxShadow: {
         glow: '0 20px 80px rgba(15, 39, 72, 0.35)',
         card: '0 18px 50px rgba(8, 17, 31, 0.14)',
+        premium: '0 24px 70px rgba(4, 11, 22, 0.18)',
       },
       backgroundImage: {
         'hero-grid':
-          'linear-gradient(rgba(255,255,255,0.06) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.06) 1px, transparent 1px)',
+          'linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px)',
       },
     },
   },

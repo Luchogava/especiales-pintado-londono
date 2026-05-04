@@ -2,7 +2,7 @@ import { Container } from './Container'
 
 function StatCard({ item }) {
   return (
-    <article className="overflow-hidden rounded-[1.5rem] border border-brand-navy/10 bg-slate-50 shadow-[0_14px_35px_rgba(5,26,52,0.08)]">
+    <article className="overflow-hidden rounded-[1.6rem] border border-brand-silver/20 bg-white shadow-[0_18px_48px_rgba(6,34,75,0.10)]">
       <div className="aspect-[16/11] overflow-hidden">
         <img
           src={item.image}
@@ -23,7 +23,7 @@ export function StatsBar({ stats }) {
   return (
     <section className="relative py-8">
       <Container>
-        <div className="rounded-[2rem] border border-brand-navy/10 bg-white p-4 shadow-card xl:p-5">
+        <div className="rounded-[2rem] border border-brand-silver/20 bg-gradient-to-br from-white via-slate-50 to-white p-4 shadow-premium xl:p-5">
           <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
             {stats.map((item) => (
               <StatCard key={item.value} item={item} />

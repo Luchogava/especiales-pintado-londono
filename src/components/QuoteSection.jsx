@@ -23,14 +23,16 @@ const initialForm = {
 
 export function QuoteSection({ phoneRaw, email }) {
   const [formData, setFormData] = useState(initialForm)
+  const contactDescription =
+    'Atendemos solicitudes de empresas, colegios, instituciones, grupos tur\u00edsticos, organizaciones, familias y clientes que buscan un servicio puntual y confiable.'
 
   const whatsappUrl = useMemo(() => {
     const lines = [
-      'Hola, quisiera solicitar una cotización para un servicio de transporte especial con Servicios Especiales Pintado Londoño.',
+      'Hola, quisiera solicitar una cotizaci\u00f3n para un servicio de transporte especial con Servicios Especiales Pintado Londo\u00f1o.',
       '',
       `Nombre: ${formData.fullName || 'No indicado'}`,
-      `Empresa o institución: ${formData.company || 'No indicado'}`,
-      `Teléfono: ${formData.phone || 'No indicado'}`,
+      `Empresa o instituci\u00f3n: ${formData.company || 'No indicado'}`,
+      `Tel\u00e9fono: ${formData.phone || 'No indicado'}`,
       `Correo: ${formData.email || 'No indicado'}`,
       `Servicio requerido: ${formData.service || 'No indicado'}`,
       `Ciudad o ruta: ${formData.city || 'No indicado'}`,
@@ -53,30 +55,27 @@ export function QuoteSection({ phoneRaw, email }) {
   }
 
   return (
-    <section id="cotizacion" className="bg-brand-ink py-24 text-white">
+    <section id="cotizacion" className="bg-[linear-gradient(145deg,#040b16_0%,#06224b_60%,#07162d_100%)] py-24 text-white">
       <Container className="grid gap-14 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
         <div>
           <SectionHeading
-            eyebrow="Cotización"
-            title="Cuéntanos qué servicio necesitas y te contactamos"
-            description="Completa el formulario para enviarnos tu solicitud por WhatsApp con la información clave. También puedes escribirnos al correo comercial para procesos formales o requerimientos especiales."
+            eyebrow={'Cotizaci\u00f3n'}
+            title={'Cu\u00e9ntanos qu\u00e9 servicio necesitas y te contactamos'}
+            description={'Completa el formulario para enviarnos tu solicitud por WhatsApp con la informaci\u00f3n clave. Tambi\u00e9n puedes escribirnos al correo comercial para procesos formales o requerimientos especiales.'}
             theme="dark"
           />
 
-          <div className="mt-8 space-y-5 rounded-[2rem] border border-brand-gold/20 bg-white/5 p-7 backdrop-blur">
+          <div className="mt-8 space-y-5 rounded-[2rem] border border-brand-silver/15 bg-white/5 p-7 backdrop-blur">
             <div>
-              <p className="text-sm font-black uppercase tracking-[0.26em] text-brand-gold">Contáctanos</p>
+              <p className="text-sm font-black uppercase tracking-[0.26em] text-brand-green">{'Cont\u00e1ctanos'}</p>
               <p className="mt-3 text-2xl font-bold text-white">{email}</p>
               <p className="mt-2 text-base font-semibold text-slate-200">WhatsApp: +57 316 841 33 92</p>
             </div>
-            <p className="leading-8 text-slate-300">
-              Atendemos solicitudes de empresas, colegios, instituciones, grupos turísticos, organizaciones, familias y
-              clientes que buscan un servicio puntual y confiable.
-            </p>
+            <p className="leading-8 text-slate-300">{contactDescription}</p>
           </div>
         </div>
 
-        <form onSubmit={handleSubmit} className="rounded-[2rem] bg-white p-7 text-brand-ink shadow-glow sm:p-8">
+        <form onSubmit={handleSubmit} className="rounded-[2rem] border border-brand-silver/18 bg-white p-7 text-brand-ink shadow-premium sm:p-8">
           <div className="grid gap-5 md:grid-cols-2">
             <Field
               label="Nombre completo"
@@ -86,14 +85,14 @@ export function QuoteSection({ phoneRaw, email }) {
               onChange={handleChange}
             />
             <Field
-              label="Empresa o institución"
+              label={'Empresa o instituci\u00f3n'}
               name="company"
               placeholder="Nombre de la empresa"
               value={formData.company}
               onChange={handleChange}
             />
             <Field
-              label="Teléfono"
+              label={'Tel\u00e9fono'}
               name="phone"
               type="tel"
               placeholder="+57"
@@ -101,7 +100,7 @@ export function QuoteSection({ phoneRaw, email }) {
               onChange={handleChange}
             />
             <Field
-              label="Correo electrónico"
+              label={'Correo electr\u00f3nico'}
               name="email"
               type="email"
               placeholder="correo@empresa.com"
@@ -114,7 +113,7 @@ export function QuoteSection({ phoneRaw, email }) {
                 name="service"
                 value={formData.service}
                 onChange={handleChange}
-                className="w-full rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3.5 outline-none transition focus:border-brand-gold focus:bg-white"
+                className="w-full rounded-2xl border border-brand-silver/25 bg-slate-50 px-4 py-3.5 outline-none transition focus:border-brand-green focus:bg-white"
               >
                 {serviceOptions.map((option) => (
                   <option key={option} value={option}>
@@ -126,7 +125,7 @@ export function QuoteSection({ phoneRaw, email }) {
             <Field
               label="Ciudad o ruta"
               name="city"
-              placeholder="Ej. Medellín - Rionegro"
+              placeholder={'Ej. Medell\u00edn - Rionegro'}
               value={formData.city}
               onChange={handleChange}
             />
@@ -147,7 +146,7 @@ export function QuoteSection({ phoneRaw, email }) {
                 placeholder="Describe horarios, puntos de recogida, destino o necesidades especiales."
                 value={formData.details}
                 onChange={handleChange}
-                className="w-full rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3.5 outline-none transition focus:border-brand-gold focus:bg-white"
+                className="w-full rounded-2xl border border-brand-silver/25 bg-slate-50 px-4 py-3.5 outline-none transition focus:border-brand-green focus:bg-white"
               />
             </label>
           </div>
@@ -160,15 +159,15 @@ export function QuoteSection({ phoneRaw, email }) {
               Enviar por WhatsApp
             </button>
             <a
-              href={`mailto:${email}?subject=${encodeURIComponent('Solicitud de cotización - Transporte especial')}`}
-              className="inline-flex items-center justify-center rounded-full border border-brand-navy/15 px-6 py-4 text-base font-bold text-brand-navy transition hover:border-brand-gold hover:text-brand-blue"
+              href={`mailto:${email}?subject=${encodeURIComponent('Solicitud de cotizaci\u00f3n - Transporte especial')}`}
+              className="inline-flex items-center justify-center rounded-full border border-brand-silver/25 px-6 py-4 text-base font-bold text-brand-navy transition hover:border-brand-green hover:text-brand-navy"
             >
               Enviar por correo
             </a>
           </div>
 
           <p className="mt-4 text-sm leading-6 text-slate-500">
-            Al enviar, se abrirá WhatsApp con tu información precargada para acelerar la atención comercial.
+            {'Al enviar, se abrir\u00e1 WhatsApp con tu informaci\u00f3n precargada para acelerar la atenci\u00f3n comercial.'}
           </p>
         </form>
       </Container>
@@ -186,7 +185,7 @@ function Field({ label, name, type = 'text', placeholder, value, onChange }) {
         placeholder={placeholder}
         value={value}
         onChange={onChange}
-        className="w-full rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3.5 outline-none transition focus:border-brand-gold focus:bg-white"
+        className="w-full rounded-2xl border border-brand-silver/25 bg-slate-50 px-4 py-3.5 outline-none transition focus:border-brand-green focus:bg-white"
       />
     </label>
   )
