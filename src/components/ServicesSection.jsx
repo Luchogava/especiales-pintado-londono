@@ -33,7 +33,10 @@ export function ServicesSection({ services }) {
           eyebrow="Servicios"
           title="Servicios pensados para cada tipo de traslado"
           description={
-            'Conoce de forma r\u00e1pida qu\u00e9 soluci\u00f3n te conviene seg\u00fan el tipo de pasajeros, la operaci\u00f3n y el objetivo del servicio.'
+            <>
+              Conoce de forma r&aacute;pida qu&eacute; soluci&oacute;n te conviene seg&uacute;n el tipo de pasajeros,
+              la operaci&oacute;n y el objetivo del servicio.
+            </>
           }
         />
 

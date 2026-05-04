@@ -7,10 +7,13 @@ export function WhyChooseUs({ reasons }) {
       <Container className="grid gap-14 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
         <div>
           <SectionHeading
-            eyebrow={'Por qu\u00e9 elegirnos'}
+            eyebrow={<>Por qu&eacute; elegirnos</>}
             title="Un aliado que entiende que mover personas exige orden y confianza"
             description={
-              'Trabajamos para que cada servicio se perciba seguro, puntual y bien acompa\u00f1ado desde la solicitud hasta la llegada.'
+              <>
+                Trabajamos para que cada servicio se perciba seguro, puntual y bien acompa&ntilde;ado desde la
+                solicitud hasta la llegada.
+              </>
             }
             theme="dark"
           />

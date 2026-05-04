@@ -11,11 +11,11 @@ export function QuickActionsSection({ whatsappLink }) {
                 Hablemos de tu servicio
               </p>
               <h2 className="mt-3 font-display text-3xl font-bold sm:text-4xl">
-                Ya conoces nuestros servicios y respaldos. Ahora elige c\u00f3mo quieres contactarnos.
+                Ya conoces nuestros servicios y respaldos. Ahora elige c&oacute;mo quieres contactarnos.
               </h2>
               <p className="mt-4 text-lg leading-8 text-slate-300">
-                Puedes escribirnos por WhatsApp para una respuesta \u00e1gil o pasar directo al formulario de
-                cotizaci\u00f3n.
+                Puedes escribirnos por WhatsApp para una respuesta &aacute;gil o pasar directo al formulario de
+                cotizaci&oacute;n.
               </p>
             </div>
 
@@ -32,7 +32,7 @@ export function QuickActionsSection({ whatsappLink }) {
                 href="#cotizacion"
                 className="inline-flex items-center justify-center rounded-full bg-brand-silver px-6 py-4 text-base font-extrabold text-brand-navy shadow-[0_18px_40px_rgba(217,221,228,0.18)] transition hover:-translate-y-0.5 hover:bg-white"
               >
-                Ir a cotizaci\u00f3n
+                Ir a cotizaci&oacute;n
               </a>
             </div>
           </div>
