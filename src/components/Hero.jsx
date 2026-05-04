@@ -1,5 +1,4 @@
 import { Container } from './Container'
-import { BrandLockup } from './BrandLockup'
 
 function ShieldIcon() {
   return (
@@ -37,8 +36,12 @@ export function Hero({ company, whatsappLink }) {
 
           <div className="mt-7 max-w-[42rem] rounded-[2rem] border border-brand-silver/15 bg-[linear-gradient(145deg,rgba(255,255,255,0.12)_0%,rgba(255,255,255,0.04)_30%,rgba(6,34,75,0.16)_100%)] p-2 shadow-[0_28px_70px_rgba(0,0,0,0.32)]">
             <div className="overflow-hidden rounded-[1.45rem] border border-brand-silver/10 bg-[radial-gradient(circle_at_top_left,#113565_0%,#08182d_42%,#040b16_100%)]">
-              <div className="px-5 py-5 sm:px-7 sm:py-6 lg:px-8 lg:py-7">
-                <BrandLockup variant="hero" />
+              <div className="flex min-h-[10.5rem] items-center justify-center px-4 py-4 sm:min-h-[13rem] sm:px-6 sm:py-5 lg:min-h-[15rem]">
+                <img
+                  src="/letrero-pl-oficial.png"
+                  alt="Servicios Especiales Pintado Londo\u00f1o, empresa de transporte especial de pasajeros"
+                  className="h-full max-h-[9.5rem] w-full object-contain drop-shadow-[0_18px_30px_rgba(0,0,0,0.32)] sm:max-h-[12rem] lg:max-h-[14rem]"
+                />
               </div>
             </div>
           </div>

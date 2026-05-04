@@ -6,13 +6,13 @@ export function Footer({ company, navigation, whatsappLink }) {
       <Container className="grid gap-10 lg:grid-cols-[1.2fr_0.8fr_0.8fr]">
         <div>
           <img
-            src="/letrero-pl.png"
-            alt="Letrero Servicios Especiales Pintado Londoño"
-            className="h-16 w-auto object-contain"
+            src="/letrero-pl-oficial.png"
+            alt="Letrero Servicios Especiales Pintado Londo\u00f1o"
+            className="h-20 w-auto max-w-full rounded-xl object-contain"
           />
           <p className="mt-4 max-w-xl leading-8 text-slate-400">
-            Transporte terrestre especial de pasajeros en Colombia con experiencia, orden y atención cercana para cada
-            servicio.
+            Transporte terrestre especial de pasajeros en Colombia con experiencia, orden y atenci\u00f3n cercana para
+            cada servicio.
           </p>
         </div>
 
