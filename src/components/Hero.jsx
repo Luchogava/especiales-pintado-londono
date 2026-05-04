@@ -1,4 +1,5 @@
 import { Container } from './Container'
+import { BrandLockup } from './BrandLockup'
 
 function ShieldIcon() {
   return (
@@ -20,8 +21,6 @@ export function Hero({ company, whatsappLink }) {
     'Soluciones de transporte especial para empresas, instituciones educativas, grupos tur\u00edsticos y servicios a la medida, con operaci\u00f3n nacional, atenci\u00f3n humana y m\u00e1s de 40 a\u00f1os de experiencia.'
   const yearsLabel = 'M\u00e1s de 40 a\u00f1os'
   const yearsAlt = 'M\u00e1s de 40 a\u00f1os movilizando personas'
-  const heroAlt = 'Servicios Especiales Pintado Londo\u00f1o'
-
   return (
     <section id="inicio" className="relative overflow-hidden bg-brand-ink text-white">
       <div className="absolute inset-0 bg-hero-grid bg-[size:42px_42px] opacity-15" />
@@ -38,11 +37,9 @@ export function Hero({ company, whatsappLink }) {
 
           <div className="mt-7 max-w-[42rem] rounded-[2rem] border border-brand-silver/15 bg-[linear-gradient(145deg,rgba(255,255,255,0.12)_0%,rgba(255,255,255,0.04)_30%,rgba(6,34,75,0.16)_100%)] p-2 shadow-[0_28px_70px_rgba(0,0,0,0.32)]">
             <div className="overflow-hidden rounded-[1.45rem] border border-brand-silver/10 bg-[radial-gradient(circle_at_top_left,#113565_0%,#08182d_42%,#040b16_100%)]">
-              <img
-                src="/letrero-pl.png"
-                alt={heroAlt}
-                className="block h-[11.5rem] w-full object-contain px-5 py-5 drop-shadow-[0_18px_30px_rgba(0,0,0,0.28)] sm:h-[13.5rem] lg:h-[15rem]"
-              />
+              <div className="px-5 py-5 sm:px-7 sm:py-6 lg:px-8 lg:py-7">
+                <BrandLockup variant="hero" />
+              </div>
             </div>
           </div>
 

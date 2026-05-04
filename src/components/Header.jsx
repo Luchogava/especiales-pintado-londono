@@ -3,7 +3,7 @@ import { Container } from './Container'
 
 export function Header({ navigation, whatsappLink }) {
   return (
-    <header className="sticky top-0 z-40 border-b border-brand-silver/10 bg-brand-ink/88 shadow-[0_14px_40px_rgba(4,11,22,0.28)] backdrop-blur-xl">
+    <header className="sticky top-0 z-40 border-b border-brand-silver/10 bg-brand-ink shadow-[0_16px_42px_rgba(4,11,22,0.36)]">
       <Container className="py-3.5">
         <div className="flex items-center justify-between gap-4">
           <a href="#inicio" className="max-w-[15rem] sm:max-w-[17rem]" aria-label="Ir al inicio">
