@@ -11,9 +11,9 @@ function ShareIcon() {
   )
 }
 
-export function ShareVacancy({ title, website }) {
+export function ShareVacancy({ title, website, vacancySlug }) {
   const [copied, setCopied] = useState(false)
-  const url = `${website}/#convocatorias`
+  const url = `${website}/?vacante=${encodeURIComponent(vacancySlug)}#convocatoria-${vacancySlug}`
   const text = `${title} - Servicios Especiales Pintado Londo\u00f1o`
   const encodedUrl = encodeURIComponent(url)
   const encodedText = encodeURIComponent(`${text}. Conoce los requisitos y post\u00falate:`)

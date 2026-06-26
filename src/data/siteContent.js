@@ -105,6 +105,7 @@ export const values = [
 
 export const careerOpenings = [
   {
+    slug: 'conductor-transporte-especial',
     title: 'Conductor de transporte especial de pasajeros',
     status: 'Recepci\u00f3n de hojas de vida',
     type: 'Operativo',
@@ -140,6 +141,7 @@ export const careerOpenings = [
     applicationSubject: 'Hoja de vida - Conductor de transporte especial',
   },
   {
+    slug: 'banco-hojas-de-vida',
     title: 'Banco de hojas de vida para apoyo operativo y administrativo',
     status: 'Convocatoria permanente',
     type: 'Administrativo y operativo',
