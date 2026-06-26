@@ -7,11 +7,11 @@ export function Footer({ company, navigation, whatsappLink }) {
         <div>
           <img
             src="/letrero-pl-oficial.png"
-            alt="Letrero Servicios Especiales Pintado Londo\u00f1o"
+            alt={'Letrero Servicios Especiales Pintado Londo\u00f1o'}
             className="h-20 w-auto max-w-full rounded-xl object-contain"
           />
           <p className="mt-4 max-w-xl leading-8 text-slate-400">
-            Transporte terrestre especial de pasajeros en Colombia con experiencia, orden y atenci\u00f3n cercana para
+            {'Transporte terrestre especial de pasajeros en Colombia con experiencia, orden y atenci\u00f3n cercana para '}
             cada servicio.
           </p>
         </div>

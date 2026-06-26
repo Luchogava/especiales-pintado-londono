@@ -134,7 +134,7 @@ export const careerOpenings = [
     ],
     selection: [
       'Entrevista y verificaci\u00f3n de experiencia.',
-      'Pruebas te\u00f3rica y pr\u00e1ctica de conducci\u00f3n.',
+      'Prueba te\u00f3rica y prueba pr\u00e1ctica de conducci\u00f3n.',
       'Examen ocupacional de ingreso y prueba psicosensom\u00e9trica.',
     ],
     applicationSubject: 'Hoja de vida - Conductor de transporte especial',

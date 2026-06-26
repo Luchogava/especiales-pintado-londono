@@ -78,14 +78,14 @@ export function CareersSection({ openings, company }) {
               <div className="mt-6 border-t border-brand-silver/20 pt-5">
                 <p className="text-base leading-7 text-slate-600">{opening.summary}</p>
                 <DetailList title="Perfil requerido" items={opening.requirements} />
-                <DetailList title="Se valorar\u00e1" items={opening.preferred} />
+                <DetailList title={'Se valorar\u00e1'} items={opening.preferred} />
                 <DetailList title="Responsabilidades principales" items={opening.responsibilities} />
-                <DetailList title="Proceso de selecci\u00f3n" items={opening.selection} />
+                <DetailList title={'Proceso de selecci\u00f3n'} items={opening.selection} />
 
                 <div className="mt-6 rounded-2xl bg-brand-navy p-5 text-white">
-                  <p className="text-xs font-black uppercase tracking-[0.22em] text-brand-green">Postulaci\u00f3n</p>
+                  <p className="text-xs font-black uppercase tracking-[0.22em] text-brand-green">{'Postulaci\u00f3n'}</p>
                   <p className="mt-2 text-sm leading-6 text-slate-200">
-                    Env\u00eda tu hoja de vida a <strong className="text-white">{company.email}</strong> con el asunto
+                    {'Env\u00eda tu hoja de vida a '}<strong className="text-white">{company.email}</strong>{' con el asunto '}
                     &ldquo;{opening.applicationSubject || 'Hoja de vida - Convocatoria'}&rdquo;.
                   </p>
                   <div className="mt-4 flex flex-wrap gap-3">
