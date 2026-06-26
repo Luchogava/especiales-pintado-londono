@@ -1,4 +1,5 @@
 import { AboutSection } from './components/AboutSection'
+import { CareersSection } from './components/CareersSection'
 import { Footer } from './components/Footer'
 import { Header } from './components/Header'
 import { Hero } from './components/Hero'
@@ -9,6 +10,7 @@ import { StatsBar } from './components/StatsBar'
 import { WhatsAppButton } from './components/WhatsAppButton'
 import { WhyChooseUs } from './components/WhyChooseUs'
 import {
+  careerOpenings,
   company,
   navigation,
   reasons,
@@ -31,6 +33,7 @@ function App() {
         <QuickActionsSection whatsappLink={whatsappLink} />
         <WhyChooseUs reasons={reasons} />
         <AboutSection values={values} />
+        <CareersSection openings={careerOpenings} email={company.email} />
         <QuoteSection phoneRaw={company.phoneRaw} email={company.email} />
       </main>
       <Footer company={company} navigation={navigation} whatsappLink={whatsappLink} />

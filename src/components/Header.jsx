@@ -14,7 +14,7 @@ export function Header({ navigation, whatsappLink }) {
             <BrandLogo />
           </a>
 
-          <nav className="hidden items-center gap-8 lg:flex" aria-label="Principal">
+          <nav className="hidden items-center gap-6 xl:gap-8 lg:flex" aria-label="Principal">
             {navigation.map((item) => (
               <a
                 key={item.href}

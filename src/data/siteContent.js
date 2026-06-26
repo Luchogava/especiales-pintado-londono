@@ -12,6 +12,7 @@ export const company = {
 export const navigation = [
   { label: 'Servicios', href: '#servicios' },
   { label: 'Nosotros', href: '#nosotros' },
+  { label: 'Convocatorias', href: '#convocatorias' },
   { label: 'Cotizaci\u00f3n', href: '#cotizacion' },
 ]
 
@@ -98,6 +99,36 @@ export const values = [
   {
     title: 'Valores',
     text: 'Seguridad, puntualidad, respeto, responsabilidad, cercan\u00eda, orden y compromiso con la calidad en cada detalle del servicio.',
+  },
+]
+
+export const careerOpenings = [
+  {
+    title: 'Conductores para transporte especial de pasajeros',
+    status: 'Recepci\u00f3n de hojas de vida',
+    type: 'Operativo',
+    location: 'Disponibilidad para operaci\u00f3n nacional',
+    summary:
+      'Buscamos personas responsables, puntuales y orientadas al buen trato para apoyar servicios empresariales, escolares, tur\u00edsticos y especiales.',
+    requirements: [
+      'Licencia de conducci\u00f3n vigente seg\u00fan el tipo de veh\u00edculo asignado.',
+      'Experiencia comprobable en transporte de pasajeros o servicios especiales.',
+      'Conocimiento de normas de seguridad vial, servicio al cliente y conducci\u00f3n preventiva.',
+      'Disponibilidad para rutas programadas, servicios eventuales y operaci\u00f3n coordinada.',
+    ],
+  },
+  {
+    title: 'Banco de hojas de vida para apoyo operativo y administrativo',
+    status: 'Convocatoria permanente',
+    type: 'Administrativo y operativo',
+    location: 'Colombia',
+    summary:
+      'Recibimos perfiles para futuras necesidades de coordinaci\u00f3n, atenci\u00f3n al cliente, apoyo log\u00edstico y gesti\u00f3n operativa.',
+    requirements: [
+      'Actitud de servicio, comunicaci\u00f3n clara y orientaci\u00f3n al detalle.',
+      'Capacidad para trabajar con orden, cumplimiento y manejo responsable de informaci\u00f3n.',
+      'Experiencia en transporte, log\u00edstica, operaciones o atenci\u00f3n al cliente ser\u00e1 valorada.',
+    ],
   },
 ]
 
