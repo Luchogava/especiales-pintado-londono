@@ -33,7 +33,7 @@ function App() {
         <QuickActionsSection whatsappLink={whatsappLink} />
         <WhyChooseUs reasons={reasons} />
         <AboutSection values={values} />
-        <CareersSection openings={careerOpenings} email={company.email} />
+        <CareersSection openings={careerOpenings} company={company} />
         <QuoteSection phoneRaw={company.phoneRaw} email={company.email} />
       </main>
       <Footer company={company} navigation={navigation} whatsappLink={whatsappLink} />

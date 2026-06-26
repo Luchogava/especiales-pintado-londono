@@ -1,5 +1,6 @@
 export const company = {
   name: 'Servicios Especiales Pintado Londo\u00f1o',
+  website: 'https://www.especialespl.com',
   phoneDisplay: '+57 316 841 33 92',
   phoneRaw: '573168413392',
   email: 'comercial@especialespl.com',
@@ -104,18 +105,39 @@ export const values = [
 
 export const careerOpenings = [
   {
-    title: 'Conductores para transporte especial de pasajeros',
+    title: 'Conductor de transporte especial de pasajeros',
     status: 'Recepci\u00f3n de hojas de vida',
     type: 'Operativo',
-    location: 'Disponibilidad para operaci\u00f3n nacional',
+    location: 'Operaci\u00f3n nacional seg\u00fan programaci\u00f3n',
     summary:
-      'Buscamos personas responsables, puntuales y orientadas al buen trato para apoyar servicios empresariales, escolares, tur\u00edsticos y especiales.',
+      'Buscamos conductores responsables, puntuales y comprometidos con la seguridad vial para apoyar nuestra operaci\u00f3n de transporte especial de pasajeros en servicios empresariales, escolares, tur\u00edsticos y especiales.',
     requirements: [
-      'Licencia de conducci\u00f3n vigente seg\u00fan el tipo de veh\u00edculo asignado.',
-      'Experiencia comprobable en transporte de pasajeros o servicios especiales.',
-      'Conocimiento de normas de seguridad vial, servicio al cliente y conducci\u00f3n preventiva.',
-      'Disponibilidad para rutas programadas, servicios eventuales y operaci\u00f3n coordinada.',
+      'Licencia de conducci\u00f3n C2 vigente para veh\u00edculos de servicio p\u00fablico.',
+      'Formaci\u00f3n b\u00e1sica primaria o bachillerato, con habilidades de lectura y escritura.',
+      'M\u00ednimo un a\u00f1o de experiencia comprobable como conductor de transporte especial de pasajeros.',
+      'Conocimiento de normas de tr\u00e1nsito, seguridad vial y servicio al cliente.',
+      'Disponibilidad para rutas programadas y servicios eventuales.',
+      'Actitud de servicio, puntualidad, respeto y buen trato.',
+      'Capacidad para realizar la inspecci\u00f3n preoperacional y cuidar el veh\u00edculo asignado.',
     ],
+    preferred: [
+      'M\u00e1s de dos a\u00f1os de experiencia en transporte especial.',
+      'Formaci\u00f3n en conducci\u00f3n defensiva y conocimiento del Plan Estrat\u00e9gico de Seguridad Vial.',
+      'Conocimientos de primeros auxilios, evacuaci\u00f3n y mec\u00e1nica b\u00e1sica de buses o busetas.',
+    ],
+    responsibilities: [
+      'Transportar pasajeros de forma segura, puntual y cordial.',
+      'Cumplir las normas de tr\u00e1nsito y las pol\u00edticas internas de seguridad vial.',
+      'Realizar diariamente la inspecci\u00f3n preoperacional del veh\u00edculo.',
+      'Reportar oportunamente fallas, novedades o condiciones inseguras.',
+      'Cuidar la limpieza, presentaci\u00f3n, documentaci\u00f3n y buen uso del veh\u00edculo asignado.',
+    ],
+    selection: [
+      'Entrevista y verificaci\u00f3n de experiencia.',
+      'Pruebas te\u00f3rica y pr\u00e1ctica de conducci\u00f3n.',
+      'Examen ocupacional de ingreso y prueba psicosensom\u00e9trica.',
+    ],
+    applicationSubject: 'Hoja de vida - Conductor de transporte especial',
   },
   {
     title: 'Banco de hojas de vida para apoyo operativo y administrativo',

@@ -1,7 +1,26 @@
 import { Container } from './Container'
 import { SectionHeading } from './SectionHeading'
+import { ShareVacancy } from './ShareVacancy'
 
-export function CareersSection({ openings, email }) {
+function DetailList({ title, items }) {
+  if (!items?.length) return null
+
+  return (
+    <div className="mt-5">
+      <p className="text-sm font-black uppercase tracking-[0.22em] text-brand-green">{title}</p>
+      <ul className="mt-3 space-y-3">
+        {items.map((item) => (
+          <li key={item} className="flex gap-3 text-sm leading-6 text-slate-600">
+            <span className="mt-2 h-2 w-2 shrink-0 rounded-full bg-brand-green" aria-hidden="true" />
+            <span>{item}</span>
+          </li>
+        ))}
+      </ul>
+    </div>
+  )
+}
+
+export function CareersSection({ openings, company }) {
   const subject = encodeURIComponent('Hoja de vida - Convocatoria Servicios Especiales Pintado Londo\u00f1o')
 
   return (
@@ -25,7 +44,7 @@ export function CareersSection({ openings, email }) {
               Env&iacute;a tu hoja de vida al correo comercial indicando en el asunto el cargo o &aacute;rea de inter&eacute;s.
             </p>
             <a
-              href={`mailto:${email}?subject=${subject}`}
+              href={`mailto:${company.email}?subject=${subject}`}
               className="mt-5 inline-flex rounded-full bg-brand-navy px-6 py-3.5 text-sm font-extrabold text-white shadow-[0_16px_32px_rgba(6,34,75,0.18)] transition hover:-translate-y-0.5 hover:bg-brand-green"
             >
               Enviar hoja de vida
@@ -58,15 +77,36 @@ export function CareersSection({ openings, email }) {
 
               <div className="mt-6 border-t border-brand-silver/20 pt-5">
                 <p className="text-base leading-7 text-slate-600">{opening.summary}</p>
-                <p className="mt-5 text-sm font-black uppercase tracking-[0.22em] text-brand-green">Requisitos</p>
-                <ul className="mt-3 space-y-3">
-                  {opening.requirements.map((requirement) => (
-                    <li key={requirement} className="flex gap-3 text-sm leading-6 text-slate-600">
-                      <span className="mt-2 h-2 w-2 rounded-full bg-brand-green" aria-hidden="true" />
-                      <span>{requirement}</span>
-                    </li>
-                  ))}
-                </ul>
+                <DetailList title="Perfil requerido" items={opening.requirements} />
+                <DetailList title="Se valorar\u00e1" items={opening.preferred} />
+                <DetailList title="Responsabilidades principales" items={opening.responsibilities} />
+                <DetailList title="Proceso de selecci\u00f3n" items={opening.selection} />
+
+                <div className="mt-6 rounded-2xl bg-brand-navy p-5 text-white">
+                  <p className="text-xs font-black uppercase tracking-[0.22em] text-brand-green">Postulaci\u00f3n</p>
+                  <p className="mt-2 text-sm leading-6 text-slate-200">
+                    Env\u00eda tu hoja de vida a <strong className="text-white">{company.email}</strong> con el asunto
+                    &ldquo;{opening.applicationSubject || 'Hoja de vida - Convocatoria'}&rdquo;.
+                  </p>
+                  <div className="mt-4 flex flex-wrap gap-3">
+                    <a
+                      href={`mailto:${company.email}?subject=${encodeURIComponent(opening.applicationSubject || 'Hoja de vida - Convocatoria')}`}
+                      className="rounded-full bg-brand-green px-5 py-3 text-sm font-extrabold text-white transition hover:bg-white hover:text-brand-navy"
+                    >
+                      Postularme por correo
+                    </a>
+                    <a
+                      href={`https://wa.me/${company.phoneRaw}?text=${encodeURIComponent(`Hola, deseo postularme a la convocatoria de ${opening.title}.`)}`}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="rounded-full border border-white/25 px-5 py-3 text-sm font-extrabold text-white transition hover:border-brand-green hover:text-brand-green"
+                    >
+                      Consultar por WhatsApp
+                    </a>
+                  </div>
+                </div>
+
+                <ShareVacancy title={opening.title} website={company.website} />
               </div>
             </details>
           ))}
