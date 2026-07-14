@@ -84,30 +84,30 @@ function ShareEvent({ event, website }) {
 }
 
 function EventCard({ event, company }) {
-  const detailsRef = useRef(null)
+  const articleRef = useRef(null)
   const eventId = `evento-${event.slug}`
 
   useEffect(() => {
-    function revealSharedEvent() {
+    function focusSharedEvent() {
       const selectedEvent = new URLSearchParams(window.location.search).get('evento')
       const matchesHash = window.location.hash === `#${eventId}`
 
       if (selectedEvent !== event.slug && !matchesHash) return
-      if (!detailsRef.current) return
+      if (!articleRef.current) return
 
-      detailsRef.current.open = true
       window.requestAnimationFrame(() => {
-        detailsRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' })
+        articleRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' })
       })
     }
 
-    revealSharedEvent()
-    window.addEventListener('hashchange', revealSharedEvent)
-    return () => window.removeEventListener('hashchange', revealSharedEvent)
+    focusSharedEvent()
+    window.addEventListener('hashchange', focusSharedEvent)
+    return () => window.removeEventListener('hashchange', focusSharedEvent)
   }, [event.slug, eventId])
 
   return (
     <article
+      ref={articleRef}
       id={eventId}
       className="scroll-mt-28 overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.06] shadow-[0_28px_80px_rgba(0,0,0,0.28)] target:ring-4 target:ring-brand-green/20"
     >
@@ -143,7 +143,7 @@ function EventCard({ event, company }) {
           <h3 className="mt-4 font-display text-3xl font-bold leading-tight sm:text-4xl">{event.title}</h3>
           <p className="mt-5 text-lg leading-8 text-slate-200">{event.summary}</p>
 
-          <details ref={detailsRef} className="group mt-6 rounded-[1.4rem] border border-white/10 bg-white/5 p-5">
+          <details className="group mt-6 rounded-[1.4rem] border border-white/10 bg-white/5 p-5">
             <summary className="flex cursor-pointer list-none items-center justify-between gap-4">
               <span className="font-bold text-white">Leer detalle del evento</span>
               <span className="flex h-9 w-9 items-center justify-center rounded-full border border-brand-green/35 text-xl font-bold text-brand-green transition group-open:rotate-45">
