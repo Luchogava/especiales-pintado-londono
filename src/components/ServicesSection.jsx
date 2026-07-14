@@ -97,12 +97,7 @@ export function ServicesSection({ services }) {
         <SectionHeading
           eyebrow="Servicios"
           title="Soluciones pensadas para cada tipo de traslado"
-          description={
-            <>
-              Conoce de forma r&aacute;pida qu&eacute; soluci&oacute;n te conviene seg&uacute;n el tipo de pasajeros,
-              la operaci&oacute;n y el objetivo del servicio.
-            </>
-          }
+          description={'Conoce de forma r\u00e1pida qu\u00e9 soluci\u00f3n te conviene seg\u00fan el tipo de pasajeros, la operaci\u00f3n y el objetivo del servicio.'}
         />
 
         <div className="mt-12 grid gap-4 md:grid-cols-2 xl:grid-cols-4" role="tablist" aria-label="Tipos de servicio">

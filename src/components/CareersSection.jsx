@@ -113,18 +113,13 @@ export function CareersSection({ openings, company }) {
           <SectionHeading
             eyebrow="Talento humano"
             title="Convocatorias para hacer parte de nuestro equipo"
-            description={
-              <>
-                Publicamos aqu&iacute; oportunidades laborales y bancos de hojas de vida para personas que quieran
-                aportar a una operaci&oacute;n segura, puntual y bien atendida.
-              </>
-            }
+            description={'Publicamos aqu\u00ed oportunidades laborales y bancos de hojas de vida para personas que quieran aportar a una operaci\u00f3n segura, puntual y bien atendida.'}
           />
 
           <div className="mt-8 rounded-[1.8rem] border border-brand-silver/20 bg-white p-6 shadow-card">
-            <p className="text-sm font-black uppercase tracking-[0.24em] text-brand-green">Canal de postulaci&oacute;n</p>
+            <p className="text-sm font-black uppercase tracking-[0.24em] text-brand-green">{'Canal de postulaci\u00f3n'}</p>
             <p className="mt-3 text-lg leading-8 text-slate-600">
-              Env&iacute;a tu hoja de vida al correo comercial indicando en el asunto el cargo o &aacute;rea de inter&eacute;s.
+              {'Env\u00eda tu hoja de vida al correo comercial indicando en el asunto el cargo o \u00e1rea de inter\u00e9s.'}
             </p>
             <a
               href={`mailto:${company.email}?subject=${subject}`}

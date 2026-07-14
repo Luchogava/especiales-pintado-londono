@@ -63,20 +63,20 @@ export const newsEvents = [
     slug: 'fiesta-virgen-del-carmen-2026',
     category: 'Evento institucional',
     date: '12 de julio de 2026',
-    title: 'Celebraci\u00f3n Fiesta Virgen del Carmen 2026',
+    title: 'Celebraci\u00f3n de la Virgen del Carmen 2026',
     summary:
-      'La Gerencia de Servicios Especiales Pintado Londo\u00f1o y sus colaboradores conmemoraron el D\u00eda de la Virgen del Carmen, una fecha significativa para el sector transportador.',
+      'La gerencia de Servicios Especiales Pintado Londo\u00f1o y sus colaboradores conmemoraron el D\u00eda de la Virgen del Carmen, una fecha significativa para el sector del transporte.',
     description:
-      'El pasado 12 de julio de 2026, la Gerencia de la empresa y sus colaboradores se reunieron para conmemorar el D\u00eda de la Virgen del Carmen. Este encuentro reafirm\u00f3 la uni\u00f3n del equipo, la tradici\u00f3n del transporte y el compromiso de seguir movilizando personas con seguridad, respeto y confianza.',
+      'El 12 de julio de 2026, la gerencia de la empresa y sus colaboradores se reunieron para conmemorar el D\u00eda de la Virgen del Carmen. Este encuentro reafirm\u00f3 la uni\u00f3n del equipo, la tradici\u00f3n del transporte y el compromiso de seguir movilizando personas con seguridad, respeto y confianza.',
     highlights: [
-      'Participaci\u00f3n de la Gerencia y colaboradores de la empresa.',
+      'Participaci\u00f3n de la gerencia y los colaboradores de la empresa.',
       'Conmemoraci\u00f3n de una tradici\u00f3n representativa para el transporte en Colombia.',
       'Integraci\u00f3n del equipo alrededor de la seguridad, la fe, el respeto y el servicio.',
     ],
     acknowledgements: {
       title: 'Agradecimiento especial',
       text:
-        'Servicios Especiales Pintado Londo\u00f1o expresa su agradecimiento a las empresas que, con sus aportes y respaldo, hicieron posible la realizaci\u00f3n de esta celebraci\u00f3n institucional.',
+        'Servicios Especiales Pintado Londo\u00f1o expresa su agradecimiento a las empresas que, con sus aportes y respaldo, hicieron posible el desarrollo de esta celebraci\u00f3n institucional.',
       companies: [
         'Geoflora S.A.S.',
         'Flores Ipanema S.A.S.',
@@ -93,7 +93,7 @@ export const newsEvents = [
     images: [
       {
         src: '/evento-virgen-carmen-2026-equipo.png',
-        alt: 'Gerencia y colaboradores durante la Fiesta Virgen del Carmen 2026',
+        alt: 'Gerencia y colaboradores de la empresa durante la celebraci\u00f3n de la Virgen del Carmen 2026',
         fit: 'contain',
       },
       {
