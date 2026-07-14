@@ -85,6 +85,7 @@ export const newsEvents = [
       {
         src: '/evento-virgen-carmen-2026-virgen.png',
         alt: 'Imagen de la Virgen del Carmen decorada con flores',
+        fit: 'contain',
       },
     ],
   },

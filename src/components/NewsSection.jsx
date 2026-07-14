@@ -154,8 +154,22 @@ function EventCard({ event, company }) {
 
       <div className="grid gap-3 bg-white p-3 sm:grid-cols-2">
         {event.images.slice(1).map((image) => (
-          <div key={image.src} className="aspect-[16/10] overflow-hidden rounded-[1.2rem] bg-slate-100">
-            <img src={image.src} alt={image.alt} className="h-full w-full object-cover transition duration-500 hover:scale-[1.03]" loading="lazy" />
+          <div
+            key={image.src}
+            className={`aspect-[16/10] overflow-hidden rounded-[1.2rem] ${
+              image.fit === 'contain'
+                ? 'bg-[radial-gradient(circle_at_center,rgba(116,192,67,0.14),transparent_38%),linear-gradient(145deg,#040b16,#132235)] p-2'
+                : 'bg-slate-100'
+            }`}
+          >
+            <img
+              src={image.src}
+              alt={image.alt}
+              className={`h-full w-full transition duration-500 hover:scale-[1.03] ${
+                image.fit === 'contain' ? 'object-contain' : 'object-cover'
+              }`}
+              loading="lazy"
+            />
           </div>
         ))}
       </div>
