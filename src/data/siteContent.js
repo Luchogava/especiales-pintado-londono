@@ -12,9 +12,43 @@ export const company = {
 
 export const navigation = [
   { label: 'Servicios', href: '#servicios' },
+  { label: 'Confianza', href: '#confianza' },
   { label: 'Nosotros', href: '#nosotros' },
   { label: 'Convocatorias', href: '#convocatorias' },
   { label: 'Cotizaci\u00f3n', href: '#cotizacion' },
+]
+
+export const sectionTabs = [
+  {
+    eyebrow: '01',
+    title: 'Servicios',
+    description: 'Elige la soluci\u00f3n seg\u00fan el tipo de traslado que necesitas.',
+    href: '#servicios',
+  },
+  {
+    eyebrow: '02',
+    title: 'Confianza',
+    description: 'Revisa trayectoria, cobertura nacional y certificaciones.',
+    href: '#confianza',
+  },
+  {
+    eyebrow: '03',
+    title: 'Nosotros',
+    description: 'Conoce la empresa, su enfoque y su informaci\u00f3n institucional.',
+    href: '#nosotros',
+  },
+  {
+    eyebrow: '04',
+    title: 'Convocatorias',
+    description: 'Consulta oportunidades laborales y comparte enlaces directos.',
+    href: '#convocatorias',
+  },
+  {
+    eyebrow: '05',
+    title: 'Cotizaci\u00f3n',
+    description: 'Solicita acompa\u00f1amiento comercial por WhatsApp o formulario.',
+    href: '#cotizacion',
+  },
 ]
 
 export const stats = [

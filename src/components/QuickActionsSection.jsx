@@ -11,11 +11,11 @@ export function QuickActionsSection({ whatsappLink }) {
                 Hablemos de tu servicio
               </p>
               <h2 className="mt-3 font-display text-3xl font-bold sm:text-4xl">
-                Ya conoces nuestros servicios y respaldos. Ahora elige c&oacute;mo quieres contactarnos.
+                Elige el canal m&aacute;s f&aacute;cil para recibir acompa&ntilde;amiento comercial.
               </h2>
               <p className="mt-4 text-lg leading-8 text-slate-300">
-                Puedes escribirnos por WhatsApp para una respuesta &aacute;gil o pasar directo al formulario de
-                cotizaci&oacute;n.
+                Escr&iacute;benos por WhatsApp para una respuesta &aacute;gil o completa el formulario con los datos
+                clave de tu ruta.
               </p>
             </div>
 

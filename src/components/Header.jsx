@@ -37,17 +37,6 @@ export function Header({ navigation, whatsappLink }) {
           </a>
         </div>
 
-        <nav className="mt-3 flex gap-4 overflow-x-auto pb-1 lg:hidden" aria-label="Principal movil">
-          {navigation.map((item) => (
-            <a
-              key={item.href}
-              href={item.href}
-              className="whitespace-nowrap rounded-full border border-brand-silver/70 bg-white/80 px-4 py-2 text-sm font-bold text-brand-navy shadow-[0_8px_20px_rgba(6,34,75,0.08)] transition hover:border-brand-green hover:text-brand-green"
-            >
-              {item.label}
-            </a>
-          ))}
-        </nav>
       </Container>
     </header>
   )

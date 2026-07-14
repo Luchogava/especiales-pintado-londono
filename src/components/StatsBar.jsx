@@ -21,7 +21,7 @@ function StatCard({ item }) {
 
 export function StatsBar({ stats }) {
   return (
-    <section className="relative py-8">
+    <section id="confianza" className="relative scroll-mt-28 py-8">
       <Container>
         <div className="rounded-[2rem] border border-brand-silver/20 bg-gradient-to-br from-white via-slate-50 to-white p-4 shadow-premium xl:p-5">
           <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">

@@ -6,6 +6,7 @@ import { Hero } from './components/Hero'
 import { QuickActionsSection } from './components/QuickActionsSection'
 import { QuoteSection } from './components/QuoteSection'
 import { ServicesSection } from './components/ServicesSection'
+import { SectionTabs } from './components/SectionTabs'
 import { StatsBar } from './components/StatsBar'
 import { WhatsAppButton } from './components/WhatsAppButton'
 import { WhyChooseUs } from './components/WhyChooseUs'
@@ -14,6 +15,7 @@ import {
   company,
   navigation,
   reasons,
+  sectionTabs,
   services,
   stats,
   values,
@@ -28,6 +30,7 @@ function App() {
       <Header navigation={navigation} whatsappLink={whatsappLink} />
       <main>
         <Hero company={company} whatsappLink={whatsappLink} />
+        <SectionTabs items={sectionTabs} />
         <ServicesSection services={services} />
         <StatsBar stats={stats} />
         <QuickActionsSection whatsappLink={whatsappLink} />
