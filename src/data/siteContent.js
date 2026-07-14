@@ -77,6 +77,7 @@ export const newsEvents = [
       {
         src: '/evento-virgen-carmen-2026-equipo.png',
         alt: 'Gerencia y colaboradores durante la Fiesta Virgen del Carmen 2026',
+        fit: 'contain',
       },
       {
         src: '/evento-virgen-carmen-2026-flota.png',

@@ -112,9 +112,22 @@ function EventCard({ event, company }) {
       className="scroll-mt-28 overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.06] shadow-[0_28px_80px_rgba(0,0,0,0.28)] target:ring-4 target:ring-brand-green/20"
     >
       <div className="grid lg:grid-cols-[1.05fr_0.95fr]">
-        <div className="relative min-h-[20rem] overflow-hidden">
-          <img src={event.images[0].src} alt={event.images[0].alt} className="h-full w-full object-cover" loading="lazy" />
-          <div className="absolute inset-0 bg-gradient-to-t from-brand-ink/80 via-transparent to-transparent" />
+        <div
+          className={`relative min-h-[20rem] overflow-hidden ${
+            event.images[0].fit === 'contain'
+              ? 'bg-[radial-gradient(circle_at_center,rgba(116,192,67,0.14),transparent_40%),linear-gradient(145deg,#040b16,#10233b)] p-2'
+              : ''
+          }`}
+        >
+          <img
+            src={event.images[0].src}
+            alt={event.images[0].alt}
+            className={`h-full w-full transition duration-500 ${
+              event.images[0].fit === 'contain' ? 'object-contain' : 'object-cover'
+            }`}
+            loading="lazy"
+          />
+          <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-brand-ink/80 via-transparent to-transparent" />
           <div className="absolute bottom-5 left-5 right-5 flex flex-wrap gap-2">
             <span className="rounded-full bg-brand-green px-4 py-2 text-xs font-black uppercase tracking-[0.18em] text-white">
               {event.category}
