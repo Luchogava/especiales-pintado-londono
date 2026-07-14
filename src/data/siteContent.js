@@ -73,6 +73,23 @@ export const newsEvents = [
       'Conmemoraci\u00f3n de una tradici\u00f3n representativa para el transporte en Colombia.',
       'Integraci\u00f3n del equipo alrededor de la seguridad, la fe, el respeto y el servicio.',
     ],
+    acknowledgements: {
+      title: 'Agradecimiento especial',
+      text:
+        'Servicios Especiales Pintado Londo\u00f1o expresa su agradecimiento a las empresas que, con sus aportes y respaldo, hicieron posible la realizaci\u00f3n de esta celebraci\u00f3n institucional.',
+      companies: [
+        'Geoflora S.A.S.',
+        'Flores Ipanema S.A.S.',
+        'Llantas al Costo',
+        'R\u00e1pido Santa Ltda.',
+        'Montallantas 5 Estrellas',
+        'Seguros Beta',
+        'Auto Frenos L\u00e1tigo',
+        'Parqueadero Zipalandia',
+        'Parqueadero La Estaci\u00f3n',
+        'Inversiones Garz\u00f3n Vargas',
+      ],
+    },
     images: [
       {
         src: '/evento-virgen-carmen-2026-equipo.png',

@@ -159,6 +159,24 @@ function EventCard({ event, company }) {
                 </li>
               ))}
             </ul>
+            {event.acknowledgements ? (
+              <div className="mt-6 rounded-[1.2rem] border border-brand-green/20 bg-brand-green/10 p-5">
+                <p className="text-xs font-black uppercase tracking-[0.22em] text-brand-green">
+                  {event.acknowledgements.title}
+                </p>
+                <p className="mt-3 leading-7 text-slate-200">{event.acknowledgements.text}</p>
+                <div className="mt-4 flex flex-wrap gap-2">
+                  {event.acknowledgements.companies.map((companyName) => (
+                    <span
+                      key={companyName}
+                      className="rounded-full border border-white/15 bg-white/10 px-3 py-2 text-xs font-bold text-white"
+                    >
+                      {companyName}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            ) : null}
           </details>
 
           <ShareEvent event={event} website={company.website} />
