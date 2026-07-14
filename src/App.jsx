@@ -3,6 +3,7 @@ import { CareersSection } from './components/CareersSection'
 import { Footer } from './components/Footer'
 import { Header } from './components/Header'
 import { Hero } from './components/Hero'
+import { NewsSection } from './components/NewsSection'
 import { QuickActionsSection } from './components/QuickActionsSection'
 import { QuoteSection } from './components/QuoteSection'
 import { ServicesSection } from './components/ServicesSection'
@@ -14,6 +15,7 @@ import {
   careerOpenings,
   company,
   navigation,
+  newsEvents,
   reasons,
   sectionTabs,
   services,
@@ -33,6 +35,7 @@ function App() {
         <SectionTabs items={sectionTabs} />
         <ServicesSection services={services} />
         <StatsBar stats={stats} />
+        <NewsSection events={newsEvents} company={company} />
         <QuickActionsSection whatsappLink={whatsappLink} />
         <WhyChooseUs reasons={reasons} />
         <AboutSection values={values} />

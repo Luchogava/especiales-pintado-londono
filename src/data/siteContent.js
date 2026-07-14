@@ -13,6 +13,7 @@ export const company = {
 export const navigation = [
   { label: 'Servicios', href: '#servicios' },
   { label: 'Confianza', href: '#confianza' },
+  { label: 'Actualidad', href: '#actualidad' },
   { label: 'Nosotros', href: '#nosotros' },
   { label: 'Convocatorias', href: '#convocatorias' },
   { label: 'Cotizaci\u00f3n', href: '#cotizacion' },
@@ -33,21 +34,59 @@ export const sectionTabs = [
   },
   {
     eyebrow: '03',
+    title: 'Actualidad',
+    description: 'Eventos, noticias y momentos clave de nuestra operaci\u00f3n.',
+    href: '#actualidad',
+  },
+  {
+    eyebrow: '04',
     title: 'Nosotros',
     description: 'Conoce la empresa, su enfoque y su informaci\u00f3n institucional.',
     href: '#nosotros',
   },
   {
-    eyebrow: '04',
+    eyebrow: '05',
     title: 'Convocatorias',
     description: 'Consulta oportunidades laborales y comparte enlaces directos.',
     href: '#convocatorias',
   },
   {
-    eyebrow: '05',
+    eyebrow: '06',
     title: 'Cotizaci\u00f3n',
     description: 'Solicita acompa\u00f1amiento comercial por WhatsApp o formulario.',
     href: '#cotizacion',
+  },
+]
+
+export const newsEvents = [
+  {
+    slug: 'fiesta-virgen-del-carmen-2026',
+    category: 'Evento institucional',
+    date: '12 de julio de 2026',
+    title: 'Celebraci\u00f3n Fiesta Virgen del Carmen 2026',
+    summary:
+      'La Gerencia de Servicios Especiales Pintado Londo\u00f1o y sus colaboradores conmemoraron el D\u00eda de la Virgen del Carmen, una fecha significativa para el sector transportador.',
+    description:
+      'El pasado 12 de julio de 2026, la Gerencia de la empresa y sus colaboradores se reunieron para conmemorar el D\u00eda de la Virgen del Carmen. Este encuentro reafirm\u00f3 la uni\u00f3n del equipo, la tradici\u00f3n del transporte y el compromiso de seguir movilizando personas con seguridad, respeto y confianza.',
+    highlights: [
+      'Participaci\u00f3n de la Gerencia y colaboradores de la empresa.',
+      'Conmemoraci\u00f3n de una tradici\u00f3n representativa para el transporte en Colombia.',
+      'Integraci\u00f3n del equipo alrededor de la seguridad, la fe, el respeto y el servicio.',
+    ],
+    images: [
+      {
+        src: '/evento-virgen-carmen-2026-equipo.png',
+        alt: 'Gerencia y colaboradores durante la Fiesta Virgen del Carmen 2026',
+      },
+      {
+        src: '/evento-virgen-carmen-2026-flota.png',
+        alt: 'Veh\u00edculos y colaboradores en la celebraci\u00f3n Virgen del Carmen 2026',
+      },
+      {
+        src: '/evento-virgen-carmen-2026-virgen.png',
+        alt: 'Imagen de la Virgen del Carmen decorada con flores',
+      },
+    ],
   },
 ]
 
