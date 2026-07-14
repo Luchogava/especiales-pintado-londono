@@ -2,6 +2,16 @@ import { useEffect, useRef, useState } from 'react'
 import { Container } from './Container'
 import { SectionHeading } from './SectionHeading'
 
+const newsIntro = {
+  eyebrow: 'Actualidad en Ruta',
+  title: 'Historias que reflejan nuestra operaci\u00f3n, cultura y compromiso',
+  description:
+    'Compartimos eventos institucionales, actividades de equipo y momentos que muestran la esencia humana y operativa de Servicios Especiales Pintado Londo\u00f1o.',
+  featureLabel: 'Memoria institucional',
+  featureText:
+    'Un espacio para destacar celebraciones, jornadas de seguridad, reconocimientos y noticias que fortalecen nuestra identidad como empresa de transporte especial de pasajeros.',
+}
+
 function ShareIcon() {
   return (
     <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
@@ -161,17 +171,14 @@ export function NewsSection({ events, company }) {
       <Container className="relative">
         <div className="grid gap-10 lg:grid-cols-[0.82fr_1.18fr] lg:items-end">
           <SectionHeading
-            eyebrow="Actualidad en Ruta"
-            title="Eventos y noticias que muestran nuestra operaci\u00f3n en movimiento"
-            description="Compartimos momentos institucionales, actividades de equipo y contenidos que reflejan nuestra cultura de servicio, seguridad y confianza."
+            eyebrow={newsIntro.eyebrow}
+            title={newsIntro.title}
+            description={newsIntro.description}
             theme="dark"
           />
           <div className="rounded-[1.8rem] border border-white/10 bg-white/5 p-5 text-slate-200 backdrop-blur">
-            <p className="text-sm font-black uppercase tracking-[0.24em] text-brand-green">Publicaci\u00f3n destacada</p>
-            <p className="mt-3 leading-7">
-              Un espacio para visibilizar eventos institucionales, noticias operativas, jornadas de seguridad,
-              reconocimientos y actividades que fortalecen nuestra cultura de servicio.
-            </p>
+            <p className="text-sm font-black uppercase tracking-[0.24em] text-brand-green">{newsIntro.featureLabel}</p>
+            <p className="mt-3 leading-7">{newsIntro.featureText}</p>
           </div>
         </div>
 
