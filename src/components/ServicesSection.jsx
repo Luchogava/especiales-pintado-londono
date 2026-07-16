@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import { Container } from './Container'
 import { SectionHeading } from './SectionHeading'
 
@@ -17,80 +16,32 @@ function ServiceIcon({ index }) {
   )
 }
 
-function ServicePanel({ service, index }) {
-  const { title, summary, idealFor, description, accent } = service
-
+function ServiceCard({ service, index }) {
   return (
-    <article className="overflow-hidden rounded-[2rem] border border-brand-silver/20 bg-white shadow-premium">
-      <div className="grid lg:grid-cols-[0.82fr_1.18fr]">
-        <div className="relative bg-[radial-gradient(circle_at_top_left,#10305f_0%,#06224b_50%,#040b16_100%)] p-7 text-white sm:p-8">
-          <div className="absolute right-[-4rem] top-[-4rem] h-40 w-40 rounded-full bg-brand-green/20 blur-3xl" />
-          <div className="relative">
-            <div
-              className={`inline-flex h-14 min-w-14 items-center justify-center rounded-2xl px-4 font-display text-lg font-bold text-white shadow-[0_16px_30px_rgba(0,0,0,0.18)] ${accent}`}
-            >
-              <ServiceIcon index={index} />
-            </div>
-            <h3 className="mt-7 font-display text-3xl font-bold leading-tight sm:text-4xl">{title}</h3>
-            <p className="mt-4 text-lg leading-8 text-slate-200">{summary}</p>
-          </div>
+    <article className="group flex h-full flex-col rounded-[1.6rem] border border-brand-silver/25 bg-white p-6 text-brand-navy shadow-[0_18px_44px_rgba(6,34,75,0.08)] transition duration-300 hover:-translate-y-1 hover:border-brand-green/55 hover:shadow-card">
+      <div className="flex items-start gap-4">
+        <div
+          className={`inline-flex h-14 min-w-14 items-center justify-center rounded-2xl text-white shadow-[0_16px_30px_rgba(0,0,0,0.16)] transition group-hover:scale-105 ${service.accent}`}
+        >
+          <ServiceIcon index={index} />
         </div>
-
-        <div className="p-7 sm:p-8">
-          <div className="flex items-center gap-4">
-            <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-brand-green/12 text-brand-green">
-              <ServiceIcon index={index} />
-            </div>
-            <div>
-              <p className="text-xs font-black uppercase tracking-[0.22em] text-brand-green">Ideal para</p>
-              <p className="mt-1 text-base font-semibold leading-7 text-slate-700">{idealFor}</p>
-            </div>
-          </div>
-          <p className="mt-7 text-lg leading-8 text-slate-600">{description}</p>
-          <a
-            href="#cotizacion"
-            className="mt-7 inline-flex rounded-full bg-brand-navy px-6 py-3.5 text-sm font-extrabold text-white shadow-[0_16px_32px_rgba(6,34,75,0.18)] transition hover:-translate-y-0.5 hover:bg-brand-green"
-          >
-            Cotizar este servicio
-          </a>
+        <div>
+          <h3 className="font-display text-xl font-bold leading-tight">{service.title}</h3>
+          <p className="mt-3 text-base leading-7 text-slate-600">{service.summary}</p>
         </div>
       </div>
+
+      <div className="mt-6 rounded-2xl bg-slate-50 p-5">
+        <p className="text-xs font-black uppercase tracking-[0.22em] text-brand-green">Ideal para</p>
+        <p className="mt-3 text-sm font-semibold leading-6 text-slate-700">{service.idealFor}</p>
+      </div>
+
+      <p className="mt-5 text-base leading-7 text-slate-600">{service.description}</p>
     </article>
   )
 }
 
-function ServiceSummaryCard({ service, index, isActive, onSelect }) {
-  return (
-    <button
-      type="button"
-      onClick={onSelect}
-      className={`group rounded-[1.4rem] border p-5 text-left transition duration-300 ${
-        isActive
-          ? 'border-brand-green bg-brand-navy text-white shadow-[0_20px_46px_rgba(6,34,75,0.22)]'
-          : 'border-brand-silver/25 bg-white text-brand-navy hover:-translate-y-0.5 hover:border-brand-green/45 hover:shadow-card'
-      }`}
-      role="tab"
-      aria-selected={isActive}
-    >
-      <span className="flex items-center gap-3">
-        <div
-          className={`inline-flex h-11 min-w-11 items-center justify-center rounded-2xl px-3 font-display text-base font-bold text-white ${service.accent}`}
-        >
-          <ServiceIcon index={index} />
-        </div>
-        <span className="font-display text-lg font-bold">{service.title}</span>
-      </span>
-      <span className={`mt-3 block text-sm leading-6 ${isActive ? 'text-slate-200' : 'text-slate-600'}`}>
-        {service.summary}
-      </span>
-    </button>
-  )
-}
-
 export function ServicesSection({ services }) {
-  const [activeIndex, setActiveIndex] = useState(0)
-  const activeService = services[activeIndex]
-
   return (
     <section id="servicios" className="scroll-mt-28 py-24">
       <Container>
@@ -100,20 +51,10 @@ export function ServicesSection({ services }) {
           description={'Conoce de forma r\u00e1pida qu\u00e9 soluci\u00f3n te conviene seg\u00fan el tipo de pasajeros, la operaci\u00f3n y el objetivo del servicio.'}
         />
 
-        <div className="mt-12 grid gap-4 md:grid-cols-2 xl:grid-cols-4" role="tablist" aria-label="Tipos de servicio">
+        <div className="mt-12 grid gap-5 md:grid-cols-2 xl:grid-cols-4" aria-label="Tipos de servicio">
           {services.map((service, index) => (
-            <ServiceSummaryCard
-              key={service.title}
-              service={service}
-              index={index}
-              isActive={activeIndex === index}
-              onSelect={() => setActiveIndex(index)}
-            />
+            <ServiceCard key={service.title} service={service} index={index} />
           ))}
-        </div>
-
-        <div className="mt-7">
-          <ServicePanel service={activeService} index={activeIndex} />
         </div>
       </Container>
     </section>
