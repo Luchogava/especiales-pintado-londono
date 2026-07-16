@@ -10,7 +10,12 @@ export function Header({ navigation, whatsappLink }) {
       />
       <Container className="relative py-2.5">
         <div className="flex items-center justify-between gap-4">
-          <a href="#inicio" className="max-w-[14rem] sm:max-w-[17rem]" aria-label="Ir al inicio">
+          <a
+            href="#inicio"
+            title="Volver al inicio"
+            className="group max-w-[14rem] rounded-2xl transition hover:-translate-y-0.5 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-green focus-visible:ring-offset-2 focus-visible:ring-offset-white sm:max-w-[17rem]"
+            aria-label="Volver al inicio de la página"
+          >
             <BrandLogo />
           </a>
 
