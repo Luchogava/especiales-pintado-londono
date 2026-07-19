@@ -28,7 +28,7 @@ function App() {
   const whatsappLink = `https://wa.me/${company.phoneRaw}?text=${encodeURIComponent(whatsappMessage)}`
 
   return (
-    <div className="min-h-screen bg-white font-body text-slate-900">
+    <div className="min-h-screen overflow-x-hidden bg-white font-body text-slate-900">
       <Header navigation={navigation} whatsappLink={whatsappLink} />
       <main>
         <Hero company={company} whatsappLink={whatsappLink} />
