@@ -3,7 +3,7 @@ import { Container } from './Container'
 
 export function Header({ navigation, whatsappLink }) {
   return (
-    <header className="sticky left-0 right-0 top-0 z-40 w-full max-w-full overflow-hidden border-b border-brand-silver/70 bg-[linear-gradient(90deg,#f7f9fc_0%,#ffffff_46%,#e8eef5_100%)] shadow-[0_16px_42px_rgba(6,34,75,0.16)]">
+    <header className="sticky left-0 right-0 top-0 z-40 w-full max-w-full overflow-hidden border-b border-brand-green/45 bg-[linear-gradient(90deg,#040B16_0%,#06224B_52%,#0b231e_100%)] shadow-[0_16px_42px_rgba(4,11,22,0.28)]">
       <div
         className="absolute inset-x-0 bottom-0 h-[3px] bg-[linear-gradient(90deg,#06224B_0%,#74C043_64%,#E33239_100%)]"
         aria-hidden="true"
@@ -13,7 +13,7 @@ export function Header({ navigation, whatsappLink }) {
           <a
             href="#inicio"
             title="Volver al inicio"
-            className="group w-[10.75rem] min-w-0 shrink rounded-2xl transition hover:-translate-y-0.5 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-green focus-visible:ring-offset-2 focus-visible:ring-offset-white min-[390px]:w-[12rem] sm:w-[12.5rem] lg:w-[13.5rem]"
+            className="group w-[10.75rem] min-w-0 shrink rounded-2xl transition hover:-translate-y-0.5 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-green focus-visible:ring-offset-2 focus-visible:ring-offset-brand-ink min-[390px]:w-[12rem] sm:w-[12.5rem] lg:w-[13.5rem]"
             aria-label={'Volver al inicio de la p\u00e1gina'}
           >
             <BrandLogo />
@@ -24,7 +24,7 @@ export function Header({ navigation, whatsappLink }) {
               <a
                 key={item.href}
                 href={item.href}
-                className="text-sm font-extrabold text-brand-navy transition hover:text-brand-green"
+                className="text-sm font-extrabold text-slate-100 transition hover:text-brand-green"
               >
                 {item.label}
               </a>

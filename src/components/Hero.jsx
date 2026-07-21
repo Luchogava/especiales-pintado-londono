@@ -34,15 +34,13 @@ export function Hero({ company, whatsappLink }) {
             {company.founded} movilizando personas en Colombia
           </div>
 
-          <div className="mt-7 max-w-[42rem] rounded-[2rem] border border-brand-silver/15 bg-[linear-gradient(145deg,rgba(255,255,255,0.12)_0%,rgba(255,255,255,0.04)_30%,rgba(6,34,75,0.16)_100%)] p-2 shadow-[0_28px_70px_rgba(0,0,0,0.32)]">
-            <div className="overflow-hidden rounded-[1.45rem] border border-white/75 bg-[linear-gradient(145deg,#ffffff_0%,#f5f7fa_52%,#e4e9ef_100%)] shadow-[inset_0_1px_0_rgba(255,255,255,0.9)]">
-              <div className="flex aspect-[16/9] items-center justify-center px-3 py-3 sm:px-6 sm:py-5">
+          <div className="mt-7 max-w-[42rem] rounded-[1.4rem] border border-brand-silver/20 bg-white p-2 shadow-[0_28px_70px_rgba(0,0,0,0.32)] sm:rounded-[2rem] sm:p-4">
+            <div className="flex aspect-[16/9] items-center justify-center overflow-hidden rounded-[1rem] bg-white sm:rounded-[1.45rem]">
                 <img
-                  src="/letrero-pl-hero-oficial.png"
+                  src="/letrero-pl-oficial-web-2026.png"
                   alt={'Servicios Especiales Pintado Londo\u00f1o, empresa de transporte especial de pasajeros'}
                   className="h-full w-full object-contain"
                 />
-              </div>
             </div>
           </div>
 
