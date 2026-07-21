@@ -34,13 +34,29 @@ export function Hero({ company, whatsappLink }) {
             {company.founded} movilizando personas en Colombia
           </div>
 
-          <div className="mt-7 max-w-[42rem] rounded-[1.4rem] border border-brand-silver/20 bg-[linear-gradient(145deg,rgba(255,255,255,0.14)_0%,rgba(116,192,67,0.08)_48%,rgba(227,50,57,0.06)_100%)] p-2 shadow-[0_28px_70px_rgba(0,0,0,0.32)] sm:rounded-[2rem] sm:p-4">
-            <div className="flex aspect-[16/9] items-center justify-center overflow-hidden rounded-[1rem] bg-brand-ink sm:rounded-[1.45rem]">
-              <img
-                src="/letrero-pl-integrado-azul.png"
-                alt={'Servicios Especiales Pintado Londo\u00f1o, empresa de transporte especial de pasajeros'}
-                className="h-full w-full object-cover sm:object-contain"
-              />
+          <div
+            className="mt-7 max-w-[42rem] overflow-hidden rounded-[1.4rem] border border-brand-silver/20 bg-[radial-gradient(circle_at_18%_22%,rgba(116,192,67,0.22),transparent_25%),linear-gradient(135deg,#06172f_0%,#040b16_56%,#0b241f_100%)] p-5 shadow-[0_28px_70px_rgba(0,0,0,0.32)] sm:rounded-[2rem] sm:p-8"
+            aria-label={'Servicios Especiales Pintado Londo\u00f1o, empresa de transporte especial de pasajeros'}
+          >
+            <div className="relative">
+              <div className="absolute -right-10 top-0 h-28 w-28 rounded-full bg-brand-green/20 blur-2xl" aria-hidden="true" />
+              <div className="absolute -bottom-8 left-0 h-24 w-24 rounded-full bg-brand-red/10 blur-2xl" aria-hidden="true" />
+              <p className="relative text-[0.68rem] font-black uppercase tracking-[0.34em] text-brand-silver sm:text-sm">
+                Servicios Especiales
+              </p>
+              <div className="relative mt-3 font-display text-[2.45rem] font-black uppercase leading-[0.9] tracking-[-0.08em] text-white sm:text-[4.35rem]">
+                <span className="block text-brand-silver drop-shadow-[0_2px_0_rgba(255,255,255,0.18)]">Pintado</span>
+                <span className="block bg-[linear-gradient(180deg,#a7e765_0%,#74c043_44%,#3f7c22_100%)] bg-clip-text text-transparent drop-shadow-[0_2px_0_rgba(255,255,255,0.14)]">
+                  {'Londo\u00f1o'}
+                </span>
+              </div>
+              <div className="relative mt-5 flex items-center gap-3">
+                <span className="h-px flex-1 bg-[linear-gradient(90deg,#74C043,rgba(217,221,228,0.55))]" aria-hidden="true" />
+                <span className="rounded-full border border-brand-green/40 bg-brand-ink/70 px-4 py-2 text-[0.68rem] font-extrabold uppercase tracking-[0.08em] text-slate-100 sm:text-xs">
+                  Empresa de transporte especial de pasajeros
+                </span>
+                <span className="h-px flex-1 bg-[linear-gradient(90deg,rgba(217,221,228,0.55),#E33239)]" aria-hidden="true" />
+              </div>
             </div>
           </div>
 
