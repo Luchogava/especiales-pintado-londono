@@ -35,11 +35,11 @@ export function Hero({ company, whatsappLink }) {
           </div>
 
           <div className="mt-7 max-w-[42rem] rounded-[1.4rem] border border-brand-silver/20 bg-[linear-gradient(145deg,rgba(255,255,255,0.14)_0%,rgba(116,192,67,0.08)_48%,rgba(227,50,57,0.06)_100%)] p-2 shadow-[0_28px_70px_rgba(0,0,0,0.32)] sm:rounded-[2rem] sm:p-4">
-            <div className="flex aspect-[16/9] items-center justify-center overflow-hidden rounded-[1rem] bg-[linear-gradient(135deg,#eef3f8_0%,#d9dde4_42%,#f7f9fb_72%,#dce8dd_100%)] sm:rounded-[1.45rem]">
+            <div className="flex aspect-[16/9] items-center justify-center overflow-hidden rounded-[1rem] bg-brand-ink sm:rounded-[1.45rem]">
               <img
-                src="/letrero-pl-oficial-web-2026.png"
+                src="/letrero-pl-integrado-azul.png"
                 alt={'Servicios Especiales Pintado Londo\u00f1o, empresa de transporte especial de pasajeros'}
-                className="h-full w-full object-contain mix-blend-multiply"
+                className="h-full w-full object-cover sm:object-contain"
               />
             </div>
           </div>
