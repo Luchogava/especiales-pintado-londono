@@ -13,7 +13,7 @@ export function Header({ navigation, whatsappLink }) {
           <a
             href="#inicio"
             title="Volver al inicio"
-            className="group w-[12rem] min-w-0 shrink rounded-2xl transition hover:-translate-y-0.5 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-green focus-visible:ring-offset-2 focus-visible:ring-offset-white min-[390px]:w-[13.25rem] sm:w-[12.5rem] lg:w-[13.5rem]"
+            className="group w-[10.75rem] min-w-0 shrink rounded-2xl transition hover:-translate-y-0.5 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-green focus-visible:ring-offset-2 focus-visible:ring-offset-white min-[390px]:w-[12rem] sm:w-[12.5rem] lg:w-[13.5rem]"
             aria-label={'Volver al inicio de la p\u00e1gina'}
           >
             <BrandLogo />
