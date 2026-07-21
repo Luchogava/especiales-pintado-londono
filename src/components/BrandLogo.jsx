@@ -13,11 +13,13 @@ export function BrandLogo() {
           Transporte especial de pasajeros
         </span>
       </div>
-      <img
-        src="/letrero-pl-oficial-web-2026.png"
-        alt={'Servicios Especiales Pintado Londo\u00f1o'}
-        className="hidden h-auto w-full max-w-full rounded-xl bg-white object-contain p-1 shadow-[0_10px_24px_rgba(6,34,75,0.18)] transition group-hover:shadow-[0_14px_30px_rgba(6,34,75,0.24)] sm:block"
-      />
+      <div className="hidden overflow-hidden rounded-xl bg-[linear-gradient(135deg,#f4f7fb_0%,#d9dde4_46%,#edf3f7_100%)] p-1 shadow-[0_10px_24px_rgba(6,34,75,0.18)] transition group-hover:shadow-[0_14px_30px_rgba(6,34,75,0.24)] sm:block">
+        <img
+          src="/letrero-pl-oficial-web-2026.png"
+          alt={'Servicios Especiales Pintado Londo\u00f1o'}
+          className="h-auto w-full max-w-full object-contain mix-blend-multiply"
+        />
+      </div>
     </div>
   )
 }
