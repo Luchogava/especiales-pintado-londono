@@ -36,10 +36,10 @@ export function Hero({ company, whatsappLink }) {
 
           <div className="mt-7 max-w-[42rem] rounded-[1.6rem] border border-brand-silver/20 bg-white/5 p-2 shadow-[0_28px_70px_rgba(0,0,0,0.32)] sm:rounded-[2rem] sm:p-3">
             <img
-              src="/letrero-institucional-pl.svg"
+              src="/letrero-institucional-pl.png"
               alt={'Servicios Especiales Pintado Londo\u00f1o, empresa de transporte especial de pasajeros'}
-              width="880"
-              height="360"
+              width="1440"
+              height="620"
               className="h-auto w-full rounded-[1.2rem] object-contain sm:rounded-[1.65rem]"
               fetchPriority="high"
             />
