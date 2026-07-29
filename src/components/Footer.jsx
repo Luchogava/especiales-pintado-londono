@@ -1,15 +1,14 @@
 import { Container } from './Container'
+import { BrandLogo } from './BrandLogo'
 
 export function Footer({ company, navigation, whatsappLink }) {
   return (
     <footer className="bg-[#050c16] py-14 text-slate-300">
       <Container className="grid gap-10 lg:grid-cols-[1.2fr_0.8fr_0.8fr]">
         <div>
-          <img
-            src="/letrero-pl-oficial.png"
-            alt={'Letrero Servicios Especiales Pintado Londo\u00f1o'}
-            className="h-20 w-auto max-w-full rounded-xl object-contain"
-          />
+          <div className="max-w-[14rem]" aria-label={'Servicios Especiales Pintado Londo\u00f1o'}>
+            <BrandLogo />
+          </div>
           <p className="mt-4 max-w-xl leading-8 text-slate-400">
             {'Transporte terrestre especial de pasajeros en Colombia con experiencia, orden y atenci\u00f3n cercana para '}
             cada servicio.

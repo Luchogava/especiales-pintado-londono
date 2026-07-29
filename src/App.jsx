@@ -30,14 +30,14 @@ function App() {
   return (
     <div className="min-h-screen overflow-x-hidden bg-white font-body text-slate-900">
       <Header navigation={navigation} whatsappLink={whatsappLink} />
-      <main>
+      <main id="contenido" tabIndex="-1">
         <Hero company={company} whatsappLink={whatsappLink} />
         <SectionTabs items={sectionTabs} />
         <ServicesSection services={services} />
         <StatsBar stats={stats} />
-        <NewsSection events={newsEvents} company={company} />
         <QuickActionsSection whatsappLink={whatsappLink} />
         <WhyChooseUs reasons={reasons} />
+        <NewsSection events={newsEvents} company={company} />
         <AboutSection values={values} />
         <CareersSection openings={careerOpenings} company={company} />
         <QuoteSection phoneRaw={company.phoneRaw} email={company.email} />

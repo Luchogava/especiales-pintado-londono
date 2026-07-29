@@ -3,7 +3,13 @@ import { Container } from './Container'
 
 export function Header({ navigation, whatsappLink }) {
   return (
-    <header className="sticky left-0 right-0 top-0 z-40 w-full max-w-full overflow-hidden border-b border-brand-green/45 bg-[linear-gradient(90deg,#040B16_0%,#06224B_52%,#0b231e_100%)] shadow-[0_16px_42px_rgba(4,11,22,0.28)]">
+    <header className="sticky left-0 right-0 top-0 z-40 w-full max-w-full overflow-hidden border-b border-brand-green/45 bg-[linear-gradient(90deg,#07162d_0%,#0a2b5b_48%,#102f27_100%)] shadow-[0_16px_42px_rgba(4,11,22,0.28)]">
+      <a
+        href="#contenido"
+        className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:rounded-full focus:bg-white focus:px-5 focus:py-3 focus:text-sm focus:font-extrabold focus:text-brand-navy"
+      >
+        Saltar al contenido principal
+      </a>
       <div
         className="absolute inset-x-0 bottom-0 h-[3px] bg-[linear-gradient(90deg,#06224B_0%,#74C043_64%,#E33239_100%)]"
         aria-hidden="true"
@@ -13,18 +19,18 @@ export function Header({ navigation, whatsappLink }) {
           <a
             href="#inicio"
             title="Volver al inicio"
-            className="group w-[10.75rem] min-w-0 shrink rounded-2xl transition hover:-translate-y-0.5 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-green focus-visible:ring-offset-2 focus-visible:ring-offset-brand-ink min-[390px]:w-[12rem] sm:w-[12.5rem] lg:w-[13.5rem]"
+            className="group w-[10.2rem] min-w-0 shrink rounded-2xl transition hover:-translate-y-0.5 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-green focus-visible:ring-offset-2 focus-visible:ring-offset-brand-ink min-[390px]:w-[11.5rem] sm:w-[12.5rem] lg:w-[13.5rem]"
             aria-label={'Volver al inicio de la p\u00e1gina'}
           >
             <BrandLogo />
           </a>
 
-          <nav className="hidden items-center gap-6 xl:gap-8 lg:flex" aria-label="Principal">
+          <nav className="hidden items-center gap-5 xl:flex xl:gap-7" aria-label="Principal">
             {navigation.map((item) => (
               <a
                 key={item.href}
                 href={item.href}
-                className="text-sm font-extrabold text-slate-100 transition hover:text-brand-green"
+                className="rounded-full px-2 py-2 text-sm font-extrabold text-slate-100 transition hover:bg-white/8 hover:text-brand-green focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-green"
               >
                 {item.label}
               </a>
@@ -35,12 +41,27 @@ export function Header({ navigation, whatsappLink }) {
             href={whatsappLink}
             target="_blank"
             rel="noreferrer"
-            className="shrink-0 rounded-full bg-[#25D366] px-2.5 py-2.5 text-sm font-extrabold text-white shadow-[0_18px_40px_rgba(37,211,102,0.35)] transition hover:-translate-y-0.5 hover:bg-[#1fbe59] min-[390px]:px-3 min-[390px]:py-3 sm:px-5"
+            className="shrink-0 rounded-full bg-[#25D366] px-2.5 py-2.5 text-sm font-extrabold text-white shadow-[0_18px_40px_rgba(37,211,102,0.35)] transition hover:-translate-y-0.5 hover:bg-[#1fbe59] focus:outline-none focus-visible:ring-2 focus-visible:ring-white min-[390px]:px-3 min-[390px]:py-3 sm:px-5"
           >
             <span className="sm:hidden">WhatsApp</span>
             <span className="hidden sm:inline">Cotiza por WhatsApp</span>
           </a>
         </div>
+
+        <nav
+          className="-mx-3 mt-3 flex gap-2 overflow-x-auto px-3 pb-1 xl:hidden"
+          aria-label="Secciones principales"
+        >
+          {navigation.map((item) => (
+            <a
+              key={item.href}
+              href={item.href}
+              className="shrink-0 rounded-full border border-white/12 bg-white/8 px-4 py-2 text-xs font-extrabold text-slate-100 transition hover:border-brand-green hover:text-brand-green focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-green"
+            >
+              {item.label}
+            </a>
+          ))}
+        </nav>
       </Container>
     </header>
   )

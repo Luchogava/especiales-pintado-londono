@@ -27,9 +27,9 @@ export function Hero({ company, whatsappLink }) {
       <div className="absolute right-[-8rem] top-10 h-80 w-80 rounded-full bg-brand-green/15 blur-3xl" />
       <div className="absolute bottom-[-8rem] right-[10%] h-64 w-64 rounded-full bg-brand-red/10 blur-3xl" />
 
-      <Container className="relative grid gap-10 py-16 lg:grid-cols-[1.08fr_0.92fr] lg:items-center lg:py-20">
+      <Container className="relative grid gap-10 py-12 sm:py-16 lg:grid-cols-[1.08fr_0.92fr] lg:items-center lg:py-20">
         <div className="max-w-3xl">
-          <div className="inline-flex items-center gap-2 rounded-full border border-brand-green/25 bg-white/5 px-4 py-2 text-sm text-slate-200">
+          <div className="inline-flex items-center gap-2 rounded-full border border-brand-green/25 bg-white/5 px-4 py-2 text-sm font-semibold text-slate-200">
             <ShieldIcon />
             {company.founded} movilizando personas en Colombia
           </div>
@@ -60,16 +60,24 @@ export function Hero({ company, whatsappLink }) {
             </div>
           </div>
 
-          <h1 className="mt-6 font-display text-4xl font-bold leading-tight sm:text-5xl lg:text-[3.45rem]">
-            Transporte especial de pasajeros con seguridad, puntualidad y buen trato
+          <h1 className="mt-6 font-display text-4xl font-bold leading-tight tracking-[-0.04em] sm:text-5xl lg:text-[3.45rem]">
+            Transporte especial de pasajeros para empresas, colegios y grupos
           </h1>
 
           <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-300 sm:text-xl">{heroDescription}</p>
 
+          <div className="mt-8 grid gap-3 text-sm font-semibold text-slate-200 sm:grid-cols-3">
+            {['Seguridad operativa', 'Cobertura nacional', 'Atenci\u00f3n humana'].map((item) => (
+              <div key={item} className="rounded-2xl border border-white/10 bg-white/5 px-4 py-3">
+                {item}
+              </div>
+            ))}
+          </div>
+
           <div className="mt-10 flex flex-col gap-4 sm:flex-row">
             <a
               href="#cotizacion"
-              className="inline-flex items-center justify-center rounded-full bg-brand-silver px-7 py-4 text-base font-extrabold text-brand-navy shadow-[0_18px_40px_rgba(217,221,228,0.18)] transition hover:-translate-y-0.5 hover:bg-white"
+              className="inline-flex min-h-14 items-center justify-center rounded-full bg-brand-silver px-7 py-4 text-base font-extrabold text-brand-navy shadow-[0_18px_40px_rgba(217,221,228,0.18)] transition hover:-translate-y-0.5 hover:bg-white focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-green"
             >
               {'Solicitar cotizaci\u00f3n'}
             </a>
@@ -77,7 +85,7 @@ export function Hero({ company, whatsappLink }) {
               href={whatsappLink}
               target="_blank"
               rel="noreferrer"
-              className="inline-flex items-center justify-center rounded-full bg-[#25D366] px-7 py-4 text-base font-extrabold text-white shadow-[0_18px_40px_rgba(37,211,102,0.38)] transition hover:-translate-y-0.5 hover:bg-[#1fbe59]"
+              className="inline-flex min-h-14 items-center justify-center rounded-full bg-[#25D366] px-7 py-4 text-base font-extrabold text-white shadow-[0_18px_40px_rgba(37,211,102,0.38)] transition hover:-translate-y-0.5 hover:bg-[#1fbe59] focus:outline-none focus-visible:ring-2 focus-visible:ring-white"
             >
               Hablar por WhatsApp
             </a>
@@ -95,11 +103,26 @@ export function Hero({ company, whatsappLink }) {
                   src="/40-anos.png"
                   alt={yearsAlt}
                   className="mx-auto mt-4 w-full max-w-[14rem] object-contain lg:max-w-[15rem]"
+                  decoding="async"
                 />
                 <p className="mt-4 text-center text-sm leading-6 text-slate-300">
                   Trayectoria, experiencia operativa y confianza para movilizar personas en todo tipo de servicio.
                 </p>
               </div>
+            </div>
+            <div className="mt-5 grid gap-3">
+              {[
+                ['1', 'Recibimos la necesidad'],
+                ['2', 'Validamos ruta, horario y pasajeros'],
+                ['3', 'Acompa\u00f1amos la cotizaci\u00f3n'],
+              ].map(([number, text]) => (
+                <div key={number} className="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/5 p-3">
+                  <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-brand-green text-sm font-black text-white">
+                    {number}
+                  </span>
+                  <span className="text-sm font-semibold text-slate-200">{text}</span>
+                </div>
+              ))}
             </div>
           </div>
         </div>

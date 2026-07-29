@@ -83,6 +83,8 @@ export function QuoteSection({ phoneRaw, email }) {
               placeholder="Tu nombre"
               value={formData.fullName}
               onChange={handleChange}
+              autoComplete="name"
+              required
             />
             <Field
               label={'Empresa o instituci\u00f3n'}
@@ -90,6 +92,7 @@ export function QuoteSection({ phoneRaw, email }) {
               placeholder="Nombre de la empresa"
               value={formData.company}
               onChange={handleChange}
+              autoComplete="organization"
             />
             <Field
               label={'Tel\u00e9fono'}
@@ -98,6 +101,8 @@ export function QuoteSection({ phoneRaw, email }) {
               placeholder="+57"
               value={formData.phone}
               onChange={handleChange}
+              autoComplete="tel"
+              required
             />
             <Field
               label={'Correo electr\u00f3nico'}
@@ -106,6 +111,7 @@ export function QuoteSection({ phoneRaw, email }) {
               placeholder="correo@empresa.com"
               value={formData.email}
               onChange={handleChange}
+              autoComplete="email"
             />
             <label className="md:col-span-2">
               <span className="mb-2 block text-sm font-bold text-brand-navy">Servicio requerido</span>
@@ -113,6 +119,7 @@ export function QuoteSection({ phoneRaw, email }) {
                 name="service"
                 value={formData.service}
                 onChange={handleChange}
+                required
                 className="w-full rounded-2xl border border-brand-silver/25 bg-slate-50 px-4 py-3.5 outline-none transition focus:border-brand-green focus:bg-white"
               >
                 {serviceOptions.map((option) => (
@@ -175,7 +182,7 @@ export function QuoteSection({ phoneRaw, email }) {
   )
 }
 
-function Field({ label, name, type = 'text', placeholder, value, onChange }) {
+function Field({ label, name, type = 'text', placeholder, value, onChange, autoComplete, required = false }) {
   return (
     <label>
       <span className="mb-2 block text-sm font-bold text-brand-navy">{label}</span>
@@ -185,6 +192,8 @@ function Field({ label, name, type = 'text', placeholder, value, onChange }) {
         placeholder={placeholder}
         value={value}
         onChange={onChange}
+        autoComplete={autoComplete}
+        required={required}
         className="w-full rounded-2xl border border-brand-silver/25 bg-slate-50 px-4 py-3.5 outline-none transition focus:border-brand-green focus:bg-white"
       />
     </label>

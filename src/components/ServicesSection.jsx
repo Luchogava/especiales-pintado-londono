@@ -37,6 +37,14 @@ function ServiceCard({ service, index }) {
       </div>
 
       <p className="mt-5 text-base leading-7 text-slate-600">{service.description}</p>
+
+      <a
+        href="#cotizacion"
+        aria-label={`Cotizar ${service.title}`}
+        className="mt-auto inline-flex min-h-12 items-center justify-center rounded-full border border-brand-green/35 px-5 py-3 text-sm font-extrabold text-brand-navy transition hover:border-brand-green hover:bg-brand-green hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-green"
+      >
+        Cotizar este servicio
+      </a>
     </article>
   )
 }

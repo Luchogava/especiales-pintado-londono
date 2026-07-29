@@ -7,14 +7,12 @@ export function QuickActionsSection({ whatsappLink }) {
         <div className="rounded-[2rem] border border-brand-silver/12 bg-[linear-gradient(135deg,#040b16_0%,#06224b_58%,#0c1930_100%)] px-6 py-8 text-white shadow-[0_20px_50px_rgba(5,26,52,0.24)] sm:px-8">
           <div className="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
             <div className="max-w-2xl">
-              <p className="text-sm font-extrabold uppercase tracking-[0.22em] text-brand-green">
-                Hablemos de tu servicio
-              </p>
+              <p className="text-sm font-extrabold uppercase tracking-[0.22em] text-brand-green">Siguiente paso</p>
               <h2 className="mt-3 font-display text-3xl font-bold sm:text-4xl">
-                {'Elige el canal m\u00e1s f\u00e1cil para recibir acompa\u00f1amiento comercial.'}
+                {'Cu\u00e9ntanos qu\u00e9 tipo de traslado necesitas y te orientamos.'}
               </h2>
               <p className="mt-4 text-lg leading-8 text-slate-300">
-                {'Escr\u00edbenos por WhatsApp para una respuesta \u00e1gil o completa el formulario con los datos clave de tu ruta.'}
+                {'Podemos ayudarte con transporte empresarial, escolar, tur\u00edstico, grupal o servicios especiales a la medida.'}
               </p>
             </div>
 
