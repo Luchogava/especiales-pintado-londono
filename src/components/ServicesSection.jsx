@@ -18,7 +18,7 @@ function ServiceIcon({ index }) {
 
 function ServiceCard({ service, index }) {
   return (
-    <article className="group flex h-full flex-col rounded-[1.6rem] border border-brand-silver/25 bg-white p-6 text-brand-navy shadow-[0_18px_44px_rgba(6,34,75,0.08)] transition duration-300 hover:-translate-y-1 hover:border-brand-green/55 hover:shadow-card">
+    <article className="group flex h-full flex-col rounded-[1.6rem] border border-brand-line bg-white p-5 text-brand-navy shadow-[0_18px_44px_rgba(6,34,75,0.08)] transition duration-300 hover:-translate-y-1 hover:border-brand-green/55 hover:shadow-card sm:p-6">
       <div className="flex items-start gap-4">
         <div
           className={`inline-flex h-14 min-w-14 items-center justify-center rounded-2xl text-white shadow-[0_16px_30px_rgba(0,0,0,0.16)] transition group-hover:scale-105 ${service.accent}`}
@@ -31,38 +31,42 @@ function ServiceCard({ service, index }) {
         </div>
       </div>
 
-      <div className="mt-6 rounded-2xl bg-slate-50 p-5">
-        <p className="text-xs font-black uppercase tracking-[0.22em] text-brand-green">Ideal para</p>
+      <div className="mt-6 rounded-2xl border border-brand-line bg-brand-porcelain p-4">
+        <p className="text-xs font-black uppercase tracking-[0.22em] text-brand-green">Clientes frecuentes</p>
         <p className="mt-3 text-sm font-semibold leading-6 text-slate-700">{service.idealFor}</p>
       </div>
 
-      <p className="mt-5 text-base leading-7 text-slate-600">{service.description}</p>
-
-      <a
-        href="#cotizacion"
-        aria-label={`Cotizar ${service.title}`}
-        className="mt-auto inline-flex min-h-12 items-center justify-center rounded-full border border-brand-green/35 px-5 py-3 text-sm font-extrabold text-brand-navy transition hover:border-brand-green hover:bg-brand-green hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-green"
-      >
-        Cotizar este servicio
-      </a>
+      <p className="mt-5 text-sm leading-6 text-slate-600">{service.description}</p>
     </article>
   )
 }
 
 export function ServicesSection({ services }) {
   return (
-    <section id="servicios" className="scroll-mt-28 py-24">
+    <section id="servicios" className="relative scroll-mt-28 py-20 sm:py-24">
       <Container>
         <SectionHeading
           eyebrow="Servicios"
-          title="Soluciones pensadas para cada tipo de traslado"
-          description={'Conoce de forma r\u00e1pida qu\u00e9 soluci\u00f3n te conviene seg\u00fan el tipo de pasajeros, la operaci\u00f3n y el objetivo del servicio.'}
+          title="Elige el tipo de transporte que necesitas"
+          description={'Cuatro l\u00edneas de servicio claras para empresas, colegios, turismo, grupos y necesidades especiales.'}
         />
 
         <div className="mt-12 grid gap-5 md:grid-cols-2 xl:grid-cols-4" aria-label="Tipos de servicio">
           {services.map((service, index) => (
             <ServiceCard key={service.title} service={service} index={index} />
           ))}
+        </div>
+
+        <div className="mt-10 flex flex-col items-start gap-4 rounded-[1.8rem] border border-brand-line bg-white/85 p-5 shadow-[0_18px_48px_rgba(6,34,75,0.08)] sm:flex-row sm:items-center sm:justify-between sm:p-6">
+          <p className="max-w-2xl text-base font-semibold leading-7 text-slate-700">
+            Si no tienes claro cu\u00e1l servicio se ajusta mejor, cu\u00e9ntanos tu necesidad y te orientamos.
+          </p>
+          <a
+            href="#cotizacion"
+            className="inline-flex min-h-12 shrink-0 items-center justify-center rounded-full bg-brand-green px-6 py-3 text-sm font-extrabold text-white shadow-[0_16px_34px_rgba(116,192,67,0.28)] transition hover:-translate-y-0.5 hover:bg-brand-navy focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-green"
+          >
+            Solicitar orientaci\u00f3n
+          </a>
         </div>
       </Container>
     </section>

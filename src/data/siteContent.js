@@ -21,39 +21,39 @@ export const navigation = [
 
 export const sectionTabs = [
   {
-    eyebrow: '01',
+    eyebrow: 'Soluciones',
     title: 'Servicios',
-    description: 'Elige la soluci\u00f3n seg\u00fan el tipo de traslado que necesitas.',
+    description: 'Empresarial, escolar, turismo y servicios especiales.',
     href: '#servicios',
   },
   {
-    eyebrow: '02',
+    eyebrow: 'Respaldo',
     title: 'Confianza',
-    description: 'Revisa trayectoria, cobertura nacional y certificaciones.',
+    description: 'Trayectoria, cobertura nacional y certificaciones.',
     href: '#confianza',
   },
   {
-    eyebrow: '03',
+    eyebrow: 'Cultura',
     title: 'Actualidad',
-    description: 'Eventos, noticias y momentos clave de nuestra operaci\u00f3n.',
+    description: 'Eventos, noticias y momentos institucionales.',
     href: '#actualidad',
   },
   {
-    eyebrow: '04',
+    eyebrow: 'Empresa',
     title: 'Nosotros',
-    description: 'Conoce la empresa, su enfoque y su informaci\u00f3n institucional.',
+    description: 'Historia, enfoque, misi\u00f3n, visi\u00f3n y valores.',
     href: '#nosotros',
   },
   {
-    eyebrow: '05',
+    eyebrow: 'Talento',
     title: 'Convocatorias',
-    description: 'Consulta oportunidades laborales y comparte enlaces directos.',
+    description: 'Oportunidades laborales y perfiles requeridos.',
     href: '#convocatorias',
   },
   {
-    eyebrow: '06',
+    eyebrow: 'Contacto',
     title: 'Cotizaci\u00f3n',
-    description: 'Solicita acompa\u00f1amiento comercial por WhatsApp o formulario.',
+    description: 'WhatsApp, correo y formulario comercial.',
     href: '#cotizacion',
   },
 ]
@@ -172,11 +172,9 @@ export const services = [
 ]
 
 export const reasons = [
-  'Experiencia comprobada desde 1984 en transporte especial de pasajeros.',
-  'Enfoque permanente en seguridad, puntualidad, confianza y buen trato.',
-  'Cobertura nacional para operaciones recurrentes, eventuales o por proyecto.',
-  'Acompa\u00f1amiento comercial \u00e1gil para cotizaciones y coordinaci\u00f3n de servicio.',
-  'Cultura de servicio orientada al orden, la comodidad y la tranquilidad del usuario.',
+  'Trayectoria comprobada desde 1984 en transporte especial de pasajeros.',
+  'Operaci\u00f3n enfocada en seguridad, puntualidad y buen trato.',
+  'Cobertura nacional para servicios recurrentes, eventuales o por proyecto.',
   'Respaldo en calidad y seguridad con certificaciones ISO vigentes.',
 ]
 
