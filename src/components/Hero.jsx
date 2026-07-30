@@ -34,15 +34,17 @@ export function Hero({ company, whatsappLink }) {
             {company.founded} movilizando personas en Colombia
           </div>
 
-          <div className="mt-7 max-w-[42rem] rounded-[1.6rem] border border-brand-silver/20 bg-white/5 p-2 shadow-[0_28px_70px_rgba(0,0,0,0.32)] sm:rounded-[2rem] sm:p-3">
-            <img
-              src="/letrero-institucional-pl.png"
-              alt={'Servicios Especiales Pintado Londo\u00f1o, empresa de transporte especial de pasajeros'}
-              width="1440"
-              height="620"
-              className="h-auto w-full rounded-[1.2rem] object-contain sm:rounded-[1.65rem]"
-              fetchPriority="high"
-            />
+          <div className="mt-7 max-w-[42rem] rounded-[1.8rem] border border-white/12 bg-[linear-gradient(145deg,rgba(217,221,228,0.14),rgba(255,255,255,0.04)_42%,rgba(116,192,67,0.08))] p-2 shadow-[0_28px_70px_rgba(0,0,0,0.34)] sm:rounded-[2.1rem] sm:p-3">
+            <div className="overflow-hidden rounded-[1.35rem] border border-brand-silver/70 bg-[linear-gradient(135deg,#f8fafc_0%,#ffffff_48%,#edf2f7_100%)] shadow-[inset_0_1px_0_rgba(255,255,255,0.9),0_18px_40px_rgba(4,11,22,0.24)] sm:rounded-[1.75rem]">
+              <img
+                src="/letrero-institucional-pl.png"
+                alt={'Servicios Especiales Pintado Londo\u00f1o, empresa de transporte especial de pasajeros'}
+                width="1600"
+                height="900"
+                className="block h-auto w-full object-contain"
+                fetchPriority="high"
+              />
+            </div>
           </div>
 
           <h1 className="mt-6 font-display text-4xl font-bold leading-tight tracking-[-0.04em] sm:text-5xl lg:text-[3.45rem]">
