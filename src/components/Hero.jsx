@@ -21,14 +21,19 @@ export function Hero({ company, whatsappLink }) {
   const yearsLabel = 'M\u00e1s de 40 a\u00f1os'
   const yearsAlt = 'M\u00e1s de 40 a\u00f1os movilizando personas'
   return (
-    <section id="inicio" className="relative overflow-hidden bg-brand-ink text-white">
-      <div className="absolute inset-0 bg-hero-grid bg-[size:42px_42px] opacity-15" />
-      <div className="absolute left-[-8rem] top-16 h-72 w-72 rounded-full bg-brand-blue/35 blur-3xl" />
-      <div className="absolute right-[-8rem] top-10 h-80 w-80 rounded-full bg-brand-green/15 blur-3xl" />
-      <div className="absolute bottom-[-8rem] right-[10%] h-64 w-64 rounded-full bg-brand-red/10 blur-3xl" />
+    <section id="inicio" className="relative overflow-hidden bg-transparent py-6 sm:py-10">
+      <div className="absolute left-[-8rem] top-16 h-72 w-72 rounded-full bg-brand-blue/18 blur-3xl" aria-hidden="true" />
+      <div className="absolute right-[-8rem] top-10 h-80 w-80 rounded-full bg-brand-green/14 blur-3xl" aria-hidden="true" />
+      <div className="absolute bottom-[-8rem] right-[10%] h-64 w-64 rounded-full bg-brand-red/8 blur-3xl" aria-hidden="true" />
 
-      <Container className="relative grid gap-10 py-12 sm:py-16 lg:grid-cols-[1.08fr_0.92fr] lg:items-center lg:py-20">
-        <div className="max-w-3xl">
+      <Container className="relative">
+        <div className="relative grid overflow-hidden rounded-[2rem] border border-brand-line bg-[linear-gradient(135deg,#040b16_0%,#06224b_58%,#0f2f26_100%)] px-5 py-8 text-white shadow-[0_30px_90px_rgba(6,34,75,0.22)] sm:rounded-[2.6rem] sm:px-8 sm:py-10 lg:grid-cols-[1.08fr_0.92fr] lg:items-center lg:gap-10 lg:px-10 lg:py-14">
+          <div className="absolute inset-0 bg-hero-grid bg-[size:42px_42px] opacity-12" aria-hidden="true" />
+          <div className="absolute left-[-8rem] top-[-6rem] h-72 w-72 rounded-full bg-brand-blue/35 blur-3xl" aria-hidden="true" />
+          <div className="absolute right-[-8rem] top-0 h-80 w-80 rounded-full bg-brand-green/15 blur-3xl" aria-hidden="true" />
+          <div className="absolute bottom-[-8rem] right-[10%] h-64 w-64 rounded-full bg-brand-red/10 blur-3xl" aria-hidden="true" />
+
+          <div className="relative max-w-3xl">
           <div className="inline-flex items-center gap-2 rounded-full border border-brand-green/25 bg-white/5 px-4 py-2 text-sm font-semibold text-slate-200">
             <ShieldIcon />
             {company.founded} movilizando personas en Colombia
@@ -77,9 +82,9 @@ export function Hero({ company, whatsappLink }) {
               Hablar por WhatsApp
             </a>
           </div>
-        </div>
+          </div>
 
-        <div className="relative">
+          <div className="relative mt-10 lg:mt-0">
           <div className="mx-auto max-w-[22rem] rounded-[2rem] border border-brand-silver/15 bg-white/10 p-5 shadow-glow backdrop-blur lg:mr-0 lg:max-w-[24rem]">
             <div className="rounded-[1.7rem] border border-white/10 bg-gradient-to-br from-white/10 via-white/5 to-brand-red/10 p-6">
               <div className="rounded-[1.4rem] border border-white/10 bg-brand-ink/40 p-4">
@@ -111,6 +116,7 @@ export function Hero({ company, whatsappLink }) {
                 </div>
               ))}
             </div>
+          </div>
           </div>
         </div>
       </Container>
