@@ -15,6 +15,38 @@ function ShieldIcon() {
   )
 }
 
+function BrandHeroMark() {
+  return (
+    <div className="relative mt-7 max-w-[42rem] overflow-hidden rounded-[1.8rem] border border-white/12 bg-[radial-gradient(circle_at_88%_18%,rgba(116,192,67,0.22),transparent_34%),radial-gradient(circle_at_8%_20%,rgba(38,120,210,0.2),transparent_28%),linear-gradient(135deg,rgba(6,34,75,0.96)_0%,rgba(4,11,22,0.98)_58%,rgba(15,47,38,0.92)_100%)] p-5 shadow-[0_28px_70px_rgba(0,0,0,0.34)] sm:rounded-[2.1rem] sm:p-7">
+      <div className="absolute inset-0 bg-hero-grid bg-[size:34px_34px] opacity-10" aria-hidden="true" />
+      <div className="absolute -right-16 -top-16 h-44 w-44 rounded-full bg-brand-green/18 blur-3xl" aria-hidden="true" />
+      <div className="absolute -bottom-20 -left-16 h-48 w-48 rounded-full bg-brand-blue/28 blur-3xl" aria-hidden="true" />
+
+      <div className="relative">
+        <p className="text-[0.72rem] font-black uppercase tracking-[0.45em] text-slate-200/90 sm:text-sm">
+          Servicios Especiales
+        </p>
+        <div className="mt-4">
+          <span className="block bg-[linear-gradient(180deg,#ffffff_0%,#d9dde4_38%,#7c8794_100%)] bg-clip-text font-display text-[clamp(3.25rem,12vw,6.9rem)] font-black uppercase leading-[0.82] tracking-[-0.08em] text-transparent drop-shadow-[0_10px_18px_rgba(0,0,0,0.36)]">
+            Pintado
+          </span>
+          <span className="block bg-[linear-gradient(180deg,#c9ff88_0%,#74c043_48%,#315f17_100%)] bg-clip-text font-display text-[clamp(3.2rem,12vw,6.6rem)] font-black uppercase leading-[0.86] tracking-[-0.08em] text-transparent drop-shadow-[0_10px_18px_rgba(0,0,0,0.34)]">
+            {'Londo\u00f1o'}
+          </span>
+        </div>
+
+        <div className="mt-5 flex items-center gap-3">
+          <span className="h-px flex-1 bg-gradient-to-r from-transparent via-brand-green to-brand-green/20" aria-hidden="true" />
+          <span className="rounded-full border border-brand-green/40 bg-brand-ink/78 px-4 py-2 text-center text-[0.58rem] font-black uppercase tracking-[0.14em] text-white shadow-[0_12px_30px_rgba(0,0,0,0.22)] sm:text-xs">
+            Empresa de transporte especial de pasajeros
+          </span>
+          <span className="h-px flex-1 bg-gradient-to-r from-brand-red/50 via-brand-red to-transparent" aria-hidden="true" />
+        </div>
+      </div>
+    </div>
+  )
+}
+
 export function Hero({ company, whatsappLink }) {
   const heroDescription =
     'Soluciones de transporte especial para empresas, instituciones educativas, grupos tur\u00edsticos y servicios a la medida, con operaci\u00f3n nacional, atenci\u00f3n humana y m\u00e1s de 40 a\u00f1os de experiencia.'
@@ -39,18 +71,7 @@ export function Hero({ company, whatsappLink }) {
             {company.founded} movilizando personas en Colombia
           </div>
 
-          <div className="mt-7 max-w-[42rem] rounded-[1.8rem] border border-white/12 bg-[linear-gradient(145deg,rgba(217,221,228,0.14),rgba(255,255,255,0.04)_42%,rgba(116,192,67,0.08))] p-2 shadow-[0_28px_70px_rgba(0,0,0,0.34)] sm:rounded-[2.1rem] sm:p-3">
-            <div className="overflow-hidden rounded-[1.35rem] border border-brand-silver/70 bg-[linear-gradient(135deg,#f8fafc_0%,#ffffff_48%,#edf2f7_100%)] shadow-[inset_0_1px_0_rgba(255,255,255,0.9),0_18px_40px_rgba(4,11,22,0.24)] sm:rounded-[1.75rem]">
-              <img
-                src="/letrero-institucional-pl.png"
-                alt={'Servicios Especiales Pintado Londo\u00f1o, empresa de transporte especial de pasajeros'}
-                width="1600"
-                height="900"
-                className="block h-auto w-full object-contain"
-                fetchPriority="high"
-              />
-            </div>
-          </div>
+          <BrandHeroMark />
 
           <h1 className="mt-6 font-display text-4xl font-bold leading-tight tracking-[-0.04em] sm:text-5xl lg:text-[3.45rem]">
             Transporte especial de pasajeros para empresas, colegios y grupos
