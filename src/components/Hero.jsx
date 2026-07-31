@@ -17,33 +17,22 @@ function ShieldIcon() {
 
 function BrandHeroMark() {
   return (
-    <div className="relative mt-7 max-w-[42rem] overflow-hidden rounded-[1.8rem] border border-white/12 bg-[radial-gradient(circle_at_88%_18%,rgba(116,192,67,0.22),transparent_34%),radial-gradient(circle_at_8%_20%,rgba(38,120,210,0.2),transparent_28%),linear-gradient(135deg,rgba(6,34,75,0.96)_0%,rgba(4,11,22,0.98)_58%,rgba(15,47,38,0.92)_100%)] p-5 shadow-[0_28px_70px_rgba(0,0,0,0.34)] sm:rounded-[2.1rem] sm:p-7">
+    <figure className="relative mt-7 max-w-[42rem] overflow-hidden rounded-[1.8rem] border border-white/12 bg-[linear-gradient(135deg,rgba(6,34,75,0.72),rgba(4,11,22,0.96)_48%,rgba(15,47,38,0.72))] p-2 shadow-[0_28px_70px_rgba(0,0,0,0.34)] sm:rounded-[2.1rem] sm:p-3">
       <div className="absolute inset-0 bg-hero-grid bg-[size:34px_34px] opacity-10" aria-hidden="true" />
-      <div className="absolute -right-16 -top-16 h-44 w-44 rounded-full bg-brand-green/18 blur-3xl" aria-hidden="true" />
-      <div className="absolute -bottom-20 -left-16 h-48 w-48 rounded-full bg-brand-blue/28 blur-3xl" aria-hidden="true" />
+      <div className="absolute left-0 top-0 h-full w-24 bg-brand-blue/25 blur-2xl" aria-hidden="true" />
+      <div className="absolute right-0 top-0 h-full w-28 bg-brand-green/18 blur-2xl" aria-hidden="true" />
 
-      <div className="relative">
-        <p className="text-[0.72rem] font-black uppercase tracking-[0.45em] text-slate-200/90 sm:text-sm">
-          Servicios Especiales
-        </p>
-        <div className="mt-4">
-          <span className="block bg-[linear-gradient(180deg,#ffffff_0%,#d9dde4_38%,#7c8794_100%)] bg-clip-text font-display text-[clamp(3.25rem,12vw,6.9rem)] font-black uppercase leading-[0.82] tracking-[-0.08em] text-transparent drop-shadow-[0_10px_18px_rgba(0,0,0,0.36)]">
-            Pintado
-          </span>
-          <span className="block bg-[linear-gradient(180deg,#c9ff88_0%,#74c043_48%,#315f17_100%)] bg-clip-text font-display text-[clamp(3.2rem,12vw,6.6rem)] font-black uppercase leading-[0.86] tracking-[-0.08em] text-transparent drop-shadow-[0_10px_18px_rgba(0,0,0,0.34)]">
-            {'Londo\u00f1o'}
-          </span>
-        </div>
-
-        <div className="mt-5 flex items-center gap-3">
-          <span className="h-px flex-1 bg-gradient-to-r from-transparent via-brand-green to-brand-green/20" aria-hidden="true" />
-          <span className="rounded-full border border-brand-green/40 bg-brand-ink/78 px-4 py-2 text-center text-[0.58rem] font-black uppercase tracking-[0.14em] text-white shadow-[0_12px_30px_rgba(0,0,0,0.22)] sm:text-xs">
-            Empresa de transporte especial de pasajeros
-          </span>
-          <span className="h-px flex-1 bg-gradient-to-r from-brand-red/50 via-brand-red to-transparent" aria-hidden="true" />
-        </div>
+      <div className="relative overflow-hidden rounded-[1.35rem] border border-brand-green/25 bg-brand-ink/72 px-3 py-4 shadow-[inset_0_1px_0_rgba(255,255,255,0.08)] sm:rounded-[1.75rem] sm:px-5 sm:py-5">
+        <img
+          src="/letrero-pl-integrado-azul.png"
+          alt={'Servicios Especiales Pintado Londo\u00f1o, empresa de transporte especial de pasajeros'}
+          width="1400"
+          height="500"
+          className="mx-auto block h-auto w-full max-w-[38rem] object-contain"
+          fetchPriority="high"
+        />
       </div>
-    </div>
+    </figure>
   )
 }
 
