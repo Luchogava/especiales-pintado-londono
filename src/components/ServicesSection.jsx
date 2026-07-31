@@ -41,7 +41,7 @@ function ServiceCard({ service, index }) {
   )
 }
 
-export function ServicesSection({ services }) {
+export function ServicesSection({ services, whatsappLink }) {
   return (
     <section id="servicios" className="relative scroll-mt-28 py-20 sm:py-24">
       <Container>
@@ -57,16 +57,35 @@ export function ServicesSection({ services }) {
           ))}
         </div>
 
-        <div className="mt-10 flex flex-col items-start gap-4 rounded-[1.8rem] border border-brand-line bg-white/85 p-5 shadow-[0_18px_48px_rgba(6,34,75,0.08)] sm:flex-row sm:items-center sm:justify-between sm:p-6">
-          <p className="max-w-2xl text-base font-semibold leading-7 text-slate-700">
-            Si no tienes claro cu\u00e1l servicio se ajusta mejor, cu\u00e9ntanos tu necesidad y te orientamos.
-          </p>
-          <a
-            href="#cotizacion"
-            className="inline-flex min-h-12 shrink-0 items-center justify-center rounded-full bg-brand-green px-6 py-3 text-sm font-extrabold text-white shadow-[0_16px_34px_rgba(116,192,67,0.28)] transition hover:-translate-y-0.5 hover:bg-brand-navy focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-green"
-          >
-            Solicitar orientaci\u00f3n
-          </a>
+        <div className="mt-10 overflow-hidden rounded-[1.9rem] border border-brand-green/20 bg-[linear-gradient(135deg,#061325_0%,#06224b_62%,#0f2f26_100%)] p-6 text-white shadow-[0_22px_58px_rgba(6,34,75,0.18)] sm:p-7">
+          <div className="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
+            <div className="max-w-3xl">
+              <p className="text-sm font-black uppercase tracking-[0.24em] text-brand-green">Cotizaci\u00f3n orientada</p>
+              <h3 className="mt-3 font-display text-2xl font-bold sm:text-3xl">
+                Dinos qu\u00e9 necesitas movilizar y te ayudamos a definir la mejor soluci\u00f3n.
+              </h3>
+              <p className="mt-3 text-base leading-7 text-slate-300">
+                Comparte origen, destino, fecha, horarios y n\u00famero de pasajeros. Con esa informaci\u00f3n podemos orientarte mejor desde el primer contacto.
+              </p>
+            </div>
+
+            <div className="flex shrink-0 flex-col gap-3 sm:flex-row lg:flex-col xl:flex-row">
+              <a
+                href={whatsappLink}
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex min-h-12 items-center justify-center rounded-full bg-[#25D366] px-6 py-3 text-sm font-extrabold text-white shadow-[0_16px_34px_rgba(37,211,102,0.34)] transition hover:-translate-y-0.5 hover:bg-[#1fbe59] focus:outline-none focus-visible:ring-2 focus-visible:ring-white"
+              >
+                Cotizar por WhatsApp
+              </a>
+              <a
+                href="#cotizacion"
+                className="inline-flex min-h-12 items-center justify-center rounded-full bg-white px-6 py-3 text-sm font-extrabold text-brand-navy shadow-[0_16px_34px_rgba(255,255,255,0.14)] transition hover:-translate-y-0.5 hover:bg-brand-silver focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-green"
+              >
+                Completar formulario
+              </a>
+            </div>
+          </div>
         </div>
       </Container>
     </section>

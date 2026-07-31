@@ -4,10 +4,8 @@ import { Footer } from './components/Footer'
 import { Header } from './components/Header'
 import { Hero } from './components/Hero'
 import { NewsSection } from './components/NewsSection'
-import { QuickActionsSection } from './components/QuickActionsSection'
 import { QuoteSection } from './components/QuoteSection'
 import { ServicesSection } from './components/ServicesSection'
-import { SectionTabs } from './components/SectionTabs'
 import { StatsBar } from './components/StatsBar'
 import { WhatsAppButton } from './components/WhatsAppButton'
 import { WhyChooseUs } from './components/WhyChooseUs'
@@ -17,7 +15,6 @@ import {
   navigation,
   newsEvents,
   reasons,
-  sectionTabs,
   services,
   stats,
   values,
@@ -32,15 +29,13 @@ function App() {
       <Header navigation={navigation} whatsappLink={whatsappLink} />
       <main id="contenido" tabIndex="-1">
         <Hero company={company} whatsappLink={whatsappLink} />
-        <SectionTabs items={sectionTabs} />
-        <ServicesSection services={services} />
+        <ServicesSection services={services} whatsappLink={whatsappLink} />
         <StatsBar stats={stats} />
-        <QuickActionsSection whatsappLink={whatsappLink} />
         <WhyChooseUs reasons={reasons} />
-        <NewsSection events={newsEvents} company={company} />
-        <AboutSection values={values} />
-        <CareersSection openings={careerOpenings} company={company} />
         <QuoteSection phoneRaw={company.phoneRaw} email={company.email} />
+        <AboutSection values={values} />
+        <NewsSection events={newsEvents} company={company} />
+        <CareersSection openings={careerOpenings} company={company} />
       </main>
       <Footer company={company} navigation={navigation} whatsappLink={whatsappLink} />
       <WhatsAppButton href={whatsappLink} />

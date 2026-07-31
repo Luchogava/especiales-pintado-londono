@@ -17,7 +17,7 @@ function ShieldIcon() {
 
 function BrandHeroMark() {
   return (
-    <figure className="relative mt-7 max-w-[42rem] overflow-hidden rounded-[1.65rem] bg-brand-ink shadow-[0_26px_64px_rgba(0,0,0,0.32)] ring-1 ring-brand-green/25 sm:rounded-[2rem]">
+    <figure className="relative mt-6 max-w-[42rem] overflow-hidden rounded-[1.45rem] bg-brand-ink shadow-[0_24px_58px_rgba(0,0,0,0.30)] ring-1 ring-brand-green/25 sm:rounded-[2rem]">
       <picture className="block">
         <source srcSet="/letrero-pl-hero-limpio.webp" type="image/webp" />
         <img
@@ -25,7 +25,7 @@ function BrandHeroMark() {
           alt={'Servicios Especiales Pintado Londo\u00f1o, empresa de transporte especial de pasajeros'}
           width="1680"
           height="945"
-          className="block aspect-[16/9] h-auto w-full object-cover"
+          className="block aspect-[16/9] h-auto w-full object-contain"
           fetchPriority="high"
         />
       </picture>
@@ -35,18 +35,18 @@ function BrandHeroMark() {
 
 export function Hero({ company, whatsappLink }) {
   const heroDescription =
-    'Soluciones de transporte especial para empresas, instituciones educativas, grupos tur\u00edsticos y servicios a la medida, con operaci\u00f3n nacional, atenci\u00f3n humana y m\u00e1s de 40 a\u00f1os de experiencia.'
+    'Movilizamos equipos de trabajo, estudiantes, turistas y grupos con seguridad, puntualidad, atenci\u00f3n humana y operaci\u00f3n nacional respaldada por m\u00e1s de 40 a\u00f1os de experiencia.'
   const yearsLabel = 'M\u00e1s de 40 a\u00f1os'
   const yearsAlt = 'M\u00e1s de 40 a\u00f1os movilizando personas'
   return (
-    <section id="inicio" className="relative overflow-hidden bg-transparent py-6 sm:py-10">
+    <section id="inicio" className="relative overflow-hidden bg-transparent py-5 sm:py-10">
       <div className="absolute left-[-8rem] top-16 h-72 w-72 rounded-full bg-brand-blue/18 blur-3xl" aria-hidden="true" />
       <div className="absolute right-[-8rem] top-10 h-80 w-80 rounded-full bg-brand-green/14 blur-3xl" aria-hidden="true" />
       <div className="absolute bottom-[-8rem] right-[10%] h-64 w-64 rounded-full bg-brand-red/8 blur-3xl" aria-hidden="true" />
 
       <Container className="relative">
-        <div className="relative grid overflow-hidden rounded-[2rem] border border-brand-line bg-[linear-gradient(135deg,#040b16_0%,#06224b_58%,#0f2f26_100%)] px-5 py-8 text-white shadow-[0_30px_90px_rgba(6,34,75,0.22)] sm:rounded-[2.6rem] sm:px-8 sm:py-10 lg:grid-cols-[1.08fr_0.92fr] lg:items-center lg:gap-10 lg:px-10 lg:py-14">
-          <div className="absolute inset-0 bg-hero-grid bg-[size:42px_42px] opacity-12" aria-hidden="true" />
+        <div className="relative grid overflow-hidden rounded-[2rem] border border-brand-line bg-[linear-gradient(135deg,#040b16_0%,#06224b_58%,#0f2f26_100%)] px-5 py-7 text-white shadow-[0_30px_90px_rgba(6,34,75,0.22)] sm:rounded-[2.6rem] sm:px-8 sm:py-10 lg:grid-cols-[1.08fr_0.92fr] lg:items-center lg:gap-10 lg:px-10 lg:py-14">
+          <div className="absolute inset-0 bg-hero-grid bg-[size:46px_46px] opacity-[0.07]" aria-hidden="true" />
           <div className="absolute left-[-8rem] top-[-6rem] h-72 w-72 rounded-full bg-brand-blue/35 blur-3xl" aria-hidden="true" />
           <div className="absolute right-[-8rem] top-0 h-80 w-80 rounded-full bg-brand-green/15 blur-3xl" aria-hidden="true" />
           <div className="absolute bottom-[-8rem] right-[10%] h-64 w-64 rounded-full bg-brand-red/10 blur-3xl" aria-hidden="true" />
@@ -59,21 +59,13 @@ export function Hero({ company, whatsappLink }) {
 
           <BrandHeroMark />
 
-          <h1 className="mt-6 font-display text-4xl font-bold leading-tight tracking-[-0.04em] sm:text-5xl lg:text-[3.45rem]">
+          <h1 className="mt-6 font-display text-[2.35rem] font-bold leading-[1.04] tracking-[-0.04em] min-[390px]:text-4xl sm:text-5xl lg:text-[3.45rem]">
             Transporte especial de pasajeros para empresas, colegios y grupos
           </h1>
 
           <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-300 sm:text-xl">{heroDescription}</p>
 
-          <div className="mt-8 grid gap-3 text-sm font-semibold text-slate-200 sm:grid-cols-3">
-            {['Seguridad operativa', 'Cobertura nacional', 'Atenci\u00f3n humana'].map((item) => (
-              <div key={item} className="rounded-2xl border border-white/10 bg-white/5 px-4 py-3">
-                {item}
-              </div>
-            ))}
-          </div>
-
-          <div className="mt-10 flex flex-col gap-4 sm:flex-row">
+          <div className="mt-8 flex flex-col gap-4 sm:flex-row">
             <a
               href="#cotizacion"
               className="inline-flex min-h-14 items-center justify-center rounded-full bg-brand-silver px-7 py-4 text-base font-extrabold text-brand-navy shadow-[0_18px_40px_rgba(217,221,228,0.18)] transition hover:-translate-y-0.5 hover:bg-white focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-green"

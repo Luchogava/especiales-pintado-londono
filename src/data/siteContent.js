@@ -13,10 +13,10 @@ export const company = {
 export const navigation = [
   { label: 'Servicios', href: '#servicios' },
   { label: 'Confianza', href: '#confianza' },
-  { label: 'Actualidad', href: '#actualidad' },
-  { label: 'Nosotros', href: '#nosotros' },
-  { label: 'Convocatorias', href: '#convocatorias' },
   { label: 'Cotizaci\u00f3n', href: '#cotizacion' },
+  { label: 'Nosotros', href: '#nosotros' },
+  { label: 'Actualidad', href: '#actualidad' },
+  { label: 'Convocatorias', href: '#convocatorias' },
 ]
 
 export const sectionTabs = [
