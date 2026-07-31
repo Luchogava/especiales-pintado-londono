@@ -18,32 +18,40 @@ function ServiceIcon({ index }) {
 
 function ServiceCard({ service, index }) {
   return (
-    <article className="group flex h-full flex-col rounded-[1.6rem] border border-brand-line bg-white p-5 text-brand-navy shadow-[0_18px_44px_rgba(6,34,75,0.08)] transition duration-300 hover:-translate-y-1 hover:border-brand-green/55 hover:shadow-card sm:p-6">
+    <article className="group flex h-full flex-col rounded-[1.35rem] border border-brand-line bg-white p-4 text-brand-navy shadow-[0_18px_44px_rgba(6,34,75,0.08)] transition duration-300 hover:-translate-y-1 hover:border-brand-green/55 hover:shadow-card sm:rounded-[1.6rem] sm:p-6">
       <div className="flex items-start gap-4">
         <div
-          className={`inline-flex h-14 min-w-14 items-center justify-center rounded-2xl text-white shadow-[0_16px_30px_rgba(0,0,0,0.16)] transition group-hover:scale-105 ${service.accent}`}
+          className={`inline-flex h-12 min-w-12 items-center justify-center rounded-2xl text-white shadow-[0_16px_30px_rgba(0,0,0,0.16)] transition group-hover:scale-105 sm:h-14 sm:min-w-14 ${service.accent}`}
         >
           <ServiceIcon index={index} />
         </div>
         <div>
-          <h3 className="font-display text-xl font-bold leading-tight">{service.title}</h3>
-          <p className="mt-3 text-base leading-7 text-slate-600">{service.summary}</p>
+          <h3 className="font-display text-lg font-bold leading-tight sm:text-xl">{service.title}</h3>
+          <p className="mt-2 text-sm leading-6 text-slate-600 sm:mt-3 sm:text-base sm:leading-7">{service.summary}</p>
         </div>
       </div>
 
-      <div className="mt-6 rounded-2xl border border-brand-line bg-brand-porcelain p-4">
+      <details className="mt-4 rounded-2xl border border-brand-line bg-brand-porcelain p-4 sm:hidden">
+        <summary className="cursor-pointer list-none text-xs font-black uppercase tracking-[0.2em] text-brand-green">
+          Ver detalle
+        </summary>
+        <p className="mt-3 text-sm font-semibold leading-6 text-slate-700">{service.idealFor}</p>
+        <p className="mt-3 text-sm leading-6 text-slate-600">{service.description}</p>
+      </details>
+
+      <div className="mt-6 hidden rounded-2xl border border-brand-line bg-brand-porcelain p-4 sm:block">
         <p className="text-xs font-black uppercase tracking-[0.22em] text-brand-green">Clientes frecuentes</p>
         <p className="mt-3 text-sm font-semibold leading-6 text-slate-700">{service.idealFor}</p>
       </div>
 
-      <p className="mt-5 text-sm leading-6 text-slate-600">{service.description}</p>
+      <p className="mt-5 hidden text-sm leading-6 text-slate-600 sm:block">{service.description}</p>
     </article>
   )
 }
 
 export function ServicesSection({ services, whatsappLink }) {
   return (
-    <section id="servicios" className="relative scroll-mt-28 py-20 sm:py-24">
+    <section id="servicios" className="relative scroll-mt-28 py-14 sm:py-24">
       <Container>
         <SectionHeading
           eyebrow="Servicios"
@@ -51,20 +59,20 @@ export function ServicesSection({ services, whatsappLink }) {
           description={'Cuatro líneas de servicio claras para empresas, colegios, turismo, grupos y necesidades especiales.'}
         />
 
-        <div className="mt-12 grid gap-5 md:grid-cols-2 xl:grid-cols-4" aria-label="Tipos de servicio">
+        <div className="mt-8 grid gap-4 sm:mt-12 md:grid-cols-2 xl:grid-cols-4" aria-label="Tipos de servicio">
           {services.map((service, index) => (
             <ServiceCard key={service.title} service={service} index={index} />
           ))}
         </div>
 
-        <div className="mt-10 overflow-hidden rounded-[1.9rem] border border-brand-green/20 bg-[linear-gradient(135deg,#061325_0%,#06224b_62%,#0f2f26_100%)] p-6 text-white shadow-[0_22px_58px_rgba(6,34,75,0.18)] sm:p-7">
+        <div className="mt-8 overflow-hidden rounded-[1.6rem] border border-brand-green/20 bg-[linear-gradient(135deg,#061325_0%,#06224b_62%,#0f2f26_100%)] p-5 text-white shadow-[0_22px_58px_rgba(6,34,75,0.18)] sm:mt-10 sm:rounded-[1.9rem] sm:p-7">
           <div className="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
             <div className="max-w-3xl">
               <p className="text-sm font-black uppercase tracking-[0.24em] text-brand-green">Cotización orientada</p>
-              <h3 className="mt-3 font-display text-2xl font-bold sm:text-3xl">
+              <h3 className="mt-3 font-display text-xl font-bold sm:text-3xl">
                 Dinos qué necesitas movilizar y te ayudamos a definir la mejor solución.
               </h3>
-              <p className="mt-3 text-base leading-7 text-slate-300">
+              <p className="mt-3 text-sm leading-6 text-slate-300 sm:text-base sm:leading-7">
                 Comparte origen, destino, fecha, horarios y número de pasajeros. Con esa información podemos orientarte mejor desde el primer contacto.
               </p>
             </div>

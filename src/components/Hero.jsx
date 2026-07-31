@@ -17,7 +17,7 @@ function ShieldIcon() {
 
 function BrandHeroMark() {
   return (
-    <figure className="relative mt-6 max-w-[42rem] overflow-hidden rounded-[1.45rem] bg-brand-ink shadow-[0_24px_58px_rgba(0,0,0,0.30)] ring-1 ring-brand-green/25 sm:rounded-[2rem]">
+    <figure className="relative mt-5 max-w-[42rem] overflow-hidden rounded-[1.35rem] bg-brand-ink shadow-[0_20px_48px_rgba(0,0,0,0.28)] ring-1 ring-brand-green/25 sm:mt-6 sm:rounded-[2rem]">
       <picture className="block">
         <source srcSet="/letrero-pl-hero-limpio.webp" type="image/webp" />
         <img
@@ -39,13 +39,13 @@ export function Hero({ company, whatsappLink }) {
   const yearsLabel = 'Más de 40 años'
   const yearsAlt = 'Más de 40 años movilizando personas'
   return (
-    <section id="inicio" className="relative overflow-hidden bg-transparent py-5 sm:py-10">
+    <section id="inicio" className="relative overflow-hidden bg-transparent py-4 sm:py-10">
       <div className="absolute left-[-8rem] top-16 h-72 w-72 rounded-full bg-brand-blue/18 blur-3xl" aria-hidden="true" />
       <div className="absolute right-[-8rem] top-10 h-80 w-80 rounded-full bg-brand-green/14 blur-3xl" aria-hidden="true" />
       <div className="absolute bottom-[-8rem] right-[10%] h-64 w-64 rounded-full bg-brand-red/8 blur-3xl" aria-hidden="true" />
 
       <Container className="relative">
-        <div className="relative grid overflow-hidden rounded-[2rem] border border-brand-line bg-[linear-gradient(135deg,#040b16_0%,#06224b_58%,#0f2f26_100%)] px-5 py-7 text-white shadow-[0_30px_90px_rgba(6,34,75,0.22)] sm:rounded-[2.6rem] sm:px-8 sm:py-10 lg:grid-cols-[1.08fr_0.92fr] lg:items-center lg:gap-10 lg:px-10 lg:py-14">
+        <div className="relative grid overflow-hidden rounded-[1.7rem] border border-brand-line bg-[linear-gradient(135deg,#040b16_0%,#06224b_58%,#0f2f26_100%)] px-4 py-6 text-white shadow-[0_30px_90px_rgba(6,34,75,0.22)] sm:rounded-[2.6rem] sm:px-8 sm:py-10 lg:grid-cols-[1.08fr_0.92fr] lg:items-center lg:gap-10 lg:px-10 lg:py-14">
           <div className="absolute inset-0 bg-hero-grid bg-[size:46px_46px] opacity-[0.07]" aria-hidden="true" />
           <div className="absolute left-[-8rem] top-[-6rem] h-72 w-72 rounded-full bg-brand-blue/35 blur-3xl" aria-hidden="true" />
           <div className="absolute right-[-8rem] top-0 h-80 w-80 rounded-full bg-brand-green/15 blur-3xl" aria-hidden="true" />
@@ -59,13 +59,18 @@ export function Hero({ company, whatsappLink }) {
 
           <BrandHeroMark />
 
-          <h1 className="mt-6 font-display text-[2.35rem] font-bold leading-[1.04] tracking-[-0.04em] min-[390px]:text-4xl sm:text-5xl lg:text-[3.45rem]">
+          <h1 className="mt-5 font-display text-[2rem] font-bold leading-[1.04] tracking-[-0.04em] min-[390px]:text-[2.25rem] sm:mt-6 sm:text-5xl lg:text-[3.45rem]">
             Transporte especial de pasajeros para empresas, colegios y grupos
           </h1>
 
-          <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-300 sm:text-xl">{heroDescription}</p>
+          <p className="mt-4 max-w-2xl text-base leading-7 text-slate-300 sm:mt-6 sm:text-xl sm:leading-8">{heroDescription}</p>
 
-          <div className="mt-8 flex flex-col gap-4 sm:flex-row">
+          <div className="mt-5 grid grid-cols-2 gap-2 text-xs font-extrabold uppercase tracking-[0.12em] text-slate-100 sm:hidden">
+            <span className="rounded-full border border-brand-green/30 bg-white/5 px-3 py-2">40+ años</span>
+            <span className="rounded-full border border-brand-green/30 bg-white/5 px-3 py-2">Cobertura nacional</span>
+          </div>
+
+          <div className="mt-7 flex flex-col gap-3 sm:mt-8 sm:flex-row sm:gap-4">
             <a
               href="#cotizacion"
               className="inline-flex min-h-14 items-center justify-center rounded-full bg-brand-silver px-7 py-4 text-base font-extrabold text-brand-navy shadow-[0_18px_40px_rgba(217,221,228,0.18)] transition hover:-translate-y-0.5 hover:bg-white focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-green"
@@ -83,7 +88,7 @@ export function Hero({ company, whatsappLink }) {
           </div>
           </div>
 
-          <div className="relative mt-10 lg:mt-0">
+          <div className="relative mt-10 hidden lg:mt-0 lg:block">
           <div className="mx-auto max-w-[22rem] rounded-[2rem] border border-brand-silver/15 bg-white/10 p-5 shadow-glow backdrop-blur lg:mr-0 lg:max-w-[24rem]">
             <div className="rounded-[1.7rem] border border-white/10 bg-gradient-to-br from-white/10 via-white/5 to-brand-red/10 p-6">
               <div className="rounded-[1.4rem] border border-white/10 bg-brand-ink/40 p-4">

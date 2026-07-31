@@ -55,8 +55,8 @@ export function QuoteSection({ phoneRaw, email }) {
   }
 
   return (
-    <section id="cotizacion" className="bg-[linear-gradient(145deg,#040b16_0%,#06224b_60%,#07162d_100%)] py-24 text-white">
-      <Container className="grid gap-14 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
+    <section id="cotizacion" className="bg-[linear-gradient(145deg,#040b16_0%,#06224b_60%,#07162d_100%)] py-16 text-white sm:py-24">
+      <Container className="grid gap-8 sm:gap-14 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
         <div>
           <SectionHeading
             eyebrow={'Cotización'}
@@ -65,7 +65,7 @@ export function QuoteSection({ phoneRaw, email }) {
             theme="dark"
           />
 
-          <div className="mt-8 space-y-5 rounded-[2rem] border border-brand-silver/15 bg-white/5 p-7 backdrop-blur">
+          <div className="mt-6 space-y-4 rounded-[1.6rem] border border-brand-silver/15 bg-white/5 p-5 backdrop-blur sm:mt-8 sm:rounded-[2rem] sm:p-7">
             <div>
               <p className="text-sm font-black uppercase tracking-[0.26em] text-brand-green">{'Contáctanos'}</p>
               <p className="mt-3 text-2xl font-bold text-white">{email}</p>
@@ -75,8 +75,8 @@ export function QuoteSection({ phoneRaw, email }) {
           </div>
         </div>
 
-        <form onSubmit={handleSubmit} className="rounded-[2rem] border border-brand-silver/18 bg-white p-7 text-brand-ink shadow-premium sm:p-8">
-          <div className="grid gap-5 md:grid-cols-2">
+        <form onSubmit={handleSubmit} className="rounded-[1.6rem] border border-brand-silver/18 bg-white p-5 text-brand-ink shadow-premium sm:rounded-[2rem] sm:p-8">
+          <div className="grid gap-4 sm:gap-5 md:grid-cols-2">
             <Field
               label="Nombre completo"
               name="fullName"
