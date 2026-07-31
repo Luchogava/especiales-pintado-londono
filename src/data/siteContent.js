@@ -1,19 +1,19 @@
 export const company = {
-  name: 'Servicios Especiales Pintado Londo\u00f1o',
+  name: 'Servicios Especiales Pintado Londoño',
   website: 'https://www.especialespl.com',
   phoneDisplay: '+57 316 841 33 92',
   phoneRaw: '573168413392',
   email: 'comercial@especialespl.com',
-  years: 'M\u00e1s de 40 a\u00f1os',
+  years: 'Más de 40 años',
   founded: 'Desde 1984',
-  coverage: 'Operaci\u00f3n nacional',
+  coverage: 'Operación nacional',
   certifications: ['ISO 9001:2015', 'ISO 45001:2018'],
 }
 
 export const navigation = [
   { label: 'Servicios', href: '#servicios' },
   { label: 'Confianza', href: '#confianza' },
-  { label: 'Cotizaci\u00f3n', href: '#cotizacion' },
+  { label: 'Cotización', href: '#cotizacion' },
   { label: 'Nosotros', href: '#nosotros' },
   { label: 'Actualidad', href: '#actualidad' },
   { label: 'Convocatorias', href: '#convocatorias' },
@@ -41,7 +41,7 @@ export const sectionTabs = [
   {
     eyebrow: 'Empresa',
     title: 'Nosotros',
-    description: 'Historia, enfoque, misi\u00f3n, visi\u00f3n y valores.',
+    description: 'Historia, enfoque, misión, visión y valores.',
     href: '#nosotros',
   },
   {
@@ -52,7 +52,7 @@ export const sectionTabs = [
   },
   {
     eyebrow: 'Contacto',
-    title: 'Cotizaci\u00f3n',
+    title: 'Cotización',
     description: 'WhatsApp, correo y formulario comercial.',
     href: '#cotizacion',
   },
@@ -63,42 +63,42 @@ export const newsEvents = [
     slug: 'fiesta-virgen-del-carmen-2026',
     category: 'Evento institucional',
     date: '12 de julio de 2026',
-    title: 'Celebraci\u00f3n de la Virgen del Carmen 2026',
+    title: 'Celebración de la Virgen del Carmen 2026',
     summary:
-      'La gerencia de Servicios Especiales Pintado Londo\u00f1o y sus colaboradores conmemoraron el D\u00eda de la Virgen del Carmen, una fecha significativa para el sector del transporte.',
+      'La gerencia de Servicios Especiales Pintado Londoño y sus colaboradores conmemoraron el Día de la Virgen del Carmen, una fecha significativa para el sector del transporte.',
     description:
-      'El 12 de julio de 2026, la gerencia de la empresa y sus colaboradores se reunieron para conmemorar el D\u00eda de la Virgen del Carmen. Este encuentro reafirm\u00f3 la uni\u00f3n del equipo, la tradici\u00f3n del transporte y el compromiso de seguir movilizando personas con seguridad, respeto y confianza.',
+      'El 12 de julio de 2026, la gerencia de la empresa y sus colaboradores se reunieron para conmemorar el Día de la Virgen del Carmen. Este encuentro reafirmó la unión del equipo, la tradición del transporte y el compromiso de seguir movilizando personas con seguridad, respeto y confianza.',
     highlights: [
-      'Participaci\u00f3n de la gerencia y los colaboradores de la empresa.',
-      'Conmemoraci\u00f3n de una tradici\u00f3n representativa para el transporte en Colombia.',
-      'Integraci\u00f3n del equipo alrededor de la seguridad, la fe, el respeto y el servicio.',
+      'Participación de la gerencia y los colaboradores de la empresa.',
+      'Conmemoración de una tradición representativa para el transporte en Colombia.',
+      'Integración del equipo alrededor de la seguridad, la fe, el respeto y el servicio.',
     ],
     acknowledgements: {
       title: 'Agradecimiento especial',
       text:
-        'Servicios Especiales Pintado Londo\u00f1o expresa su agradecimiento a las empresas que, con sus aportes y respaldo, hicieron posible el desarrollo de esta celebraci\u00f3n institucional.',
+        'Servicios Especiales Pintado Londoño expresa su agradecimiento a las empresas que, con sus aportes y respaldo, hicieron posible el desarrollo de esta celebración institucional.',
       companies: [
         'Geoflora S.A.S.',
         'Flores Ipanema S.A.S.',
         'Llantas al Costo',
-        'R\u00e1pido Santa Ltda.',
+        'Rápido Santa Ltda.',
         'Montallantas 5 Estrellas',
         'Seguros Beta',
-        'Auto Frenos L\u00e1tigo',
+        'Auto Frenos Látigo',
         'Parqueadero Zipalandia',
-        'Parqueadero La Estaci\u00f3n',
-        'Inversiones Garz\u00f3n Vargas',
+        'Parqueadero La Estación',
+        'Inversiones Garzón Vargas',
       ],
     },
     images: [
       {
         src: '/evento-virgen-carmen-2026-equipo.png',
-        alt: 'Gerencia y colaboradores de la empresa durante la celebraci\u00f3n de la Virgen del Carmen 2026',
+        alt: 'Gerencia y colaboradores de la empresa durante la celebración de la Virgen del Carmen 2026',
         fit: 'contain',
       },
       {
         src: '/evento-virgen-carmen-2026-flota.png',
-        alt: 'Veh\u00edculos y colaboradores en la celebraci\u00f3n Virgen del Carmen 2026',
+        alt: 'Vehículos y colaboradores en la celebración Virgen del Carmen 2026',
       },
       {
         src: '/evento-virgen-carmen-2026-virgen.png',
@@ -111,28 +111,28 @@ export const newsEvents = [
 
 export const stats = [
   {
-    value: '40+ a\u00f1os',
+    value: '40+ años',
     label: 'Movilizando personas con experiencia, criterio operativo y confianza comercial.',
     image: '/stat-40-anos-v2.png',
-    imageAlt: 'M\u00e1s de 40 a\u00f1os movilizando personas',
+    imageAlt: 'Más de 40 años movilizando personas',
   },
   {
     value: 'Cobertura nacional',
-    label: 'Atendemos rutas y servicios en distintas regiones del pa\u00eds con operaci\u00f3n organizada.',
+    label: 'Atendemos rutas y servicios en distintas regiones del país con operación organizada.',
     image: '/stat-cobertura-v2.png',
     imageAlt: 'Cobertura nacional con mapa de Colombia',
   },
   {
     value: 'ISO 9001:2015',
-    label: 'Gesti\u00f3n de calidad enfocada en servicio, mejora continua y consistencia operativa.',
+    label: 'Gestión de calidad enfocada en servicio, mejora continua y consistencia operativa.',
     image: '/stat-iso-9001-v2.png',
-    imageAlt: 'Certificaci\u00f3n ISO 9001:2015',
+    imageAlt: 'Certificación ISO 9001:2015',
   },
   {
     value: 'ISO 45001:2018',
-    label: 'Compromiso con la seguridad, la salud en el trabajo y la operaci\u00f3n responsable.',
+    label: 'Compromiso con la seguridad, la salud en el trabajo y la operación responsable.',
     image: '/stat-iso-45001-v2.png',
-    imageAlt: 'Certificaci\u00f3n ISO 45001:2018',
+    imageAlt: 'Certificación ISO 45001:2018',
   },
 ]
 
@@ -143,7 +143,7 @@ export const services = [
     summary: 'Movilidad corporativa organizada, puntual y con imagen profesional.',
     idealFor: 'Empresas, contratistas, personal operativo y equipos administrativos.',
     description:
-      'Rutas programadas con log\u00edstica clara, cumplimiento de horarios y respaldo operativo para la continuidad del servicio.',
+      'Rutas programadas con logística clara, cumplimiento de horarios y respaldo operativo para la continuidad del servicio.',
   },
   {
     title: 'Transporte escolar',
@@ -151,45 +151,45 @@ export const services = [
     summary: 'Seguridad y confianza para cada trayecto de la comunidad educativa.',
     idealFor: 'Colegios, instituciones educativas, estudiantes y familias.',
     description:
-      'Servicio responsable con control de rutas, puntualidad y acompa\u00f1amiento confiable para estudiantes y acudientes.',
+      'Servicio responsable con control de rutas, puntualidad y acompañamiento confiable para estudiantes y acudientes.',
   },
   {
     title: 'Turismo y grupos',
     accent: 'bg-brand-graphite',
-    summary: 'Traslados c\u00f3modos y bien coordinados para experiencias grupales.',
-    idealFor: 'Eventos, convenciones, viajes tur\u00edsticos y recorridos especiales.',
+    summary: 'Traslados cómodos y bien coordinados para experiencias grupales.',
+    idealFor: 'Eventos, convenciones, viajes turísticos y recorridos especiales.',
     description:
-      'Coordinaci\u00f3n flexible para grupos que necesitan atenci\u00f3n cordial, comodidad y una experiencia bien gestionada.',
+      'Coordinación flexible para grupos que necesitan atención cordial, comodidad y una experiencia bien gestionada.',
   },
   {
     title: 'Servicios especiales',
     accent: 'bg-brand-red',
-    summary: 'Soluciones a la medida para necesidades espec\u00edficas de transporte.',
+    summary: 'Soluciones a la medida para necesidades específicas de transporte.',
     idealFor: 'Organizaciones, familias y clientes con requerimientos puntuales.',
     description:
-      'Atenci\u00f3n personalizada para rutas, horarios y condiciones especiales con seguridad, orden y capacidad de respuesta.',
+      'Atención personalizada para rutas, horarios y condiciones especiales con seguridad, orden y capacidad de respuesta.',
   },
 ]
 
 export const reasons = [
   'Trayectoria comprobada desde 1984 en transporte especial de pasajeros.',
-  'Operaci\u00f3n enfocada en seguridad, puntualidad y buen trato.',
+  'Operación enfocada en seguridad, puntualidad y buen trato.',
   'Cobertura nacional para servicios recurrentes, eventuales o por proyecto.',
   'Respaldo en calidad y seguridad con certificaciones ISO vigentes.',
 ]
 
 export const values = [
   {
-    title: 'Misi\u00f3n',
-    text: 'Brindar soluciones de transporte especial de pasajeros con altos est\u00e1ndares de seguridad, cumplimiento, comodidad y trato humano, generando confianza en cada recorrido.',
+    title: 'Misión',
+    text: 'Brindar soluciones de transporte especial de pasajeros con altos estándares de seguridad, cumplimiento, comodidad y trato humano, generando confianza en cada recorrido.',
   },
   {
-    title: 'Visi\u00f3n',
+    title: 'Visión',
     text: 'Consolidarnos como una empresa referente en Colombia por la excelencia del servicio, la confiabilidad operativa y la capacidad de responder a las necesidades de cada cliente.',
   },
   {
     title: 'Valores',
-    text: 'Seguridad, puntualidad, respeto, responsabilidad, cercan\u00eda, orden y compromiso con la calidad en cada detalle del servicio.',
+    text: 'Seguridad, puntualidad, respeto, responsabilidad, cercanía, orden y compromiso con la calidad en cada detalle del servicio.',
   },
 ]
 
@@ -197,36 +197,36 @@ export const careerOpenings = [
   {
     slug: 'conductor-transporte-especial',
     title: 'Conductor de transporte especial de pasajeros',
-    status: 'Recepci\u00f3n de hojas de vida',
+    status: 'Recepción de hojas de vida',
     type: 'Operativo',
-    location: 'Operaci\u00f3n nacional seg\u00fan programaci\u00f3n',
+    location: 'Operación nacional según programación',
     summary:
-      'Buscamos conductores responsables, puntuales y comprometidos con la seguridad vial para apoyar nuestra operaci\u00f3n de transporte especial de pasajeros en servicios empresariales, escolares, tur\u00edsticos y especiales.',
+      'Buscamos conductores responsables, puntuales y comprometidos con la seguridad vial para apoyar nuestra operación de transporte especial de pasajeros en servicios empresariales, escolares, turísticos y especiales.',
     requirements: [
-      'Licencia de conducci\u00f3n C2 vigente para veh\u00edculos de servicio p\u00fablico.',
-      'Formaci\u00f3n b\u00e1sica primaria o bachillerato, con habilidades de lectura y escritura.',
-      'M\u00ednimo un a\u00f1o de experiencia comprobable como conductor de transporte especial de pasajeros.',
-      'Conocimiento de normas de tr\u00e1nsito, seguridad vial y servicio al cliente.',
+      'Licencia de conducción C2 vigente para vehículos de servicio público.',
+      'Formación básica primaria o bachillerato, con habilidades de lectura y escritura.',
+      'Mínimo un año de experiencia comprobable como conductor de transporte especial de pasajeros.',
+      'Conocimiento de normas de tránsito, seguridad vial y servicio al cliente.',
       'Disponibilidad para rutas programadas y servicios eventuales.',
       'Actitud de servicio, puntualidad, respeto y buen trato.',
-      'Capacidad para realizar la inspecci\u00f3n preoperacional y cuidar el veh\u00edculo asignado.',
+      'Capacidad para realizar la inspección preoperacional y cuidar el vehículo asignado.',
     ],
     preferred: [
-      'M\u00e1s de dos a\u00f1os de experiencia en transporte especial.',
-      'Formaci\u00f3n en conducci\u00f3n defensiva y conocimiento del Plan Estrat\u00e9gico de Seguridad Vial.',
-      'Conocimientos de primeros auxilios, evacuaci\u00f3n y mec\u00e1nica b\u00e1sica de buses o busetas.',
+      'Más de dos años de experiencia en transporte especial.',
+      'Formación en conducción defensiva y conocimiento del Plan Estratégico de Seguridad Vial.',
+      'Conocimientos de primeros auxilios, evacuación y mecánica básica de buses o busetas.',
     ],
     responsibilities: [
       'Transportar pasajeros de forma segura, puntual y cordial.',
-      'Cumplir las normas de tr\u00e1nsito y las pol\u00edticas internas de seguridad vial.',
-      'Realizar diariamente la inspecci\u00f3n preoperacional del veh\u00edculo.',
+      'Cumplir las normas de tránsito y las políticas internas de seguridad vial.',
+      'Realizar diariamente la inspección preoperacional del vehículo.',
       'Reportar oportunamente fallas, novedades o condiciones inseguras.',
-      'Cuidar la limpieza, presentaci\u00f3n, documentaci\u00f3n y buen uso del veh\u00edculo asignado.',
+      'Cuidar la limpieza, presentación, documentación y buen uso del vehículo asignado.',
     ],
     selection: [
-      'Entrevista y verificaci\u00f3n de experiencia.',
-      'Prueba te\u00f3rica y prueba pr\u00e1ctica de conducci\u00f3n.',
-      'Examen ocupacional de ingreso y prueba psicosensom\u00e9trica.',
+      'Entrevista y verificación de experiencia.',
+      'Prueba teórica y prueba práctica de conducción.',
+      'Examen ocupacional de ingreso y prueba psicosensométrica.',
     ],
     applicationSubject: 'Hoja de vida - Conductor de transporte especial',
   },
@@ -237,14 +237,14 @@ export const careerOpenings = [
     type: 'Administrativo y operativo',
     location: 'Colombia',
     summary:
-      'Recibimos perfiles para futuras necesidades de coordinaci\u00f3n, atenci\u00f3n al cliente, apoyo log\u00edstico y gesti\u00f3n operativa.',
+      'Recibimos perfiles para futuras necesidades de coordinación, atención al cliente, apoyo logístico y gestión operativa.',
     requirements: [
-      'Actitud de servicio, comunicaci\u00f3n clara y orientaci\u00f3n al detalle.',
-      'Capacidad para trabajar con orden, cumplimiento y manejo responsable de informaci\u00f3n.',
-      'Experiencia en transporte, log\u00edstica, operaciones o atenci\u00f3n al cliente ser\u00e1 valorada.',
+      'Actitud de servicio, comunicación clara y orientación al detalle.',
+      'Capacidad para trabajar con orden, cumplimiento y manejo responsable de información.',
+      'Experiencia en transporte, logística, operaciones o atención al cliente será valorada.',
     ],
   },
 ]
 
 export const whatsappMessage =
-  'Hola, quisiera solicitar una cotizaci\u00f3n para un servicio de transporte especial con Servicios Especiales Pintado Londo\u00f1o.'
+  'Hola, quisiera solicitar una cotización para un servicio de transporte especial con Servicios Especiales Pintado Londoño.'

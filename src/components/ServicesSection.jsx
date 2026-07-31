@@ -48,7 +48,7 @@ export function ServicesSection({ services, whatsappLink }) {
         <SectionHeading
           eyebrow="Servicios"
           title="Elige el tipo de transporte que necesitas"
-          description={'Cuatro l\u00edneas de servicio claras para empresas, colegios, turismo, grupos y necesidades especiales.'}
+          description={'Cuatro líneas de servicio claras para empresas, colegios, turismo, grupos y necesidades especiales.'}
         />
 
         <div className="mt-12 grid gap-5 md:grid-cols-2 xl:grid-cols-4" aria-label="Tipos de servicio">
@@ -60,12 +60,12 @@ export function ServicesSection({ services, whatsappLink }) {
         <div className="mt-10 overflow-hidden rounded-[1.9rem] border border-brand-green/20 bg-[linear-gradient(135deg,#061325_0%,#06224b_62%,#0f2f26_100%)] p-6 text-white shadow-[0_22px_58px_rgba(6,34,75,0.18)] sm:p-7">
           <div className="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
             <div className="max-w-3xl">
-              <p className="text-sm font-black uppercase tracking-[0.24em] text-brand-green">Cotizaci\u00f3n orientada</p>
+              <p className="text-sm font-black uppercase tracking-[0.24em] text-brand-green">Cotización orientada</p>
               <h3 className="mt-3 font-display text-2xl font-bold sm:text-3xl">
-                Dinos qu\u00e9 necesitas movilizar y te ayudamos a definir la mejor soluci\u00f3n.
+                Dinos qué necesitas movilizar y te ayudamos a definir la mejor solución.
               </h3>
               <p className="mt-3 text-base leading-7 text-slate-300">
-                Comparte origen, destino, fecha, horarios y n\u00famero de pasajeros. Con esa informaci\u00f3n podemos orientarte mejor desde el primer contacto.
+                Comparte origen, destino, fecha, horarios y número de pasajeros. Con esa información podemos orientarte mejor desde el primer contacto.
               </p>
             </div>
 

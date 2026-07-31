@@ -4,9 +4,9 @@ import { SectionHeading } from './SectionHeading'
 
 const newsIntro = {
   eyebrow: 'Actualidad en Ruta',
-  title: 'Historias que reflejan nuestra operaci\u00f3n, cultura y compromiso',
+  title: 'Historias que reflejan nuestra operación, cultura y compromiso',
   description:
-    'Compartimos eventos institucionales, actividades de equipo y momentos que muestran la esencia humana y operativa de Servicios Especiales Pintado Londo\u00f1o.',
+    'Compartimos eventos institucionales, actividades de equipo y momentos que muestran la esencia humana y operativa de Servicios Especiales Pintado Londoño.',
   featureLabel: 'Memoria institucional',
   featureText:
     'Un espacio para destacar celebraciones, jornadas de seguridad, reconocimientos y noticias que fortalecen nuestra identidad como empresa de transporte especial de pasajeros.',
@@ -26,9 +26,9 @@ function ShareIcon() {
 function ShareEvent({ event, website }) {
   const [copied, setCopied] = useState(false)
   const url = `${website}/?evento=${encodeURIComponent(event.slug)}#evento-${event.slug}`
-  const text = `${event.title} - Servicios Especiales Pintado Londo\u00f1o`
+  const text = `${event.title} - Servicios Especiales Pintado Londoño`
   const encodedUrl = encodeURIComponent(url)
-  const encodedText = encodeURIComponent(`${text}. Conoce esta publicaci\u00f3n:`)
+  const encodedText = encodeURIComponent(`${text}. Conoce esta publicación:`)
   const linkedInUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${encodedUrl}`
   const secondaryClass =
     'rounded-full border border-white/20 bg-white/8 px-4 py-2.5 text-sm font-bold text-white transition hover:border-brand-green hover:text-brand-green'

@@ -22,7 +22,7 @@ function BrandHeroMark() {
         <source srcSet="/letrero-pl-hero-limpio.webp" type="image/webp" />
         <img
           src="/letrero-pl-hero-limpio.png"
-          alt={'Servicios Especiales Pintado Londo\u00f1o, empresa de transporte especial de pasajeros'}
+          alt={'Servicios Especiales Pintado Londoño, empresa de transporte especial de pasajeros'}
           width="1680"
           height="945"
           className="block aspect-[16/9] h-auto w-full object-contain"
@@ -35,9 +35,9 @@ function BrandHeroMark() {
 
 export function Hero({ company, whatsappLink }) {
   const heroDescription =
-    'Movilizamos equipos de trabajo, estudiantes, turistas y grupos con seguridad, puntualidad, atenci\u00f3n humana y operaci\u00f3n nacional respaldada por m\u00e1s de 40 a\u00f1os de experiencia.'
-  const yearsLabel = 'M\u00e1s de 40 a\u00f1os'
-  const yearsAlt = 'M\u00e1s de 40 a\u00f1os movilizando personas'
+    'Movilizamos equipos de trabajo, estudiantes, turistas y grupos con seguridad, puntualidad, atención humana y operación nacional respaldada por más de 40 años de experiencia.'
+  const yearsLabel = 'Más de 40 años'
+  const yearsAlt = 'Más de 40 años movilizando personas'
   return (
     <section id="inicio" className="relative overflow-hidden bg-transparent py-5 sm:py-10">
       <div className="absolute left-[-8rem] top-16 h-72 w-72 rounded-full bg-brand-blue/18 blur-3xl" aria-hidden="true" />
@@ -70,7 +70,7 @@ export function Hero({ company, whatsappLink }) {
               href="#cotizacion"
               className="inline-flex min-h-14 items-center justify-center rounded-full bg-brand-silver px-7 py-4 text-base font-extrabold text-brand-navy shadow-[0_18px_40px_rgba(217,221,228,0.18)] transition hover:-translate-y-0.5 hover:bg-white focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-green"
             >
-              {'Solicitar cotizaci\u00f3n'}
+              {'Solicitar cotización'}
             </a>
             <a
               href={whatsappLink}
@@ -105,7 +105,7 @@ export function Hero({ company, whatsappLink }) {
               {[
                 ['1', 'Recibimos la necesidad'],
                 ['2', 'Validamos ruta, horario y pasajeros'],
-                ['3', 'Acompa\u00f1amos la cotizaci\u00f3n'],
+                ['3', 'Acompañamos la cotización'],
               ].map(([number, text]) => (
                 <div key={number} className="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/5 p-3">
                   <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-brand-green text-sm font-black text-white">

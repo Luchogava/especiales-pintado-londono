@@ -15,9 +15,9 @@ export function WhyChooseUs({ reasons }) {
       <Container className="grid gap-14 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
         <div>
           <SectionHeading
-            eyebrow={'Por qu\u00e9 elegirnos'}
+            eyebrow={'Por qué elegirnos'}
             title="Confianza para contratar transporte especial sin improvisar"
-            description={'Reunimos experiencia, cobertura, certificaciones y atenci\u00f3n humana para que cada traslado tenga respaldo desde el primer contacto.'}
+            description={'Reunimos experiencia, cobertura, certificaciones y atención humana para que cada traslado tenga respaldo desde el primer contacto.'}
             theme="dark"
           />
         </div>

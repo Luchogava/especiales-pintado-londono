@@ -20,7 +20,7 @@ export function Header({ navigation, whatsappLink }) {
             href="#inicio"
             title="Volver al inicio"
             className="group w-[10.2rem] min-w-0 shrink rounded-2xl transition hover:-translate-y-0.5 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-green focus-visible:ring-offset-2 focus-visible:ring-offset-brand-ink min-[390px]:w-[11.5rem] sm:w-[12.5rem] lg:w-[13.5rem]"
-            aria-label={'Volver al inicio de la p\u00e1gina'}
+            aria-label={'Volver al inicio de la página'}
           >
             <BrandLogo />
           </a>

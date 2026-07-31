@@ -1,7 +1,7 @@
 import { Container } from './Container'
 
 export function QuickActionsSection({ whatsappLink }) {
-  const steps = ['Describe tu necesidad', 'Validamos ruta y capacidad', 'Recibes orientaci\u00f3n comercial']
+  const steps = ['Describe tu necesidad', 'Validamos ruta y capacidad', 'Recibes orientación comercial']
 
   return (
     <section className="py-12">
@@ -9,12 +9,12 @@ export function QuickActionsSection({ whatsappLink }) {
         <div className="rounded-[2rem] border border-brand-silver/12 bg-[linear-gradient(135deg,#040b16_0%,#06224b_58%,#0f2f26_100%)] px-6 py-8 text-white shadow-[0_20px_50px_rgba(5,26,52,0.24)] sm:px-8">
           <div className="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
             <div className="max-w-2xl">
-              <p className="text-sm font-extrabold uppercase tracking-[0.22em] text-brand-green">Cotizaci\u00f3n guiada</p>
+              <p className="text-sm font-extrabold uppercase tracking-[0.22em] text-brand-green">Cotización guiada</p>
               <h2 className="mt-3 font-display text-3xl font-bold sm:text-4xl">
                 {'Pasa de la idea del traslado a una solicitud clara.'}
               </h2>
               <p className="mt-4 text-lg leading-8 text-slate-300">
-                {'Te acompa\u00f1amos para definir servicio, ruta, horarios, cantidad de pasajeros y condiciones de operaci\u00f3n.'}
+                {'Te acompañamos para definir servicio, ruta, horarios, cantidad de pasajeros y condiciones de operación.'}
               </p>
             </div>
 
@@ -41,7 +41,7 @@ export function QuickActionsSection({ whatsappLink }) {
               href="#cotizacion"
               className="inline-flex items-center justify-center rounded-full bg-brand-silver px-6 py-4 text-base font-extrabold text-brand-navy shadow-[0_18px_40px_rgba(217,221,228,0.18)] transition hover:-translate-y-0.5 hover:bg-white focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-green"
             >
-              {'Ir a cotizaci\u00f3n'}
+              {'Ir a cotización'}
             </a>
           </div>
         </div>

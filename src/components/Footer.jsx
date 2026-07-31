@@ -6,11 +6,11 @@ export function Footer({ company, navigation, whatsappLink }) {
     <footer className="bg-[#050c16] py-14 text-slate-300">
       <Container className="grid gap-10 lg:grid-cols-[1.2fr_0.8fr_0.8fr]">
         <div>
-          <div className="max-w-[14rem]" aria-label={'Servicios Especiales Pintado Londo\u00f1o'}>
+          <div className="max-w-[14rem]" aria-label={'Servicios Especiales Pintado Londoño'}>
             <BrandLogo />
           </div>
           <p className="mt-4 max-w-xl leading-8 text-slate-400">
-            {'Transporte terrestre especial de pasajeros en Colombia con experiencia, orden y atenci\u00f3n cercana para '}
+            {'Transporte terrestre especial de pasajeros en Colombia con experiencia, orden y atención cercana para '}
             cada servicio.
           </p>
         </div>

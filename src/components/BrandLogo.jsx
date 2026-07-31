@@ -7,7 +7,7 @@ export function BrandLogo() {
         </span>
         <span className="mt-1 block whitespace-nowrap font-display text-[0.92rem] font-black uppercase leading-none tracking-[-0.05em] sm:text-[1.04rem]">
           <span className="text-white">Pintado</span>
-          <span className="ml-1 text-brand-green">{'Londo\u00f1o'}</span>
+          <span className="ml-1 text-brand-green">{'Londoño'}</span>
         </span>
         <span className="mt-1 block whitespace-nowrap text-[0.49rem] font-extrabold leading-none text-slate-200/90 sm:text-[0.56rem]">
           Transporte especial de pasajeros
