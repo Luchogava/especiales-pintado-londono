@@ -17,18 +17,18 @@ function ShieldIcon() {
 
 function BrandHeroMark() {
   return (
-    <figure className="relative mt-7 max-w-[42rem] overflow-hidden rounded-[1.7rem] border border-brand-green/25 bg-[linear-gradient(135deg,#040b16_0%,#07162d_52%,#0f2f26_100%)] p-2 shadow-[0_26px_64px_rgba(0,0,0,0.32)] sm:rounded-[2rem] sm:p-3">
-      <div className="absolute inset-0 bg-hero-grid bg-[size:38px_38px] opacity-[0.07]" aria-hidden="true" />
-      <div className="relative overflow-hidden rounded-[1.35rem] border border-white/10 bg-brand-ink sm:rounded-[1.65rem]">
+    <figure className="relative mt-7 max-w-[42rem] overflow-hidden rounded-[1.65rem] bg-brand-ink shadow-[0_26px_64px_rgba(0,0,0,0.32)] ring-1 ring-brand-green/25 sm:rounded-[2rem]">
+      <picture className="block">
+        <source srcSet="/letrero-pl-hero-limpio.webp" type="image/webp" />
         <img
-          src="/letrero-pl-oficial.png"
+          src="/letrero-pl-hero-limpio.png"
           alt={'Servicios Especiales Pintado Londo\u00f1o, empresa de transporte especial de pasajeros'}
           width="1680"
           height="945"
-          className="block aspect-[16/9] h-auto w-full object-contain"
+          className="block aspect-[16/9] h-auto w-full object-cover"
           fetchPriority="high"
         />
-      </div>
+      </picture>
     </figure>
   )
 }
