@@ -68,7 +68,7 @@ export function ServicesSection({ services, whatsappLink }) {
         <div className="mt-8 overflow-hidden rounded-[1.6rem] border border-brand-green/20 bg-[linear-gradient(135deg,#061325_0%,#06224b_62%,#0f2f26_100%)] p-5 text-white shadow-[0_22px_58px_rgba(6,34,75,0.18)] sm:mt-10 sm:rounded-[1.9rem] sm:p-7">
           <div className="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
             <div className="max-w-3xl">
-              <p className="text-sm font-black uppercase tracking-[0.24em] text-brand-green">Cotización orientada</p>
+              <p className="text-sm font-black uppercase tracking-[0.24em] text-brand-green">Asesoría rápida</p>
               <h3 className="mt-3 font-display text-xl font-bold sm:text-3xl">
                 Dinos qué necesitas movilizar y te ayudamos a definir la mejor solución.
               </h3>
@@ -87,10 +87,10 @@ export function ServicesSection({ services, whatsappLink }) {
                 Cotizar por WhatsApp
               </a>
               <a
-                href="#cotizacion"
+                href="#confianza"
                 className="inline-flex min-h-12 items-center justify-center rounded-full bg-white px-6 py-3 text-sm font-extrabold text-brand-navy shadow-[0_16px_34px_rgba(255,255,255,0.14)] transition hover:-translate-y-0.5 hover:bg-brand-silver focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-green"
               >
-                Completar formulario
+                Ver respaldo
               </a>
             </div>
           </div>

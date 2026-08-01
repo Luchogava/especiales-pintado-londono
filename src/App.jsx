@@ -4,7 +4,6 @@ import { Footer } from './components/Footer'
 import { Header } from './components/Header'
 import { Hero } from './components/Hero'
 import { NewsSection } from './components/NewsSection'
-import { QuoteSection } from './components/QuoteSection'
 import { ServicesSection } from './components/ServicesSection'
 import { StatsBar } from './components/StatsBar'
 import { WhatsAppButton } from './components/WhatsAppButton'
@@ -31,8 +30,7 @@ function App() {
         <Hero company={company} whatsappLink={whatsappLink} />
         <ServicesSection services={services} whatsappLink={whatsappLink} />
         <StatsBar stats={stats} />
-        <WhyChooseUs reasons={reasons} />
-        <QuoteSection phoneRaw={company.phoneRaw} email={company.email} />
+        <WhyChooseUs reasons={reasons} whatsappLink={whatsappLink} />
         <AboutSection values={values} />
         <NewsSection events={newsEvents} company={company} />
         <CareersSection openings={careerOpenings} company={company} />

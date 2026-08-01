@@ -4,12 +4,12 @@ import { SectionHeading } from './SectionHeading'
 
 const newsIntro = {
   eyebrow: 'Actualidad en Ruta',
-  title: 'Historias que reflejan nuestra operación, cultura y compromiso',
+  title: 'Actualidad institucional',
   description:
-    'Compartimos eventos institucionales, actividades de equipo y momentos que muestran la esencia humana y operativa de Servicios Especiales Pintado Londoño.',
+    'Eventos y momentos que muestran nuestra cultura de servicio, seguridad y confianza.',
   featureLabel: 'Memoria institucional',
   featureText:
-    'Un espacio para destacar celebraciones, jornadas de seguridad, reconocimientos y noticias que fortalecen nuestra identidad como empresa de transporte especial de pasajeros.',
+    'Contenido institucional disponible para clientes, aliados y colaboradores.',
 }
 
 function ShareIcon() {
@@ -113,7 +113,7 @@ function EventCard({ event, company }) {
     >
       <div className="grid lg:grid-cols-[1.05fr_0.95fr]">
         <div
-          className={`relative min-h-[20rem] overflow-hidden ${
+          className={`relative min-h-[15rem] overflow-hidden sm:min-h-[20rem] ${
             event.images[0].fit === 'contain'
               ? 'bg-[radial-gradient(circle_at_center,rgba(116,192,67,0.14),transparent_40%),linear-gradient(145deg,#040b16,#10233b)] p-2'
               : ''
@@ -177,32 +177,32 @@ function EventCard({ event, company }) {
                 </div>
               </div>
             ) : null}
+
+            <div className="mt-6 grid gap-3 sm:grid-cols-2">
+              {event.images.slice(1).map((image) => (
+                <div
+                  key={image.src}
+                  className={`aspect-[16/10] overflow-hidden rounded-[1.2rem] ${
+                    image.fit === 'contain'
+                      ? 'bg-[radial-gradient(circle_at_center,rgba(116,192,67,0.14),transparent_38%),linear-gradient(145deg,#040b16,#132235)] p-2'
+                      : 'bg-slate-100'
+                  }`}
+                >
+                  <img
+                    src={image.src}
+                    alt={image.alt}
+                    className={`h-full w-full transition duration-500 hover:scale-[1.03] ${
+                      image.fit === 'contain' ? 'object-contain' : 'object-cover'
+                    }`}
+                    loading="lazy"
+                  />
+                </div>
+              ))}
+            </div>
           </details>
 
           <ShareEvent event={event} website={company.website} />
         </div>
-      </div>
-
-      <div className="grid gap-3 bg-white p-3 sm:grid-cols-2">
-        {event.images.slice(1).map((image) => (
-          <div
-            key={image.src}
-            className={`aspect-[16/10] overflow-hidden rounded-[1.2rem] ${
-              image.fit === 'contain'
-                ? 'bg-[radial-gradient(circle_at_center,rgba(116,192,67,0.14),transparent_38%),linear-gradient(145deg,#040b16,#132235)] p-2'
-                : 'bg-slate-100'
-            }`}
-          >
-            <img
-              src={image.src}
-              alt={image.alt}
-              className={`h-full w-full transition duration-500 hover:scale-[1.03] ${
-                image.fit === 'contain' ? 'object-contain' : 'object-cover'
-              }`}
-              loading="lazy"
-            />
-          </div>
-        ))}
       </div>
     </article>
   )
@@ -210,24 +210,24 @@ function EventCard({ event, company }) {
 
 export function NewsSection({ events, company }) {
   return (
-    <section id="actualidad" className="relative overflow-hidden bg-[linear-gradient(145deg,#040b16_0%,#06224b_58%,#07162d_100%)] py-24 text-white">
+    <section id="actualidad" className="relative overflow-hidden bg-[linear-gradient(145deg,#040b16_0%,#06224b_58%,#07162d_100%)] py-14 text-white sm:py-20">
       <div className="absolute inset-0 bg-hero-grid bg-[size:42px_42px] opacity-10" aria-hidden="true" />
       <div className="absolute right-[-8rem] top-[-8rem] h-72 w-72 rounded-full bg-brand-green/20 blur-3xl" aria-hidden="true" />
       <Container className="relative">
-        <div className="grid gap-10 lg:grid-cols-[0.82fr_1.18fr] lg:items-end">
+        <div className="grid gap-6 lg:grid-cols-[0.82fr_1.18fr] lg:items-end">
           <SectionHeading
             eyebrow={newsIntro.eyebrow}
             title={newsIntro.title}
             description={newsIntro.description}
             theme="dark"
           />
-          <div className="rounded-[1.8rem] border border-white/10 bg-white/5 p-5 text-slate-200 backdrop-blur">
+          <div className="hidden rounded-[1.8rem] border border-white/10 bg-white/5 p-5 text-slate-200 backdrop-blur sm:block">
             <p className="text-sm font-black uppercase tracking-[0.24em] text-brand-green">{newsIntro.featureLabel}</p>
             <p className="mt-3 leading-7">{newsIntro.featureText}</p>
           </div>
         </div>
 
-        <div className="mt-12 space-y-8">
+        <div className="mt-8 space-y-6 sm:mt-10">
           {events.map((event) => (
             <EventCard key={event.slug} event={event} company={company} />
           ))}

@@ -13,49 +13,7 @@ export const company = {
 export const navigation = [
   { label: 'Servicios', href: '#servicios' },
   { label: 'Confianza', href: '#confianza' },
-  { label: 'Cotización', href: '#cotizacion' },
   { label: 'Nosotros', href: '#nosotros' },
-  { label: 'Actualidad', href: '#actualidad' },
-  { label: 'Convocatorias', href: '#convocatorias' },
-]
-
-export const sectionTabs = [
-  {
-    eyebrow: 'Soluciones',
-    title: 'Servicios',
-    description: 'Empresarial, escolar, turismo y servicios especiales.',
-    href: '#servicios',
-  },
-  {
-    eyebrow: 'Respaldo',
-    title: 'Confianza',
-    description: 'Trayectoria, cobertura nacional y certificaciones.',
-    href: '#confianza',
-  },
-  {
-    eyebrow: 'Cultura',
-    title: 'Actualidad',
-    description: 'Eventos, noticias y momentos institucionales.',
-    href: '#actualidad',
-  },
-  {
-    eyebrow: 'Empresa',
-    title: 'Nosotros',
-    description: 'Historia, enfoque, misión, visión y valores.',
-    href: '#nosotros',
-  },
-  {
-    eyebrow: 'Talento',
-    title: 'Convocatorias',
-    description: 'Oportunidades laborales y perfiles requeridos.',
-    href: '#convocatorias',
-  },
-  {
-    eyebrow: 'Contacto',
-    title: 'Cotización',
-    description: 'WhatsApp, correo y formulario comercial.',
-    href: '#cotizacion',
-  },
 ]
 
 export const newsEvents = [
@@ -112,25 +70,25 @@ export const newsEvents = [
 export const stats = [
   {
     value: '40+ años',
-    label: 'Movilizando personas con experiencia, criterio operativo y confianza comercial.',
+    label: 'Experiencia comprobada en transporte especial de pasajeros.',
     image: '/stat-40-anos-v2.png',
     imageAlt: 'Más de 40 años movilizando personas',
   },
   {
     value: 'Cobertura nacional',
-    label: 'Atendemos rutas y servicios en distintas regiones del país con operación organizada.',
+    label: 'Servicios organizados en distintas regiones de Colombia.',
     image: '/stat-cobertura-v2.png',
     imageAlt: 'Cobertura nacional con mapa de Colombia',
   },
   {
     value: 'ISO 9001:2015',
-    label: 'Gestión de calidad enfocada en servicio, mejora continua y consistencia operativa.',
+    label: 'Gestión de calidad y mejora continua del servicio.',
     image: '/stat-iso-9001-v2.png',
     imageAlt: 'Certificación ISO 9001:2015',
   },
   {
     value: 'ISO 45001:2018',
-    label: 'Compromiso con la seguridad, la salud en el trabajo y la operación responsable.',
+    label: 'Seguridad, salud en el trabajo y operación responsable.',
     image: '/stat-iso-45001-v2.png',
     imageAlt: 'Certificación ISO 45001:2018',
   },
@@ -172,10 +130,18 @@ export const services = [
 ]
 
 export const reasons = [
-  'Trayectoria comprobada desde 1984 en transporte especial de pasajeros.',
-  'Operación enfocada en seguridad, puntualidad y buen trato.',
-  'Cobertura nacional para servicios recurrentes, eventuales o por proyecto.',
-  'Respaldo en calidad y seguridad con certificaciones ISO vigentes.',
+  {
+    title: 'Seguridad operativa',
+    text: 'Planeación, control y enfoque preventivo en cada servicio.',
+  },
+  {
+    title: 'Cumplimiento',
+    text: 'Rutas, horarios y coordinación clara para cada cliente.',
+  },
+  {
+    title: 'Atención humana',
+    text: 'Trato respetuoso, cercano y responsable durante todo el proceso.',
+  },
 ]
 
 export const values = [

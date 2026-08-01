@@ -72,18 +72,18 @@ export function Hero({ company, whatsappLink }) {
 
           <div className="mt-7 flex flex-col gap-3 sm:mt-8 sm:flex-row sm:gap-4">
             <a
-              href="#cotizacion"
-              className="inline-flex min-h-14 items-center justify-center rounded-full bg-brand-silver px-7 py-4 text-base font-extrabold text-brand-navy shadow-[0_18px_40px_rgba(217,221,228,0.18)] transition hover:-translate-y-0.5 hover:bg-white focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-green"
-            >
-              {'Solicitar cotización'}
-            </a>
-            <a
               href={whatsappLink}
               target="_blank"
               rel="noreferrer"
               className="inline-flex min-h-14 items-center justify-center rounded-full bg-[#25D366] px-7 py-4 text-base font-extrabold text-white shadow-[0_18px_40px_rgba(37,211,102,0.38)] transition hover:-translate-y-0.5 hover:bg-[#1fbe59] focus:outline-none focus-visible:ring-2 focus-visible:ring-white"
             >
-              Hablar por WhatsApp
+              Cotizar por WhatsApp
+            </a>
+            <a
+              href="#servicios"
+              className="inline-flex min-h-14 items-center justify-center rounded-full bg-brand-silver px-7 py-4 text-base font-extrabold text-brand-navy shadow-[0_18px_40px_rgba(217,221,228,0.18)] transition hover:-translate-y-0.5 hover:bg-white focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-green"
+            >
+              Ver servicios
             </a>
           </div>
           </div>
