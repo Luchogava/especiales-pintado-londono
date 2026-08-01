@@ -31,20 +31,9 @@ function ServiceCard({ service, index }) {
         </div>
       </div>
 
-      <details className="mt-4 rounded-2xl border border-brand-line bg-brand-porcelain p-4 sm:hidden">
-        <summary className="cursor-pointer list-none text-xs font-black uppercase tracking-[0.2em] text-brand-green">
-          Ver detalle
-        </summary>
-        <p className="mt-3 text-sm font-semibold leading-6 text-slate-700">{service.idealFor}</p>
-        <p className="mt-3 text-sm leading-6 text-slate-600">{service.description}</p>
-      </details>
-
-      <div className="mt-6 hidden rounded-2xl border border-brand-line bg-brand-porcelain p-4 sm:block">
-        <p className="text-xs font-black uppercase tracking-[0.22em] text-brand-green">Clientes frecuentes</p>
-        <p className="mt-3 text-sm font-semibold leading-6 text-slate-700">{service.idealFor}</p>
-      </div>
-
-      <p className="mt-5 hidden text-sm leading-6 text-slate-600 sm:block">{service.description}</p>
+      <p className="mt-4 text-sm leading-6 text-slate-600 sm:mt-5 sm:text-base sm:leading-7">
+        {service.description}
+      </p>
     </article>
   )
 }
@@ -56,7 +45,7 @@ export function ServicesSection({ services, whatsappLink }) {
         <SectionHeading
           eyebrow="Servicios"
           title="Elige el tipo de transporte que necesitas"
-          description={'Cuatro líneas de servicio claras para empresas, colegios, turismo, grupos y necesidades especiales.'}
+          description="Soluciones claras para operaciones empresariales, escolares, turísticas y servicios especiales."
         />
 
         <div className="mt-8 grid gap-4 sm:mt-12 md:grid-cols-2 xl:grid-cols-4" aria-label="Tipos de servicio">

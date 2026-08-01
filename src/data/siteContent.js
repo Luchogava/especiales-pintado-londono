@@ -99,7 +99,6 @@ export const services = [
     title: 'Transporte empresarial',
     accent: 'bg-brand-navy',
     summary: 'Movilidad corporativa organizada, puntual y con imagen profesional.',
-    idealFor: 'Empresas, contratistas, personal operativo y equipos administrativos.',
     description:
       'Rutas programadas con logística clara, cumplimiento de horarios y respaldo operativo para la continuidad del servicio.',
   },
@@ -107,7 +106,6 @@ export const services = [
     title: 'Transporte escolar',
     accent: 'bg-brand-green',
     summary: 'Seguridad y confianza para cada trayecto de la comunidad educativa.',
-    idealFor: 'Colegios, instituciones educativas, estudiantes y familias.',
     description:
       'Servicio responsable con control de rutas, puntualidad y acompañamiento confiable para estudiantes y acudientes.',
   },
@@ -115,7 +113,6 @@ export const services = [
     title: 'Turismo y grupos',
     accent: 'bg-brand-graphite',
     summary: 'Traslados cómodos y bien coordinados para experiencias grupales.',
-    idealFor: 'Eventos, convenciones, viajes turísticos y recorridos especiales.',
     description:
       'Coordinación flexible para grupos que necesitan atención cordial, comodidad y una experiencia bien gestionada.',
   },
@@ -123,7 +120,6 @@ export const services = [
     title: 'Servicios especiales',
     accent: 'bg-brand-red',
     summary: 'Soluciones a la medida para necesidades específicas de transporte.',
-    idealFor: 'Organizaciones, familias y clientes con requerimientos puntuales.',
     description:
       'Atención personalizada para rutas, horarios y condiciones especiales con seguridad, orden y capacidad de respuesta.',
   },
