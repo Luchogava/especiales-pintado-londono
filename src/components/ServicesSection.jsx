@@ -27,13 +27,11 @@ function ServiceCard({ service, index }) {
         </div>
         <div>
           <h3 className="font-display text-lg font-bold leading-tight sm:text-xl">{service.title}</h3>
-          <p className="mt-2 text-sm leading-6 text-slate-600 sm:mt-3 sm:text-base sm:leading-7">{service.summary}</p>
+          <p className="mt-2 text-sm leading-6 text-slate-600 sm:mt-3 sm:text-base sm:leading-7">
+            {service.summary}
+          </p>
         </div>
       </div>
-
-      <p className="mt-4 text-sm leading-6 text-slate-600 sm:mt-5 sm:text-base sm:leading-7">
-        {service.description}
-      </p>
     </article>
   )
 }
