@@ -3,7 +3,7 @@ import { SectionHeading } from './SectionHeading'
 
 export function AboutSection({ values }) {
   const description =
-    'Desde 1984 prestamos transporte terrestre especial de pasajeros para empresas, colegios, instituciones, grupos turísticos y servicios a la medida.'
+    'Desde 1984 movilizamos personas con seguridad, puntualidad y atención cercana.'
 
   return (
     <section id="nosotros" className="py-14 sm:py-20">
@@ -14,12 +14,6 @@ export function AboutSection({ values }) {
             title={'Una operación con experiencia y criterio de servicio'}
             description={description}
           />
-
-          <div className="mt-6 rounded-[1.5rem] border border-brand-silver/20 bg-white p-5 shadow-card">
-            <p className="text-base leading-7 text-slate-600">
-              {'Nuestra prioridad es que cada cliente encuentre una solución clara, segura y bien coordinada para movilizar personas con tranquilidad.'}
-            </p>
-          </div>
         </div>
 
         <div className="rounded-[1.8rem] border border-brand-silver/16 bg-[linear-gradient(140deg,#04101f_0%,#06224b_72%,#07162d_100%)] p-5 text-white shadow-glow sm:p-6">

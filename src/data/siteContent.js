@@ -23,9 +23,9 @@ export const newsEvents = [
     date: '12 de julio de 2026',
     title: 'Celebración de la Virgen del Carmen 2026',
     summary:
-      'La gerencia de Servicios Especiales Pintado Londoño y sus colaboradores conmemoraron el Día de la Virgen del Carmen, una fecha significativa para el sector del transporte.',
+      'Un encuentro institucional para conmemorar una fecha significativa para el sector transporte.',
     description:
-      'El 12 de julio de 2026, la gerencia de la empresa y sus colaboradores se reunieron para conmemorar el Día de la Virgen del Carmen. Este encuentro reafirmó la unión del equipo, la tradición del transporte y el compromiso de seguir movilizando personas con seguridad, respeto y confianza.',
+      'El 12 de julio de 2026, la gerencia y los colaboradores conmemoraron el Día de la Virgen del Carmen, reafirmando la unión del equipo y el compromiso con un servicio seguro y responsable.',
     highlights: [
       'Participación de la gerencia y los colaboradores de la empresa.',
       'Conmemoración de una tradición representativa para el transporte en Colombia.',
@@ -34,7 +34,7 @@ export const newsEvents = [
     acknowledgements: {
       title: 'Agradecimiento especial',
       text:
-        'Servicios Especiales Pintado Londoño expresa su agradecimiento a las empresas que, con sus aportes y respaldo, hicieron posible el desarrollo de esta celebración institucional.',
+        'Agradecemos a las empresas aliadas que apoyaron esta celebración institucional.',
       companies: [
         'Geoflora S.A.S.',
         'Flores Ipanema S.A.S.',
@@ -70,25 +70,25 @@ export const newsEvents = [
 export const stats = [
   {
     value: '40+ años',
-    label: 'Experiencia comprobada en transporte especial de pasajeros.',
+    label: 'Trayectoria en transporte especial.',
     image: '/stat-40-anos-v2.png',
     imageAlt: 'Más de 40 años movilizando personas',
   },
   {
     value: 'Cobertura nacional',
-    label: 'Servicios organizados en distintas regiones de Colombia.',
+    label: 'Operación en distintas regiones.',
     image: '/stat-cobertura-v2.png',
     imageAlt: 'Cobertura nacional con mapa de Colombia',
   },
   {
     value: 'ISO 9001:2015',
-    label: 'Gestión de calidad y mejora continua del servicio.',
+    label: 'Gestión de calidad.',
     image: '/stat-iso-9001-v2.png',
     imageAlt: 'Certificación ISO 9001:2015',
   },
   {
     value: 'ISO 45001:2018',
-    label: 'Seguridad, salud en el trabajo y operación responsable.',
+    label: 'Seguridad y salud en el trabajo.',
     image: '/stat-iso-45001-v2.png',
     imageAlt: 'Certificación ISO 45001:2018',
   },
@@ -120,30 +120,30 @@ export const services = [
 export const reasons = [
   {
     title: 'Seguridad operativa',
-    text: 'Planeación, control y enfoque preventivo en cada servicio.',
+    text: 'Planeación y control en cada servicio.',
   },
   {
     title: 'Cumplimiento',
-    text: 'Rutas, horarios y coordinación clara para cada cliente.',
+    text: 'Rutas y horarios coordinados.',
   },
   {
     title: 'Atención humana',
-    text: 'Trato respetuoso, cercano y responsable durante todo el proceso.',
+    text: 'Trato cercano y responsable.',
   },
 ]
 
 export const values = [
   {
     title: 'Misión',
-    text: 'Brindar soluciones de transporte especial de pasajeros con altos estándares de seguridad, cumplimiento, comodidad y trato humano, generando confianza en cada recorrido.',
+    text: 'Prestar transporte especial de pasajeros con seguridad, cumplimiento, comodidad y trato humano.',
   },
   {
     title: 'Visión',
-    text: 'Consolidarnos como una empresa referente en Colombia por la excelencia del servicio, la confiabilidad operativa y la capacidad de responder a las necesidades de cada cliente.',
+    text: 'Ser una empresa referente por calidad, confiabilidad operativa y capacidad de respuesta.',
   },
   {
     title: 'Valores',
-    text: 'Seguridad, puntualidad, respeto, responsabilidad, cercanía, orden y compromiso con la calidad en cada detalle del servicio.',
+    text: 'Seguridad, puntualidad, respeto, responsabilidad, cercanía, orden y calidad.',
   },
 ]
 
@@ -155,7 +155,7 @@ export const careerOpenings = [
     type: 'Operativo',
     location: 'Operación nacional según programación',
     summary:
-      'Buscamos conductores responsables, puntuales y comprometidos con la seguridad vial para apoyar nuestra operación de transporte especial de pasajeros en servicios empresariales, escolares, turísticos y especiales.',
+      'Buscamos conductores responsables, puntuales y comprometidos con la seguridad vial.',
     requirements: [
       'Licencia de conducción C2 vigente para vehículos de servicio público.',
       'Formación básica primaria o bachillerato, con habilidades de lectura y escritura.',
@@ -191,7 +191,7 @@ export const careerOpenings = [
     type: 'Administrativo y operativo',
     location: 'Colombia',
     summary:
-      'Recibimos perfiles para futuras necesidades de coordinación, atención al cliente, apoyo logístico y gestión operativa.',
+      'Recibimos perfiles para futuras necesidades operativas y administrativas.',
     requirements: [
       'Actitud de servicio, comunicación clara y orientación al detalle.',
       'Capacidad para trabajar con orden, cumplimiento y manejo responsable de información.',

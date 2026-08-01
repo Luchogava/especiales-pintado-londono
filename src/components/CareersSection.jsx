@@ -113,13 +113,13 @@ export function CareersSection({ openings, company }) {
           <SectionHeading
             eyebrow="Talento humano"
             title="Convocatorias laborales"
-            description={'Espacio secundario para publicar oportunidades y recibir hojas de vida.'}
+            description="Oportunidades laborales vigentes y banco de hojas de vida."
           />
 
           <div className="mt-6 rounded-[1.5rem] border border-brand-silver/20 bg-white p-5 shadow-card">
             <p className="text-sm font-black uppercase tracking-[0.24em] text-brand-green">{'Canal de postulación'}</p>
             <p className="mt-3 text-sm leading-7 text-slate-600 sm:text-base">
-              {'Envía tu hoja de vida al correo comercial indicando en el asunto el cargo o área de interés.'}
+              {'Envía tu hoja de vida indicando el cargo o área de interés.'}
             </p>
             <a
               href={`mailto:${company.email}?subject=${subject}`}

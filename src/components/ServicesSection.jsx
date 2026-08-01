@@ -43,7 +43,7 @@ export function ServicesSection({ services, whatsappLink }) {
         <SectionHeading
           eyebrow="Servicios"
           title="Elige el tipo de transporte que necesitas"
-          description="Soluciones claras para operaciones empresariales, escolares, turísticas y servicios especiales."
+          description="Cuatro soluciones para movilizar personas con seguridad, orden y puntualidad."
         />
 
         <div className="mt-8 grid gap-4 sm:mt-12 md:grid-cols-2 xl:grid-cols-4" aria-label="Tipos de servicio">
@@ -57,11 +57,8 @@ export function ServicesSection({ services, whatsappLink }) {
             <div className="max-w-3xl">
               <p className="text-sm font-black uppercase tracking-[0.24em] text-brand-green">Asesoría rápida</p>
               <h3 className="mt-3 font-display text-xl font-bold sm:text-3xl">
-                Dinos qué necesitas movilizar y te ayudamos a definir la mejor solución.
+                Cuéntanos tu ruta y te orientamos por WhatsApp.
               </h3>
-              <p className="mt-3 text-sm leading-6 text-slate-300 sm:text-base sm:leading-7">
-                Comparte origen, destino, fecha, horarios y número de pasajeros. Con esa información podemos orientarte mejor desde el primer contacto.
-              </p>
             </div>
 
             <div className="flex shrink-0 flex-col gap-3 sm:flex-row lg:flex-col xl:flex-row">

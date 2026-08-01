@@ -18,9 +18,6 @@ export function WhyChooseUs({ reasons, whatsappLink }) {
             <h2 className="mt-3 font-display text-2xl font-bold leading-tight sm:text-4xl">
               Transporte especial con respaldo, orden y buen trato
             </h2>
-            <p className="mt-3 text-sm leading-6 text-slate-300 sm:text-base sm:leading-7">
-              Lo esencial para contratar con tranquilidad, sin saturarte de información.
-            </p>
             <a
               href={whatsappLink}
               target="_blank"

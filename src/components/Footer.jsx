@@ -10,8 +10,7 @@ export function Footer({ company, navigation, whatsappLink }) {
             <BrandLogo />
           </div>
           <p className="mt-4 max-w-xl leading-8 text-slate-400">
-            {'Transporte terrestre especial de pasajeros en Colombia con experiencia, orden y atención cercana para '}
-            cada servicio.
+            {'Transporte especial de pasajeros con experiencia, orden y atención cercana.'}
           </p>
         </div>
 

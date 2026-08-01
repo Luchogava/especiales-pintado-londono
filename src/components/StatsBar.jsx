@@ -27,8 +27,8 @@ export function StatsBar({ stats }) {
       <Container>
         <SectionHeading
           eyebrow="Confianza institucional"
-          title="Pruebas visibles para decidir con tranquilidad"
-          description="Trayectoria, cobertura y certificaciones presentadas como respaldo real de cumplimiento, calidad y seguridad operativa."
+          title="Respaldo para contratar con confianza"
+          description="Trayectoria, cobertura nacional y certificaciones ISO."
         />
         <div className="mt-8 rounded-[1.6rem] border border-brand-line bg-gradient-to-br from-white via-brand-porcelain to-white p-3 shadow-premium sm:mt-10 sm:rounded-[2rem] sm:p-4 xl:p-5">
           <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">

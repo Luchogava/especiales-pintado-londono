@@ -6,10 +6,10 @@ const newsIntro = {
   eyebrow: 'Actualidad en Ruta',
   title: 'Actualidad institucional',
   description:
-    'Eventos y momentos que muestran nuestra cultura de servicio, seguridad y confianza.',
+    'Eventos y momentos que reflejan nuestra cultura de servicio.',
   featureLabel: 'Memoria institucional',
   featureText:
-    'Contenido institucional disponible para clientes, aliados y colaboradores.',
+    'Publicaciones para clientes, aliados y colaboradores.',
 }
 
 function ShareIcon() {

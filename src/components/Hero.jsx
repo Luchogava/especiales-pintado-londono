@@ -35,7 +35,7 @@ function BrandHeroMark() {
 
 export function Hero({ company, whatsappLink }) {
   const heroDescription =
-    'Movilizamos equipos de trabajo, estudiantes, turistas y grupos con seguridad, puntualidad, atención humana y operación nacional respaldada por más de 40 años de experiencia.'
+    'Movilidad segura y puntual para empresas, colegios, turismo y grupos, con operación nacional y más de 40 años de experiencia.'
   const yearsLabel = 'Más de 40 años'
   const yearsAlt = 'Más de 40 años movilizando personas'
   return (
@@ -102,23 +102,9 @@ export function Hero({ company, whatsappLink }) {
                   decoding="async"
                 />
                 <p className="mt-4 text-center text-sm leading-6 text-slate-300">
-                  Trayectoria, experiencia operativa y confianza para movilizar personas en todo tipo de servicio.
+                  Experiencia comprobada en transporte especial de pasajeros.
                 </p>
               </div>
-            </div>
-            <div className="mt-5 grid gap-3">
-              {[
-                ['1', 'Recibimos la necesidad'],
-                ['2', 'Validamos ruta, horario y pasajeros'],
-                ['3', 'Acompañamos la cotización'],
-              ].map(([number, text]) => (
-                <div key={number} className="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/5 p-3">
-                  <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-brand-green text-sm font-black text-white">
-                    {number}
-                  </span>
-                  <span className="text-sm font-semibold text-slate-200">{text}</span>
-                </div>
-              ))}
             </div>
           </div>
           </div>
