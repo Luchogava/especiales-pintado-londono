@@ -47,14 +47,14 @@ function CareerOpening({ opening, index, company }) {
     <details
       ref={detailsRef}
       id={vacancyId}
-      className="group scroll-mt-28 rounded-[1.45rem] border border-brand-silver/20 bg-white p-4 shadow-card transition open:border-brand-green/40 open:shadow-premium target:border-brand-green target:ring-4 target:ring-brand-green/15 sm:rounded-[1.7rem] sm:p-5"
+      className="group scroll-mt-28 rounded-[1.2rem] border border-brand-silver/20 bg-white p-3 shadow-card transition open:border-brand-green/40 open:shadow-premium target:border-brand-green target:ring-4 target:ring-brand-green/15 sm:rounded-[1.7rem] sm:p-5"
     >
       <summary className="flex cursor-pointer list-none items-start justify-between gap-5">
         <span>
           <span className="inline-flex rounded-full bg-brand-navy px-3 py-1 text-xs font-black uppercase tracking-[0.18em] text-white">
             Convocatoria 0{index + 1}
           </span>
-          <span className="mt-4 block font-display text-xl font-bold text-brand-navy sm:text-2xl">{opening.title}</span>
+          <span className="mt-3 block font-display text-lg font-bold text-brand-navy sm:mt-4 sm:text-2xl">{opening.title}</span>
           <span className="mt-3 flex flex-wrap gap-2 text-sm font-bold">
             <span className="rounded-full bg-brand-green/12 px-3 py-1 text-brand-green">{opening.status}</span>
             <span className="rounded-full bg-slate-100 px-3 py-1 text-slate-600">{opening.type}</span>
@@ -107,8 +107,8 @@ export function CareersSection({ openings, company }) {
   const subject = encodeURIComponent('Hoja de vida - Convocatoria Servicios Especiales Pintado Londoño')
 
   return (
-    <section id="convocatorias" className="bg-slate-50 py-14 sm:py-20">
-      <Container className="grid gap-8 lg:grid-cols-[0.78fr_1.22fr] lg:items-start">
+    <section id="convocatorias" className="bg-slate-50 py-10 sm:py-20">
+      <Container className="grid gap-6 sm:gap-8 lg:grid-cols-[0.78fr_1.22fr] lg:items-start">
         <div>
           <SectionHeading
             eyebrow="Talento humano"
@@ -116,8 +116,8 @@ export function CareersSection({ openings, company }) {
             description="Oportunidades laborales vigentes y banco de hojas de vida."
           />
 
-          <div className="mt-6 rounded-[1.5rem] border border-brand-silver/20 bg-white p-5 shadow-card">
-            <p className="text-sm font-black uppercase tracking-[0.24em] text-brand-green">{'Canal de postulación'}</p>
+          <div className="mt-5 rounded-[1.25rem] border border-brand-silver/20 bg-white p-4 shadow-card sm:mt-6 sm:rounded-[1.5rem] sm:p-5">
+            <p className="text-xs font-black uppercase tracking-[0.22em] text-brand-green sm:text-sm sm:tracking-[0.24em]">{'Canal de postulación'}</p>
             <p className="mt-3 text-sm leading-7 text-slate-600 sm:text-base">
               {'Envía tu hoja de vida indicando el cargo o área de interés.'}
             </p>

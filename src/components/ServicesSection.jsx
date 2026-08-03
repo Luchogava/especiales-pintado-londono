@@ -10,7 +10,7 @@ function ServiceIcon({ index }) {
   ]
 
   return (
-    <svg viewBox="0 0 24 24" className="h-7 w-7" fill="none" aria-hidden="true">
+    <svg viewBox="0 0 24 24" className="h-6 w-6 sm:h-7 sm:w-7" fill="none" aria-hidden="true">
       <path d={paths[index]} stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" />
     </svg>
   )
@@ -18,16 +18,16 @@ function ServiceIcon({ index }) {
 
 function ServiceCard({ service, index }) {
   return (
-    <article className="group flex h-full flex-col rounded-[1.35rem] border border-brand-line bg-white p-4 text-brand-navy shadow-[0_18px_44px_rgba(6,34,75,0.08)] transition duration-300 hover:-translate-y-1 hover:border-brand-green/55 hover:shadow-card sm:rounded-[1.6rem] sm:p-6">
-      <div className="flex items-start gap-4">
+    <article className="group flex h-full flex-col rounded-[1.15rem] border border-brand-line bg-white p-3 text-brand-navy shadow-[0_18px_44px_rgba(6,34,75,0.08)] transition duration-300 hover:-translate-y-1 hover:border-brand-green/55 hover:shadow-card sm:rounded-[1.6rem] sm:p-6">
+      <div className="flex items-start gap-3 sm:gap-4">
         <div
-          className={`inline-flex h-12 min-w-12 items-center justify-center rounded-2xl text-white shadow-[0_16px_30px_rgba(0,0,0,0.16)] transition group-hover:scale-105 sm:h-14 sm:min-w-14 ${service.accent}`}
+          className={`inline-flex h-10 min-w-10 items-center justify-center rounded-xl text-white shadow-[0_16px_30px_rgba(0,0,0,0.16)] transition group-hover:scale-105 sm:h-14 sm:min-w-14 sm:rounded-2xl ${service.accent}`}
         >
           <ServiceIcon index={index} />
         </div>
         <div>
-          <h3 className="font-display text-lg font-bold leading-tight sm:text-xl">{service.title}</h3>
-          <p className="mt-2 text-sm leading-6 text-slate-600 sm:mt-3 sm:text-base sm:leading-7">
+          <h3 className="font-display text-base font-bold leading-tight sm:text-xl">{service.title}</h3>
+          <p className="mt-2 text-sm leading-5 text-slate-600 sm:mt-3 sm:text-base sm:leading-7">
             {service.summary}
           </p>
         </div>
@@ -38,7 +38,7 @@ function ServiceCard({ service, index }) {
 
 export function ServicesSection({ services, whatsappLink }) {
   return (
-    <section id="servicios" className="relative scroll-mt-28 py-14 sm:py-24">
+    <section id="servicios" className="relative scroll-mt-28 py-10 sm:py-24">
       <Container>
         <SectionHeading
           eyebrow="Servicios"
@@ -46,17 +46,17 @@ export function ServicesSection({ services, whatsappLink }) {
           description="Cuatro soluciones para movilizar personas con seguridad, orden y puntualidad."
         />
 
-        <div className="mt-8 grid gap-4 sm:mt-12 md:grid-cols-2 xl:grid-cols-4" aria-label="Tipos de servicio">
+        <div className="mt-6 grid gap-3 sm:mt-12 sm:gap-4 md:grid-cols-2 xl:grid-cols-4" aria-label="Tipos de servicio">
           {services.map((service, index) => (
             <ServiceCard key={service.title} service={service} index={index} />
           ))}
         </div>
 
-        <div className="mt-8 overflow-hidden rounded-[1.6rem] border border-brand-green/20 bg-[linear-gradient(135deg,#061325_0%,#06224b_62%,#0f2f26_100%)] p-5 text-white shadow-[0_22px_58px_rgba(6,34,75,0.18)] sm:mt-10 sm:rounded-[1.9rem] sm:p-7">
+        <div className="mt-6 overflow-hidden rounded-[1.35rem] border border-brand-green/20 bg-[linear-gradient(135deg,#061325_0%,#06224b_62%,#0f2f26_100%)] p-4 text-white shadow-[0_22px_58px_rgba(6,34,75,0.18)] sm:mt-10 sm:rounded-[1.9rem] sm:p-7">
           <div className="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
             <div className="max-w-3xl">
-              <p className="text-sm font-black uppercase tracking-[0.24em] text-brand-green">Asesoría rápida</p>
-              <h3 className="mt-3 font-display text-xl font-bold sm:text-3xl">
+              <p className="text-xs font-black uppercase tracking-[0.22em] text-brand-green sm:text-sm sm:tracking-[0.24em]">Asesoría rápida</p>
+              <h3 className="mt-2 font-display text-lg font-bold sm:mt-3 sm:text-3xl">
                 Cuéntanos tu ruta y te orientamos por WhatsApp.
               </h3>
             </div>
@@ -72,7 +72,7 @@ export function ServicesSection({ services, whatsappLink }) {
               </a>
               <a
                 href="#confianza"
-                className="inline-flex min-h-12 items-center justify-center rounded-full bg-white px-6 py-3 text-sm font-extrabold text-brand-navy shadow-[0_16px_34px_rgba(255,255,255,0.14)] transition hover:-translate-y-0.5 hover:bg-brand-silver focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-green"
+                className="hidden min-h-12 items-center justify-center rounded-full bg-white px-6 py-3 text-sm font-extrabold text-brand-navy shadow-[0_16px_34px_rgba(255,255,255,0.14)] transition hover:-translate-y-0.5 hover:bg-brand-silver focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-green sm:inline-flex"
               >
                 Ver respaldo
               </a>

@@ -5,11 +5,11 @@ export function SectionHeading({ eyebrow, title, description, align = 'left', th
 
   return (
     <div className={alignment}>
-      <p className="mb-3 text-xs font-extrabold uppercase tracking-[0.24em] text-brand-green sm:mb-4 sm:text-sm sm:tracking-[0.28em]">
+      <p className="mb-2 text-[0.68rem] font-extrabold uppercase tracking-[0.22em] text-brand-green sm:mb-4 sm:text-sm sm:tracking-[0.28em]">
         {eyebrow}
       </p>
-      <h2 className={`font-display text-2xl font-bold leading-tight sm:text-4xl ${titleColor}`}>{title}</h2>
-      <p className={`mt-3 text-base leading-7 sm:mt-4 sm:text-lg sm:leading-8 ${descriptionColor}`}>{description}</p>
+      <h2 className={`font-display text-[1.65rem] font-bold leading-tight sm:text-4xl ${titleColor}`}>{title}</h2>
+      <p className={`mt-2 text-sm leading-6 sm:mt-4 sm:text-lg sm:leading-8 ${descriptionColor}`}>{description}</p>
     </div>
   )
 }

@@ -59,18 +59,18 @@ export function Hero({ company, whatsappLink }) {
 
           <BrandHeroMark />
 
-          <h1 className="mt-5 font-display text-[2rem] font-bold leading-[1.04] tracking-[-0.04em] min-[390px]:text-[2.25rem] sm:mt-6 sm:text-5xl lg:text-[3.45rem]">
+          <h1 className="mt-5 font-display text-[1.9rem] font-bold leading-[1.04] tracking-[-0.04em] min-[390px]:text-[2.15rem] sm:mt-6 sm:text-5xl lg:text-[3.45rem]">
             Transporte especial de pasajeros para empresas, colegios y grupos
           </h1>
 
-          <p className="mt-4 max-w-2xl text-base leading-7 text-slate-300 sm:mt-6 sm:text-xl sm:leading-8">{heroDescription}</p>
+          <p className="mt-3 max-w-2xl text-sm leading-6 text-slate-300 sm:mt-6 sm:text-xl sm:leading-8">{heroDescription}</p>
 
           <div className="mt-5 grid grid-cols-2 gap-2 text-xs font-extrabold uppercase tracking-[0.12em] text-slate-100 sm:hidden">
             <span className="rounded-full border border-brand-green/30 bg-white/5 px-3 py-2">40+ años</span>
             <span className="rounded-full border border-brand-green/30 bg-white/5 px-3 py-2">Cobertura nacional</span>
           </div>
 
-          <div className="mt-7 flex flex-col gap-3 sm:mt-8 sm:flex-row sm:gap-4">
+          <div className="mt-6 flex flex-col gap-3 sm:mt-8 sm:flex-row sm:gap-4">
             <a
               href={whatsappLink}
               target="_blank"
@@ -81,7 +81,7 @@ export function Hero({ company, whatsappLink }) {
             </a>
             <a
               href="#servicios"
-              className="inline-flex min-h-14 items-center justify-center rounded-full bg-brand-silver px-7 py-4 text-base font-extrabold text-brand-navy shadow-[0_18px_40px_rgba(217,221,228,0.18)] transition hover:-translate-y-0.5 hover:bg-white focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-green"
+              className="hidden min-h-14 items-center justify-center rounded-full bg-brand-silver px-7 py-4 text-base font-extrabold text-brand-navy shadow-[0_18px_40px_rgba(217,221,228,0.18)] transition hover:-translate-y-0.5 hover:bg-white focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-green sm:inline-flex"
             >
               Ver servicios
             </a>

@@ -10,12 +10,12 @@ function CheckIcon() {
 
 export function WhyChooseUs({ reasons, whatsappLink }) {
   return (
-    <section className="bg-[linear-gradient(145deg,#061325_0%,#06224b_58%,#0f2f26_100%)] py-12 text-white sm:py-16">
+    <section className="bg-[linear-gradient(145deg,#061325_0%,#06224b_58%,#0f2f26_100%)] py-10 text-white sm:py-16">
       <Container>
-        <div className="grid gap-6 rounded-[1.8rem] border border-white/10 bg-white/[0.06] p-5 shadow-[0_24px_70px_rgba(0,0,0,0.22)] backdrop-blur sm:p-7 lg:grid-cols-[0.82fr_1.18fr] lg:items-center">
+        <div className="grid gap-5 rounded-[1.5rem] border border-white/10 bg-white/[0.06] p-4 shadow-[0_24px_70px_rgba(0,0,0,0.22)] backdrop-blur sm:gap-6 sm:rounded-[1.8rem] sm:p-7 lg:grid-cols-[0.82fr_1.18fr] lg:items-center">
           <div>
             <p className="text-xs font-black uppercase tracking-[0.24em] text-brand-green">Por qué elegirnos</p>
-            <h2 className="mt-3 font-display text-2xl font-bold leading-tight sm:text-4xl">
+            <h2 className="mt-2 font-display text-[1.65rem] font-bold leading-tight sm:mt-3 sm:text-4xl">
               Transporte especial con respaldo, orden y buen trato
             </h2>
             <a
@@ -30,12 +30,12 @@ export function WhyChooseUs({ reasons, whatsappLink }) {
 
           <div className="grid gap-3 sm:grid-cols-3">
             {reasons.map((reason) => (
-              <div key={reason.title} className="rounded-[1.25rem] border border-white/10 bg-white/[0.06] p-4">
-                <span className="inline-flex h-10 w-10 items-center justify-center rounded-2xl bg-brand-green text-white">
+              <div key={reason.title} className="rounded-[1.1rem] border border-white/10 bg-white/[0.06] p-3 sm:rounded-[1.25rem] sm:p-4">
+                <span className="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-brand-green text-white sm:h-10 sm:w-10 sm:rounded-2xl">
                   <CheckIcon />
                 </span>
-                <p className="mt-4 font-display text-lg font-bold text-white">{reason.title}</p>
-                <p className="mt-2 text-sm leading-6 text-slate-300">{reason.text}</p>
+                <p className="mt-3 font-display text-base font-bold text-white sm:mt-4 sm:text-lg">{reason.title}</p>
+                <p className="mt-1 text-sm leading-5 text-slate-300 sm:mt-2 sm:leading-6">{reason.text}</p>
               </div>
             ))}
           </div>

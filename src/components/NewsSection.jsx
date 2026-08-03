@@ -113,7 +113,7 @@ function EventCard({ event, company }) {
     >
       <div className="grid lg:grid-cols-[1.05fr_0.95fr]">
         <div
-          className={`relative min-h-[15rem] overflow-hidden sm:min-h-[20rem] ${
+          className={`relative min-h-[12rem] overflow-hidden sm:min-h-[20rem] ${
             event.images[0].fit === 'contain'
               ? 'bg-[radial-gradient(circle_at_center,rgba(116,192,67,0.14),transparent_40%),linear-gradient(145deg,#040b16,#10233b)] p-2'
               : ''
@@ -138,10 +138,10 @@ function EventCard({ event, company }) {
           </div>
         </div>
 
-        <div className="bg-[radial-gradient(circle_at_top_right,rgba(116,192,67,0.16),transparent_35%),linear-gradient(145deg,#06224b_0%,#040b16_100%)] p-7 text-white sm:p-8">
-          <p className="text-sm font-black uppercase tracking-[0.26em] text-brand-green">Evento destacado</p>
-          <h3 className="mt-4 font-display text-3xl font-bold leading-tight sm:text-4xl">{event.title}</h3>
-          <p className="mt-5 text-lg leading-8 text-slate-200">{event.summary}</p>
+        <div className="bg-[radial-gradient(circle_at_top_right,rgba(116,192,67,0.16),transparent_35%),linear-gradient(145deg,#06224b_0%,#040b16_100%)] p-5 text-white sm:p-8">
+          <p className="text-xs font-black uppercase tracking-[0.24em] text-brand-green sm:text-sm sm:tracking-[0.26em]">Evento destacado</p>
+          <h3 className="mt-3 font-display text-2xl font-bold leading-tight sm:mt-4 sm:text-4xl">{event.title}</h3>
+          <p className="mt-3 text-base leading-7 text-slate-200 sm:mt-5 sm:text-lg sm:leading-8">{event.summary}</p>
 
           <details className="group mt-6 rounded-[1.4rem] border border-white/10 bg-white/5 p-5">
             <summary className="flex cursor-pointer list-none items-center justify-between gap-4">
@@ -210,7 +210,7 @@ function EventCard({ event, company }) {
 
 export function NewsSection({ events, company }) {
   return (
-    <section id="actualidad" className="relative overflow-hidden bg-[linear-gradient(145deg,#040b16_0%,#06224b_58%,#07162d_100%)] py-14 text-white sm:py-20">
+    <section id="actualidad" className="relative overflow-hidden bg-[linear-gradient(145deg,#040b16_0%,#06224b_58%,#07162d_100%)] py-10 text-white sm:py-20">
       <div className="absolute inset-0 bg-hero-grid bg-[size:42px_42px] opacity-10" aria-hidden="true" />
       <div className="absolute right-[-8rem] top-[-8rem] h-72 w-72 rounded-full bg-brand-green/20 blur-3xl" aria-hidden="true" />
       <Container className="relative">
@@ -227,7 +227,7 @@ export function NewsSection({ events, company }) {
           </div>
         </div>
 
-        <div className="mt-8 space-y-6 sm:mt-10">
+        <div className="mt-6 space-y-5 sm:mt-10 sm:space-y-6">
           {events.map((event) => (
             <EventCard key={event.slug} event={event} company={company} />
           ))}
