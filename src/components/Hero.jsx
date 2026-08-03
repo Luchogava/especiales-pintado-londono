@@ -15,6 +15,45 @@ function ShieldIcon() {
   )
 }
 
+function ClockIcon() {
+  return (
+    <svg viewBox="0 0 24 24" className="h-4 w-4" fill="none" aria-hidden="true">
+      <circle cx="12" cy="12" r="8" stroke="currentColor" strokeWidth="1.8" />
+      <path d="M12 7.8V12L15 13.8" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+  )
+}
+
+function RouteIcon() {
+  return (
+    <svg viewBox="0 0 24 24" className="h-4 w-4" fill="none" aria-hidden="true">
+      <path
+        d="M12 21S5.5 15.2 5.5 9.8C5.5 6.2 8.4 3.5 12 3.5S18.5 6.2 18.5 9.8C18.5 15.2 12 21 12 21Z"
+        stroke="currentColor"
+        strokeWidth="1.8"
+        strokeLinejoin="round"
+      />
+      <circle cx="12" cy="9.8" r="2.2" stroke="currentColor" strokeWidth="1.8" />
+    </svg>
+  )
+}
+
+function MobileTrustBadge({ icon, value, label }) {
+  return (
+    <div className="flex items-center gap-2.5 rounded-2xl border border-white/12 bg-white/[0.075] p-3 text-left shadow-[inset_0_1px_0_rgba(255,255,255,0.08),0_12px_28px_rgba(0,0,0,0.16)] backdrop-blur">
+      <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-brand-green text-white shadow-[0_10px_24px_rgba(116,192,67,0.26)]">
+        {icon}
+      </span>
+      <span>
+        <span className="block font-display text-base font-black leading-none text-white">{value}</span>
+        <span className="mt-1 block text-[0.62rem] font-extrabold uppercase tracking-[0.16em] text-slate-300">
+          {label}
+        </span>
+      </span>
+    </div>
+  )
+}
+
 function BrandHeroMark() {
   return (
     <figure className="relative mt-5 max-w-[42rem] overflow-hidden rounded-[1.35rem] bg-brand-ink shadow-[0_20px_48px_rgba(0,0,0,0.28)] ring-1 ring-brand-green/25 sm:mt-6 sm:rounded-[2rem]">
@@ -65,9 +104,9 @@ export function Hero({ company, whatsappLink }) {
 
           <p className="mt-3 max-w-2xl text-sm leading-6 text-slate-300 sm:mt-6 sm:text-xl sm:leading-8">{heroDescription}</p>
 
-          <div className="mt-5 grid grid-cols-2 gap-2 text-xs font-extrabold uppercase tracking-[0.12em] text-slate-100 sm:hidden">
-            <span className="rounded-full border border-brand-green/30 bg-white/5 px-3 py-2">40+ años</span>
-            <span className="rounded-full border border-brand-green/30 bg-white/5 px-3 py-2">Cobertura nacional</span>
+          <div className="mt-5 grid grid-cols-2 gap-2.5 sm:hidden" aria-label="Indicadores de confianza">
+            <MobileTrustBadge icon={<ClockIcon />} value="40+ años" label="Experiencia" />
+            <MobileTrustBadge icon={<RouteIcon />} value="Nacional" label="Cobertura" />
           </div>
 
           <div className="mt-6 flex flex-col gap-3 sm:mt-8 sm:flex-row sm:gap-4">
