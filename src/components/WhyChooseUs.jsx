@@ -22,7 +22,7 @@ export function WhyChooseUs({ reasons, whatsappLink }) {
               href={whatsappLink}
               target="_blank"
               rel="noreferrer"
-              className="mt-5 inline-flex min-h-12 items-center justify-center rounded-full bg-[#25D366] px-6 py-3 text-sm font-extrabold text-white shadow-[0_16px_34px_rgba(37,211,102,0.34)] transition hover:-translate-y-0.5 hover:bg-[#1fbe59] focus:outline-none focus-visible:ring-2 focus-visible:ring-white"
+              className="btn-premium-green mt-5 w-full sm:w-auto"
             >
               Hablar con un asesor
             </a>

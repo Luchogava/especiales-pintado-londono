@@ -66,13 +66,13 @@ export function ServicesSection({ services, whatsappLink }) {
                 href={whatsappLink}
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex min-h-12 items-center justify-center rounded-full bg-[#25D366] px-6 py-3 text-sm font-extrabold text-white shadow-[0_16px_34px_rgba(37,211,102,0.34)] transition hover:-translate-y-0.5 hover:bg-[#1fbe59] focus:outline-none focus-visible:ring-2 focus-visible:ring-white"
+                className="btn-premium-green w-full sm:w-auto"
               >
                 Cotizar por WhatsApp
               </a>
               <a
                 href="#confianza"
-                className="hidden min-h-12 items-center justify-center rounded-full bg-white px-6 py-3 text-sm font-extrabold text-brand-navy shadow-[0_16px_34px_rgba(255,255,255,0.14)] transition hover:-translate-y-0.5 hover:bg-brand-silver focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-green sm:inline-flex"
+                className="btn-premium-ghost hidden sm:inline-flex"
               >
                 Ver respaldo
               </a>

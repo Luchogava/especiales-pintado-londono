@@ -40,8 +40,8 @@ function RouteIcon() {
 
 function MobileTrustBadge({ icon, value, label }) {
   return (
-    <div className="flex items-center gap-2.5 rounded-2xl border border-white/12 bg-white/[0.075] p-3 text-left shadow-[inset_0_1px_0_rgba(255,255,255,0.08),0_12px_28px_rgba(0,0,0,0.16)] backdrop-blur">
-      <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-brand-green text-white shadow-[0_10px_24px_rgba(116,192,67,0.26)]">
+    <div className="flex items-center gap-2.5 rounded-2xl border border-brand-green/30 bg-[linear-gradient(135deg,rgba(255,255,255,0.11),rgba(116,192,67,0.08))] p-3 text-left shadow-[inset_0_1px_0_rgba(255,255,255,0.10),0_16px_34px_rgba(0,0,0,0.20)] backdrop-blur">
+      <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-[linear-gradient(135deg,#74C043,#A5E55E)] text-brand-ink shadow-[0_10px_24px_rgba(116,192,67,0.30)]">
         {icon}
       </span>
       <span>
@@ -114,13 +114,13 @@ export function Hero({ company, whatsappLink }) {
               href={whatsappLink}
               target="_blank"
               rel="noreferrer"
-              className="inline-flex min-h-14 items-center justify-center rounded-full bg-[#25D366] px-7 py-4 text-base font-extrabold text-white shadow-[0_18px_40px_rgba(37,211,102,0.38)] transition hover:-translate-y-0.5 hover:bg-[#1fbe59] focus:outline-none focus-visible:ring-2 focus-visible:ring-white"
+              className="btn-premium-green min-h-14 w-full px-7 py-4 text-base sm:w-auto"
             >
               Cotizar por WhatsApp
             </a>
             <a
               href="#servicios"
-              className="hidden min-h-14 items-center justify-center rounded-full bg-brand-silver px-7 py-4 text-base font-extrabold text-brand-navy shadow-[0_18px_40px_rgba(217,221,228,0.18)] transition hover:-translate-y-0.5 hover:bg-white focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-green sm:inline-flex"
+              className="btn-premium-ghost hidden min-h-14 px-7 py-4 text-base sm:inline-flex"
             >
               Ver servicios
             </a>

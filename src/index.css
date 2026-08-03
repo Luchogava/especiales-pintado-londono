@@ -58,6 +58,24 @@ textarea {
   background: rgba(116, 192, 67, 0.28);
 }
 
+@layer components {
+  .btn-premium-green {
+    @apply inline-flex min-h-12 items-center justify-center rounded-full bg-[linear-gradient(135deg,#25D366_0%,#74C043_56%,#A5E55E_100%)] px-6 py-3 text-sm font-extrabold text-brand-ink shadow-[0_18px_38px_rgba(37,211,102,0.34)] ring-1 ring-white/35 transition duration-300 hover:-translate-y-0.5 hover:shadow-[0_22px_46px_rgba(37,211,102,0.44)] focus:outline-none focus-visible:ring-2 focus-visible:ring-white active:translate-y-0;
+  }
+
+  .btn-premium-dark {
+    @apply inline-flex min-h-12 items-center justify-center rounded-full bg-[linear-gradient(135deg,#06224B_0%,#10305F_100%)] px-6 py-3 text-sm font-extrabold text-white shadow-[0_16px_34px_rgba(6,34,75,0.24)] ring-1 ring-brand-green/20 transition duration-300 hover:-translate-y-0.5 hover:bg-brand-green hover:text-brand-ink focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-green active:translate-y-0;
+  }
+
+  .btn-premium-ghost {
+    @apply inline-flex min-h-12 items-center justify-center rounded-full border border-white/20 bg-white/10 px-6 py-3 text-sm font-extrabold text-white shadow-[inset_0_1px_0_rgba(255,255,255,0.08),0_12px_28px_rgba(0,0,0,0.12)] backdrop-blur transition duration-300 hover:-translate-y-0.5 hover:border-brand-green hover:bg-white hover:text-brand-navy focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-green active:translate-y-0;
+  }
+
+  .btn-premium-light {
+    @apply inline-flex min-h-11 items-center justify-center rounded-full border border-brand-silver/35 bg-white px-4 py-2.5 text-sm font-extrabold text-brand-navy shadow-[0_10px_24px_rgba(6,34,75,0.08)] transition duration-300 hover:-translate-y-0.5 hover:border-brand-green hover:text-brand-green focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-green active:translate-y-0;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,

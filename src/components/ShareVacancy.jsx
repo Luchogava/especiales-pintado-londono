@@ -40,8 +40,7 @@ export function ShareVacancy({ title, website, vacancySlug }) {
     await copyLink()
   }
 
-  const secondaryClass =
-    'rounded-full border border-brand-silver/35 bg-white px-4 py-2.5 text-sm font-bold text-brand-navy transition hover:border-brand-green hover:text-brand-green'
+  const secondaryClass = 'btn-premium-light'
 
   return (
     <div className="mt-6 rounded-2xl border border-brand-silver/25 bg-slate-50 p-4">
@@ -50,7 +49,7 @@ export function ShareVacancy({ title, website, vacancySlug }) {
         <button
           type="button"
           onClick={share}
-          className="inline-flex items-center gap-2 rounded-full bg-brand-green px-4 py-2.5 text-sm font-extrabold text-white transition hover:-translate-y-0.5 hover:bg-brand-navy focus:outline-none focus:ring-2 focus:ring-brand-green focus:ring-offset-2"
+          className="btn-premium-green gap-2"
         >
           <ShareIcon /> Compartir
         </button>

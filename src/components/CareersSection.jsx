@@ -82,7 +82,7 @@ function CareerOpening({ opening, index, company }) {
           <div className="mt-4 flex flex-wrap gap-3">
             <a
               href={`mailto:${company.email}?subject=${encodeURIComponent(opening.applicationSubject || 'Hoja de vida - Convocatoria')}`}
-              className="rounded-full bg-brand-green px-5 py-3 text-sm font-extrabold text-white transition hover:bg-white hover:text-brand-navy"
+              className="btn-premium-green w-full sm:w-auto"
             >
               Postularme por correo
             </a>
@@ -90,7 +90,7 @@ function CareerOpening({ opening, index, company }) {
               href={`https://wa.me/${company.phoneRaw}?text=${encodeURIComponent(`Hola, deseo postularme a la convocatoria de ${opening.title}.`)}`}
               target="_blank"
               rel="noreferrer"
-              className="rounded-full border border-white/25 px-5 py-3 text-sm font-extrabold text-white transition hover:border-brand-green hover:text-brand-green"
+              className="btn-premium-ghost w-full sm:w-auto"
             >
               Consultar por WhatsApp
             </a>
@@ -123,7 +123,7 @@ export function CareersSection({ openings, company }) {
             </p>
             <a
               href={`mailto:${company.email}?subject=${subject}`}
-              className="mt-5 inline-flex rounded-full bg-brand-navy px-6 py-3.5 text-sm font-extrabold text-white shadow-[0_16px_32px_rgba(6,34,75,0.18)] transition hover:-translate-y-0.5 hover:bg-brand-green"
+              className="btn-premium-dark mt-5 w-full sm:w-auto"
             >
               Enviar hoja de vida
             </a>

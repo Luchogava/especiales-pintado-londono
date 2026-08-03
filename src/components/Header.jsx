@@ -41,7 +41,7 @@ export function Header({ navigation, whatsappLink }) {
             href={whatsappLink}
             target="_blank"
             rel="noreferrer"
-            className="shrink-0 rounded-full bg-[#25D366] px-2.5 py-2.5 text-sm font-extrabold text-white shadow-[0_18px_40px_rgba(37,211,102,0.35)] transition hover:-translate-y-0.5 hover:bg-[#1fbe59] focus:outline-none focus-visible:ring-2 focus-visible:ring-white min-[390px]:px-3 min-[390px]:py-3 sm:px-5"
+            className="btn-premium-green min-h-11 shrink-0 px-3 py-2.5 text-sm sm:px-5"
           >
             <span className="sm:hidden">WhatsApp</span>
             <span className="hidden sm:inline">Cotiza por WhatsApp</span>

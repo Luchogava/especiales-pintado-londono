@@ -30,8 +30,7 @@ function ShareEvent({ event, website }) {
   const encodedUrl = encodeURIComponent(url)
   const encodedText = encodeURIComponent(`${text}. Conoce esta publicación:`)
   const linkedInUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${encodedUrl}`
-  const secondaryClass =
-    'rounded-full border border-white/20 bg-white/8 px-4 py-2.5 text-sm font-bold text-white transition hover:border-brand-green hover:text-brand-green'
+  const secondaryClass = 'btn-premium-ghost min-h-11 px-4 py-2.5'
 
   async function copyLink() {
     try {
@@ -60,7 +59,7 @@ function ShareEvent({ event, website }) {
       <button
         type="button"
         onClick={share}
-        className="inline-flex items-center gap-2 rounded-full bg-brand-green px-5 py-3 text-sm font-extrabold text-white transition hover:-translate-y-0.5 hover:bg-white hover:text-brand-navy focus:outline-none focus:ring-2 focus:ring-brand-green focus:ring-offset-2 focus:ring-offset-brand-navy"
+        className="btn-premium-green gap-2"
       >
         <ShareIcon /> Compartir evento
       </button>
